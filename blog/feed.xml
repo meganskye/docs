@@ -4,7 +4,7 @@
         <title>Darwinia Documentation Blog</title>
         <link>https://docs.darwinia.network/docs/blog</link>
         <description>The best place to stay up-to-date with the latest Darwinia Documentation news and events.</description>
-        <lastBuildDate>Thu, 12 Mar 2020 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Mar 2020 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -13,6 +13,16 @@
             <link>https://docs.darwinia.network/docs/blog</link>
         </image>
         <copyright>Copyright © 2020 Darwinia Network</copyright>
+        <item>
+            <title><![CDATA[Darwinia 将对 RING & DOT 持有者进行空投]]></title>
+            <link>https://docs.darwinia.network/docs/blog/2020/03/23/crab-airdrop-snapshot.html</link>
+            <guid>https://docs.darwinia.network/docs/blog/2020/03/23/crab-airdrop-snapshot.html</guid>
+            <pubDate>Mon, 23 Mar 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="asset/2020-03-23-crab-airdrop-snapshot-1.png" alt=""></p>
+<p>Crab 网络初始供应量中一部分 cRING 将分发给 RING &amp; DOT 的持有者，RING &amp; DOT 的持有者可以免费获得 cRING 空投。</p>
+<p>Darwinia 官方已于 2020年3月20日，对 RING &amp; DOT 的持有者进行了快照，RING &amp; DOT的持有者可在 Crab 网络上线后自行查询/领取。</p>
+]]></description>
+        </item>
         <item>
             <title><![CDATA[Darwinia最后一版测试网络「Crab」即将发布]]></title>
             <link>https://docs.darwinia.network/docs/blog/2020/03/12/crab-coming.html</link>
@@ -72,21 +82,21 @@
 ]]></description>
         </item>
         <item>
-            <title><![CDATA[Darwinia development team Itering wins funding from Web3 Foundation]]></title>
-            <link>https://docs.darwinia.network/docs/blog/2020/02/10/web3-grant-scale-en.html</link>
-            <guid>https://docs.darwinia.network/docs/blog/2020/02/10/web3-grant-scale-en.html</guid>
-            <pubDate>Mon, 10 Feb 2020 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p><img src="/docs/blog/assets/doc15-1.jpeg" alt=""></p>
-<p>Web3 Foundation announced a new list of W3F Grants for its funding plan. The project Scale submitted by the Darwinia development team Itering(<a href="http://www.itering.io/"><em>www.itering.io</em></a>), who has received the investment support of Web3 Foundation and has become the officially recognized project of the Web3 ecosystem and Polkadot.</p>
-]]></description>
-        </item>
-        <item>
             <title><![CDATA[Darwinia开发团队Itering荣获Web3基金会资助]]></title>
             <link>https://docs.darwinia.network/docs/blog/2020/02/10/web3-grant-scale.html</link>
             <guid>https://docs.darwinia.network/docs/blog/2020/02/10/web3-grant-scale.html</guid>
             <pubDate>Mon, 10 Feb 2020 06:00:00 GMT</pubDate>
             <description><![CDATA[<p><img src="/docs/blog/assets/doc15-1.jpeg" alt=""></p>
 <p>Web3 Foundation公布其资助计划W3F Grants的新一批名单，由DARWINIA开发团队Itering（<a href="http://www.itering.io">www.itering.io</a>）提交的项目Scale得到了Web3基金会的投资支持，成为了Web3生态和Polkadot的官方认可项目。</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Darwinia development team Itering wins funding from Web3 Foundation]]></title>
+            <link>https://docs.darwinia.network/docs/blog/2020/02/10/web3-grant-scale-en.html</link>
+            <guid>https://docs.darwinia.network/docs/blog/2020/02/10/web3-grant-scale-en.html</guid>
+            <pubDate>Mon, 10 Feb 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/docs/blog/assets/doc15-1.jpeg" alt=""></p>
+<p>Web3 Foundation announced a new list of W3F Grants for its funding plan. The project Scale submitted by the Darwinia development team Itering(<a href="http://www.itering.io/"><em>www.itering.io</em></a>), who has received the investment support of Web3 Foundation and has become the officially recognized project of the Web3 ecosystem and Polkadot.</p>
 ]]></description>
         </item>
         <item>
