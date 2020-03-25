@@ -2,12 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.darwinia.network/docs/blog</id>
     <title>Darwinia Documentation Blog</title>
-    <updated>2020-03-23T06:00:00.000Z</updated>
+    <updated>2020-03-25T06:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.darwinia.network/docs/blog"/>
     <subtitle>The best place to stay up-to-date with the latest Darwinia Documentation news and events.</subtitle>
     <logo>https://docs.darwinia.network/docs/img/logo.png</logo>
     <rights>Copyright © 2020 Darwinia Network</rights>
+    <entry>
+        <title type="html"><![CDATA[Darwinia 与 MathWallet 正式达成战略合作伙伴关系]]></title>
+        <id>https://docs.darwinia.network/docs/blog/2020/03/25/darwinia-mathwallet-partners.html</id>
+        <link href="https://docs.darwinia.network/docs/blog/2020/03/25/darwinia-mathwallet-partners.html"/>
+        <updated>2020-03-25T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p><img src="/docs/blog/assets/2020-03-25-darwinia-mathwallet-partners-1.png" alt=""></p>
+<p>Darwinia Network（达尔文网络）宣布与 MathWallet（麦子钱包）正式达成战略合作伙伴关系。</p>
+]]></summary>
+        <author>
+            <name>@DarwiniaNetwork</name>
+            <email/>
+            <uri>http://twitter.com/DarwiniaNetwork</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Darwinia 将对 RING & DOT 持有者进行空投]]></title>
         <id>https://docs.darwinia.network/docs/blog/2020/03/23/crab-airdrop-snapshot.html</id>
@@ -97,14 +111,12 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[PolkaBase AMA | DARWINIA：如何打造资产互联网？]]></title>
-        <id>https://docs.darwinia.network/docs/blog/2020/02/21/polkabase-ama.html</id>
-        <link href="https://docs.darwinia.network/docs/blog/2020/02/21/polkabase-ama.html"/>
+        <title type="html"><![CDATA[PolkaBase AMA Review “How to build the Internet of assets?”]]></title>
+        <id>https://docs.darwinia.network/docs/blog/2020/02/21/polkabase-ama-en.html</id>
+        <link href="https://docs.darwinia.network/docs/blog/2020/02/21/polkabase-ama-en.html"/>
         <updated>2020-02-21T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p><img src="/docs/blog/assets/doc16-1.jpeg" alt=""></p>
-<p>非常荣幸能够参加「链读」AMA，以下是此次AMA的全部内容。</p>
-<p>主持人：Yuki，链读品牌负责人
-嘉宾：王晓寅，DARWINIA Co-Founder</p>
+<p>Ladies and gentlemen, great to have you all here! This time, we have brought together the two-month Polkadot Ecosystem Project AMA series, which has been launched to the 3rd AMA.</p>
 ]]></summary>
         <author>
             <name>@DarwiniaNetwork</name>
@@ -113,12 +125,14 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[PolkaBase AMA Review “How to build the Internet of assets?”]]></title>
-        <id>https://docs.darwinia.network/docs/blog/2020/02/21/polkabase-ama-en.html</id>
-        <link href="https://docs.darwinia.network/docs/blog/2020/02/21/polkabase-ama-en.html"/>
+        <title type="html"><![CDATA[PolkaBase AMA | DARWINIA：如何打造资产互联网？]]></title>
+        <id>https://docs.darwinia.network/docs/blog/2020/02/21/polkabase-ama.html</id>
+        <link href="https://docs.darwinia.network/docs/blog/2020/02/21/polkabase-ama.html"/>
         <updated>2020-02-21T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p><img src="/docs/blog/assets/doc16-1.jpeg" alt=""></p>
-<p>Ladies and gentlemen, great to have you all here! This time, we have brought together the two-month Polkadot Ecosystem Project AMA series, which has been launched to the 3rd AMA.</p>
+<p>非常荣幸能够参加「链读」AMA，以下是此次AMA的全部内容。</p>
+<p>主持人：Yuki，链读品牌负责人
+嘉宾：王晓寅，DARWINIA Co-Founder</p>
 ]]></summary>
         <author>
             <name>@DarwiniaNetwork</name>
