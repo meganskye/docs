@@ -1,0 +1,238 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>0013 Darwinia Cross Chain Nft Standards · Darwinia Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="- rfc: 13"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="0013 Darwinia Cross Chain Nft Standards · Darwinia Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.darwinia.network/docs/"/><meta property="og:description" content="- rfc: 13"/><meta property="og:image" content="https://docs.darwinia.network/docs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.darwinia.network/docs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docs/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://docs.darwinia.network/docs/blog/atom.xml" title="Darwinia Documentation Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://docs.darwinia.network/docs/blog/feed.xml" title="Darwinia Documentation Blog RSS Feed"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-159909608-2', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/docs/css/main.css"/><script src="/docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docs/en"><img class="logo" src="/docs/img/logo.png" alt="Darwinia Documentation"/></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/blog/" target="_self">Blog</a></li><li class="siteNavGroupActive"><a href="/docs/docs/en/wiki-intro" target="_self">Wiki</a></li><li class=""><a href="/docs/docs/en/crab-home" target="_self">Crab Network</a></li><li class=""><a href="/docs/docs/en/dev-home" target="_self">Developers</a></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/docs/img/language.svg" alt="Languages icon"/>English</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/docs/docs/zh-CN/rfc-0013-darwinia-cross-chain-nft-standards">中文</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(event) {
+          event.preventDefault();
+
+          if (languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>RFCs</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Get Started<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/docs/en/wiki-intro">Introduction</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/wiki-faq">FAQ</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/wiki-community">Community</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/wiki-roadmap">Roadmap</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/wiki-tut-index">Tutorials</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/wiki-tool-index">Tools</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/misc-sample">Sample Article</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/wiki-contribute">How to contribute</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Understanding Darwinia<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/docs/en/wp-home">Overview</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">RFCs</h4><ul><li class="navListItem"><a class="navItem" href="/docs/docs/en/wiki-rfc-index">RFCs</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/rfc-0001-darwinia-developement-structure">0001 Darwinia Developement Structure</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/rfc-0007-dawinia-token-staking-model">0007 Dawinia Token Staking Model</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/rfc-0009-dawinia-liquid-kton-reward">0009 Dawinia Liquid Kton Reward</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/rfc-0010-darwinia-cross-chain-nft-bridge-protocol">0010 Darwinia Cross Chain Nft Bridge Protocol</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/rfc-0011-using-harberger-tax-to-find-price-for-xclaim-vault-collaterals">0011 Using Harberger Tax To Find Price For Xclaim Vault Collaterals</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/rfc-0012-darwinia-bridge-core-interoperation-in-chainrelay-enabled-blockchains">0012 Darwinia Bridge Core Interoperation In Chainrelay Enabled Blockchains</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/docs/en/rfc-0013-darwinia-cross-chain-nft-standards">0013 Darwinia Cross Chain Nft Standards</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/rfc-0014-darwinia-token-migration-by-cross-chain-redeem-protocol">0014 Darwinia Token Migration By Cross Chain Redeem Protocol</a></li></ul></div><li class="navListItem"><a class="navItem" href="/docs/docs/en/wiki-glossary">Glossary</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Tutorials<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/docs/en/wiki-tut-p1">P1</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/darwinia-network/rfc/edit/master/RFC/src/0013-darwinia-cross-chain-nft-standards.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">0013 Darwinia Cross Chain Nft Standards</h1></header><article><div><span><ul>
+<li>rfc: 13</li>
+<li>title: 0013-darwinia-cross-chain-nft-standards</li>
+<li>status: Draft</li>
+<li>desc: Darwinia Cross-chain NFT Standards</li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="cross-chain-nft-standards"></a><a href="#cross-chain-nft-standards" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Cross-chain NFT Standards</h1>
+<h2><a class="anchor" aria-hidden="true" id="i-概述"></a><a href="#i-概述" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>I. 概述</h2>
+<p>为了方便的标记一个物品或者一个资产，我们会用一个唯一的标识来标记它，不同的物品具有不同的标识。我们先拿物理空间里面的物品举例，在理想情况下，所有的物品都应该在同一个时空里面，这样大家都能观察的到，并且方便做区分和标识。但是现实情况是，不同的物品可能存在于不同的时空里面，并且观察者也不一定能看到每一个物品。同样的情况，在虚拟资产世界，因为存在不同的账本或称区块链网络(简称域)，不同的物品在同一个域里面因为有不同的标识，可以容易的区分和定位，但是该域里面的观察者无法识别和解析来自外部域的物品标识。</p>
+<p>目前现有的很多通证标准的设计，都主要是针对域内资产进行标识设计，没有将不同域内的资产复用考虑进来，这样导致在对非同质资产进行复用时，单独的Token ID无法标识唯一的资产，还需要带上很多域信息，实现起来十分复杂。</p>
+<p>跨链技术可以极大的帮助通证在更广泛的区块链网络中实现互联互通，但是同时，也给开发者和用户带来了一些认知和使用门槛，其中就包括通证可识别性的问题。</p>
+<p>因为目前的通证标准，例如ERC20或ERC721，只记录的其在某个特定链上的所有权信息，没有考虑到通证有可能会分布在两个区块链网络。当通证同时分布在两个区块链网络时，我们需要一套识别和解析系统帮助用户和通证应用来解析和查询当前的通证状态。当我们给出一个NFT的Token ID时，我们无法确定它目前所在区块链网络是哪个，其所有者是谁，因为当NFT发生跨链转移后，在其中一个区块链网络上该通证处于活跃状态，而其他则处于不可用状态，比如锁定状态。在没有通证解析系统的情况下，链外操作无法确定该NFT在哪条链上时处于活跃状态。</p>
+<p>跨链环境下，Token面临的识别性和解析问题，需要新的解决方案和标准来解决。因此我们引入一个基于通证跨链证明的解析系统来解决通证跨链时的定位和解析需求，通过通证解析系统和域内唯一标识，我们可以存在与不同域的通证之间的关联关系映射起来，并标识他们之间的相同与不同。</p>
+<p>本文将在<a href="./rfc-0010-darwinia-cross-chain-nft-bridge-protocol">RFC-0010 Darwinia Cross-chain NFT Bridge Protocol</a>的基础上，进一步细化NFT相关的标准和设计细节。</p>
+<h2><a class="anchor" aria-hidden="true" id="ii-介绍"></a><a href="#ii-介绍" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>II. 介绍</h2>
+<h3><a class="anchor" aria-hidden="true" id="a-目标"></a><a href="#a-目标" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>A. 目标</h3>
+<ul>
+<li>可识别。NFT在跨链过程中，应该保证NFT的token id可被追溯。因为不同区块链的token id表示的类型不同，所以NFT在不同区块链之间流转的过程中，token id的内容和类型都可能会发生变化；甚至同一个NFT在从chain A跨到chain B，再从chain B跨回chain A后，在chain A上的token id也可能会发生变化，token id的不可识别直接导致资产价值归零。因此与fungible token不同的是，保持NFT的可识别性是NFT跨链安全的重要部分。</li>
+<li>可追踪。因为NFT在跨链过程中，token id会不断发生变化，因此了解同一个NFT在不同链上的token id可以对应用层的建立更加复杂的逻辑提供极大的帮助。</li>
+<li>访问友好。鉴于需要和外部的钱包/RPC客户端交互，因此减少外部访问的成本，提高效率和友好性也是NFT跨链中的重要内容。在 <a href="https://github.com/darwinia-network/rfcs/blob/master/RFC/zh_CN/0010-darwinia-cross-chain-nft-bridge-protocol.md">0010-darwinia-cross-chain-nft-bridge-protocol</a> 实现方案中，随着NFT在Bridge Core内流转的次数越多，在Bridge Core内沉淀的信息也就越多。因此外部钱包/RPC客户端只需要向Bridge Core请求一次，就可以得到该NFT在所有链的local token id 信息。而不需要向每条链分别请求获取。</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="b-术语"></a><a href="#b-术语" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>B. 术语</h3>
+<ul>
+<li><strong>GID / Global ID</strong>， 表示NFT在所有链中的全局唯一标识。适用范围：全局</li>
+<li><strong>Local ID / Local token id</strong>，表示NFT在不同的区块链中的token id. 适用范围：某一条区块链</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="c-分类"></a><a href="#c-分类" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>C. 分类</h3>
+<p>当我们讨论NFT跨链时，可以根据NFT所在基础设施的网络情况，分成几类：</p>
+<ul>
+<li>跨平行链(Polkadot内)</li>
+</ul>
+<p>当在平行链之间进行跨链时，例如在Polkadot网络中，因为有共享安全，共享运行时SPREE等设计，因此将通证解析系统放在中继链上时最合适的，因为通证跨平行链的消息会流经中继链，中继链可以通过在消息中继模块之外，嵌入一个收集模块，将通证跨链消息规范化统一收集之后，提供给通证解析服务。</p>
+<ul>
+<li>跨异构公链</li>
+</ul>
+<p>在异构跨链模式下，例如Ethereum和EOS之间，或者Ethereum和Tron之间，通证跨链一般通过跨链转接桥的方案等进行跨链，例如ACCS(HTLCs), XClaim, Parity Bridge(Mainet/Sidechain)，Darwinia Bridge Core等等。</p>
+<p>对基于Darwinia Bridge Core技术搭建的跨链转接桥，其NFT的跨链是通过在对手链上构建超额抵押的对称CBA，并利用Chain Relay技术来保证可赎回性和可解析性。Darwinia Bridge Core跟其他转接桥技术的区别有两点，1. 背书链也支持Chain Relay以更好的验证外链证明，而不需要担保质押 2. 通过在不同的公链上构建Darwinia Chain Relay，并利用一个Hub结构来优化利用这些基础设施，实现公链间的互联互通。设计细节可以参考RFC0010.</p>
+<p>本文所讨论的NFT跨链标准，主要集中的Polkadot内部，也就是平行链之间的NFT跨链标准，而对于公链间的跨链桥细节和外部公链上的NFT标准则不包含在本文范围。</p>
+<h2><a class="anchor" aria-hidden="true" id="iii-跨链共享标准"></a><a href="#iii-跨链共享标准" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>III. 跨链共享标准</h2>
+<h3><a class="anchor" aria-hidden="true" id="a-全局唯一标识gid和local-id"></a><a href="#a-全局唯一标识gid和local-id" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>A. 全局唯一标识GID和Local ID</h3>
+<p>鉴于NFT跨链的目标，本方案会在跨链时为NFT分配一个唯一个全局ID，并且在跨链桥内部保留其在外部链上的local token id，达到可识别、可追踪、访问友好的目标。</p>
+<p>（跨链桥Bridge Core的实现细节详见<a href="https://github.com/darwinia-network/rfcs/blob/master/RFC/zh_CN/0010-darwinia-cross-chain-nft-bridge-protocol.md">0010-darwinia-cross-chain-nft-bridge-protocol</a>）[1]</p>
+<p>为了将不同标准的通证标识符进行规范化，以提供识别和解析方法，与现有的标准进行很好的协调和对接，并满足社区基础设施建设的标准需求。跨链系统将为每一个跨链后的通证分配一个全局ID(global_id)。</p>
+<h4><a class="anchor" aria-hidden="true" id="gid生成方式"></a><a href="#gid生成方式" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>GID生成方式</h4>
+<p>GID 作为 NFT的全局标识，需要保证唯一性。因此不同的NFT在跨链时为其通过自增的方式分配一个GID即可。</p>
+<h4><a class="anchor" aria-hidden="true" id="cid-based-local-id-编码方式"></a><a href="#cid-based-local-id-编码方式" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CID-based Local ID 编码方式</h4>
+<p><strong>Local ID</strong> 为了保证其跨链可识别性，需包含一下三个字段：</p>
+<pre><code class="hljs css language-python">&lt;chain id&gt;&lt;contract id&gt;&lt;token id&gt;
+</code></pre>
+<p>不同的区块链的数据类型不同、加密方式等都不相同，因此local token id很可能从内容到类型都差别很大。</p>
+<p>这里，我们借鉴IPLD[2]中CID的编码方式。鉴于IPLD用来解决不同区块链上的内容寻址问题，因此也非常适合用来解决这里的local token id的索引问题。</p>
+<pre><code class="hljs css language-python">&lt;mbase&gt;&lt;version&gt;&lt;chain id&gt;&lt;data&gt;
+</code></pre>
+<p>解释：</p>
+<ul>
+<li><p><strong>mbase</strong>: 编码方式，base58,base64 etc.</p></li>
+<li><p><strong>version</strong>: 版本信息。</p></li>
+<li><p><strong>chain id</strong>: chain id信息</p></li>
+<li><p><strong>data</strong>： 包含以下两个字段</p>
+<pre><code class="hljs css language-python">&lt;contract id&gt;&lt;token id&gt;
+</code></pre>
+<p>contract id 和 token id 又遵从以下格式：</p>
+<pre><code class="hljs css language-python">&lt;hash func&gt;&lt;len&gt;&lt;value&gt;
+</code></pre>
+<p>因此完整的data字段如下：</p>
+<pre><code class="hljs css language-python">&lt;hash func&gt;&lt;len&gt;&lt;contract id content&gt;&lt;hash func&gt;&lt;len&gt;&lt;token id content&gt;
+</code></pre></li>
+</ul>
+<p>通过这种编码方式，既可以清晰地寻址到 local token id，又节省了字节数，提高了传输效率。</p>
+<h3><a class="anchor" aria-hidden="true" id="b-utlilising-fungiblenon-fungible-assets-on-polkadot"></a><a href="#b-utlilising-fungiblenon-fungible-assets-on-polkadot" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>B. Utlilising Fungible/Non-fungible assets on Polkadot</h3>
+<p>基于已有的polkadot内部fungible asset的标识和使用方案[3]进行扩展，我们可以使用如下一行URI格式的标识方式，为钱包/ RPC客户端的访问提供便利：</p>
+<p>同一个NFT资产可以用：</p>
+<pre><code class="hljs css language-html">polkadot://<span class="hljs-tag">&lt;<span class="hljs-name">nft|ft</span> <span class="hljs-attr">flag</span>&gt;</span>/<span class="hljs-tag">&lt;<span class="hljs-name">Local</span> <span class="hljs-attr">ID</span>&gt;</span>
+</code></pre>
+<p>可以用：</p>
+<pre><code class="hljs css language-python">polkadot://&lt;nft|ft flag&gt;/&lt;Global ID&gt;/&lt;chain ID&gt;
+</code></pre>
+<p>来表示。</p>
+<blockquote>
+<p>其中nft|ft flag, 0表示fungible token, 1 表示  non-fungible token</p>
+</blockquote>
+<p>举例：假设<code>z43AaGEvwdfzjrCZ3Sq7DKxdDHrwoaPQDtqF4jfdkNEVTiqGVFW</code>表示以太坊上合约为<code>0x14a4123da9ad21b2215dc0ab6984ec1e89842c6d</code>，token id为<code>0x01</code>的NFT，它对应的GID为<code>42</code>，那么</p>
+<pre><code class="hljs css language-python">polkadot://<span class="hljs-number">1</span>/z43AaGEvwdfzjrCZ3Sq7DKxdDHrwoaPQDtqF4jfdkNEVTiqGVFW
+</code></pre>
+<p>表示，也可以用：</p>
+<pre><code class="hljs css language-python">polkadot://<span class="hljs-number">1</span>/<span class="hljs-number">42</span>/eth
+</code></pre>
+<p>表示。</p>
+<p>这两个URI会寻址到同一个NFT. 因为Bridge Core已经提供了GID和Local ID间的关系拓扑</p>
+<h3><a class="anchor" aria-hidden="true" id="c-数据请求格式"></a><a href="#c-数据请求格式" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>C. 数据请求格式</h3>
+<p>如果有钱包/RPC客户端向Bridge Core请求NFT的拓扑信息，可以根据GID得到所有已知链的local ID信息：</p>
+<pre><code class="hljs css language-html">{
+    GID: 42,
+    total: [
+        {
+            chain_id: eth,
+          contract_id: 0x1234,
+            token_id: 0x01
+     },
+        {
+            chain_id: eos,
+            asset_id: dgoods,
+            token_id: 1.2.3
+        },
+      ...
+    ]
+}
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="d-基于unfo的解析模块"></a><a href="#d-基于unfo的解析模块" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>D. 基于UNFO的解析模块</h3>
+<p>通证解析模块是NFT cross-chain协议内嵌的一个模块，用于在 <em>Issuing chain</em> 或者其连接的中继链上记录和解析当前通证在中继链范围内的全局状态，并规范化处理成解析格式的方式，来为跨链网络提供通证解析查询和可追踪性。由于在NFT跨链桥协议中，使用了UNFO来记录与NFT相关的跨链信息，协议和其他映射信息，因此我们可以利用这些证明信息，并引入NFT解析模块来记录、更新和解析UNFO及相关信息。</p>
+<p>在NFT通过Bridge Core 从B链转移至I链的过程中，Bridge Core会为每一个NFT分配一个GID，并将中间状态及其转移过程表达成UNFO，包括GID, (External Chain ID, External Contact Address, External Token ID), lock_script等信息。</p>
+<p>这些UNFO记录集合会被归集在一个记录解析表里面，通过这个解析表，可以为跨链协议(e.g redeem)提供NFT通证解析服务，也可以为外部系统提供NFT解析服务。</p>
+<table>
+<thead>
+<tr><th>UNFO</th><th>GID</th><th>Externl Chain ID</th><th>External Contact Address</th><th>External Token ID</th><th>Lock_Script</th><th>Active Status</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>GID0001</td><td>Ethereum</td><td>A_ERC721</td><td>12</td><td>script_issuing_burn_or_relay</td><td>False</td></tr>
+<tr><td>2</td><td>GID0001</td><td>Tron</td><td>B_TRC721</td><td>?</td><td>script_backing_redeem</td><td>True</td></tr>
+<tr><td>3</td><td>GID0002</td><td>EOS</td><td>C_dGoods</td><td>2.5.4</td><td>script_issuing_burn_or_relay</td><td>False</td></tr>
+<tr><td>4</td><td>GID0002</td><td>EOS</td><td>C_dGoods</td><td>2.5.4</td><td>script_ownership_contract</td><td>True</td></tr>
+<tr><td>5</td><td>GID0003</td><td>Bridge Core</td><td>None</td><td>None</td><td>script_ownership_contract</td><td>True</td></tr>
+<tr><td>6</td><td>GID0004</td><td>ETC</td><td>ETC_ERC721</td><td>23</td><td>script_issuing_burn_or_relay</td><td>False</td></tr>
+<tr><td>7</td><td>GID0004</td><td>Ethereum</td><td>D_ERC1155</td><td>13</td><td>script_backing_redeem</td><td>False</td></tr>
+</tbody>
+</table>
+<p>GID0001: This NFT is cross-chain transfered from (Ethereum, A_ERC721, 12) to (Tron, B_TRC721, ?) trough Bridge Core, Currently it is active on Tron.</p>
+<p>GID0002: This NFT is cross-chain transfered from (EOS, C_dGoods, 2.5.4) to an account Bridge Core,the script_ownership_contract is linking to an ownership managemetn contract on Bridge Core.</p>
+<p>GID0003: This NFT is originally created on Bridge Core, it is recorded as UNFO because the golobal identifier is generated in the UNFO module, the script_ownership_contract is linking to an ownership managemetn contract on Bridge Core.</p>
+<p>GID0004: This NFT is cross-chain transfered from (ETC, ETC_ERC721, 23) to (Ethereum, D_ERC1155, ?) trough Bridge Core, and then redeem reversely back. The 7th UNFO's External Local ID is unknow before redeem, but when redeeming, it will be updated to reveal it's value.
+<center>
+Figure: UNFO Set Table Sample
+</center> 备注:</p>
+<ol>
+<li>External Token ID有可能是未知状态，用&quot;?&quot;表示，之所以会出现这种情况，是因为在issue过程中, 目标发行链上生成的External Token ID 不会通知和反馈给Bridge Core，没有相关的交易证明信息，UNFO也就只好设置该值为未知。但是，当后面某些新的赎回交易发生时，发起者发送给Bridge Core的赎回交易有可能会包含GID和External Token ID，此时可以通过这个交易证明，更新原来未知的External Token ID值为已知值。</li>
+<li>为了保持良好的一致性，在NFT通过Bridge Core跨链流转的生命周期内，希望保持External Chain ID和 (External Contact Address, External Token ID) 的映射关系保持不变，此时可以通过上面提到的解析服务，至历史UNFO记录里面查询相应的External Token ID，以保持一致性。</li>
+</ol>
+<h3><a class="anchor" aria-hidden="true" id="e-跨平行链操作"></a><a href="#e-跨平行链操作" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>E. 跨平行链操作</h3>
+<p>在稍后的III章节，我们将会假设转账是发生在同一条链上的，关于如何处理跨链间的转账，我们将会使用一个关联的SPREE模块来解决(参考Polkadot相关方案[3]实现)。</p>
+<p>通证解析系统还可以设计一个关联的SPREE模块(共享存储和共享运行时)，这样可以把解析模块当做一个共享的模块，开放给其他平行链来使用。SPREE模块还可以帮助在解析模块内定义约束条件，例如全局的通证总量，发行规则，并部署至SPREE模块，可以实现中继网络管辖范围的验证和可信互操作。</p>
+<h2><a class="anchor" aria-hidden="true" id="iv-nft-standard-on-polkadotdarwinia"></a><a href="#iv-nft-standard-on-polkadotdarwinia" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>IV. NFT Standard on Polkadot/Darwinia</h2>
+<p>A cross-chain non fungible token standard is required for blockchains to transfer assets across the ecosystem and for clients (e.g. wallet, browser extension) to offer unified support of the token that provided by different chains.</p>
+<p>将参考以太坊中的ERC721和ERC1155标准。所有权管理模块或者合约将直接使用GID作为NFT通证的ID，而GID是由UNFO模块中负责管理和生成的，这一点跟ERC721不同，因为在ERC721中，NFT合约负责管理和生成NFT 的Token ID。</p>
+<p>NFT标准主要由几部分组成，GID管理、资源描述、所有权管理、扩展标准。</p>
+<h3><a class="anchor" aria-hidden="true" id="a-nft-descriptions"></a><a href="#a-nft-descriptions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>A. NFT Descriptions</h3>
+<p>NFT descriptions offers a universal way to describe, display the details about a token. This information may not be stored on-chain to reduce usage of on-chain storages. A centralized or decentralized token registry may be used to discovery the token description, which is out of the scope here.</p>
+<h3><a class="anchor" aria-hidden="true" id="b-所有权管理"></a><a href="#b-所有权管理" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>B. 所有权管理</h3>
+<p>[WIP]</p>
+<h3><a class="anchor" aria-hidden="true" id="c-规范"></a><a href="#c-规范" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>C. 规范</h3>
+<p>[WIP]</p>
+<h3><a class="anchor" aria-hidden="true" id="参考"></a><a href="#参考" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>参考</h3>
+<p>[1] <a href="https://github.com/darwinia-network/rfcs/blob/master/RFC/zh_CN/0010-darwinia-cross-chain-nft-bridge-protocol.md">https://github.com/darwinia-network/rfcs/blob/master/RFC/zh_CN/0010-darwinia-cross-chain-nft-bridge-protocol.md</a></p>
+<p>[2] <a href="https://ipld.io/">https://ipld.io/</a></p>
+<p>[3] <a href="https://hackmd.io/gQKQGf42TeOODid3hM4_1w">https://hackmd.io/gQKQGf42TeOODid3hM4_1w</a></p>
+<p>[4] <a href="https://en.wikipedia.org/wiki/Unique_identifier">https://en.wikipedia.org/wiki/Unique_identifier</a> [5] <a href="https://en.wikipedia.org/wiki/Identifiers.org#Comparison_with_other_URI_systems">https://en.wikipedia.org/wiki/Identifiers.org#Comparison_with_other_URI_systems</a> [6] <a href="https://elixir-europe.org/platforms/interoperability">https://elixir-europe.org/platforms/interoperability</a></p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2020-3-26</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/docs/en/rfc-0012-darwinia-bridge-core-interoperation-in-chainrelay-enabled-blockchains"><span class="arrow-prev">← </span><span>0012 Darwinia Bridge Core Interoperation In Chainrelay Enabled Blockchains</span></a><a class="docs-next button" href="/docs/docs/en/rfc-0014-darwinia-token-migration-by-cross-chain-redeem-protocol"><span>0014 Darwinia Token Migration By Cross Chain Redeem Protocol</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#i-概述">I. 概述</a></li><li><a href="#ii-介绍">II. 介绍</a><ul class="toc-headings"><li><a href="#a-目标">A. 目标</a></li><li><a href="#b-术语">B. 术语</a></li><li><a href="#c-分类">C. 分类</a></li></ul></li><li><a href="#iii-跨链共享标准">III. 跨链共享标准</a><ul class="toc-headings"><li><a href="#a-全局唯一标识gid和local-id">A. 全局唯一标识GID和Local ID</a></li><li><a href="#b-utlilising-fungiblenon-fungible-assets-on-polkadot">B. Utlilising Fungible/Non-fungible assets on Polkadot</a></li><li><a href="#c-数据请求格式">C. 数据请求格式</a></li><li><a href="#d-基于unfo的解析模块">D. 基于UNFO的解析模块</a></li><li><a href="#e-跨平行链操作">E. 跨平行链操作</a></li></ul></li><li><a href="#iv-nft-standard-on-polkadotdarwinia">IV. NFT Standard on Polkadot/Darwinia</a><ul class="toc-headings"><li><a href="#a-nft-descriptions">A. NFT Descriptions</a></li><li><a href="#b-所有权管理">B. 所有权管理</a></li><li><a href="#c-规范">C. 规范</a></li><li><a href="#参考">参考</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><div><h5>Docs</h5><a href="/docs/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docs/docs/en/doc2.html">Guides (or other categories)</a><a href="/docs/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/docs/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><a href="/docs/" class="nav-home"><img src="/docs/img/logo.png" alt="Darwinia Documentation" width="160"/></a><div class="share-links"><div><a href="https://medium.com/@DarwiniaNetwork" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJFBMVEVHcEx7cK97cK98bbZ7ca57ca97ca98cK97ca97cK57ca97cK5wzXcXAAAAC3RSTlMA6c8Mn1yPbyW6RucScUEAAAExSURBVDjL7ZShb8JQEMZfgG60iqVbQlJDgqxhODKDmJvBz5CQYDB4TBNkzTxmHlUGpI/753jfvZUWesUQHKeu3y/Xu/e9axVdCfWAN0P9iQj/pfyB4VYh1pZp5PVV/to5hJqFO+SDQs8DBMdCH4VhASYRlIDzsUnds2m7KF1wGuUdVKHR+2keAT6dMgE2s3kuoQftC/Msy9AZGS3GPBMBduwJdN0XIHzwkPwJkI8Qku9KkA//TeNYhEO2IZqJMDXis1aBCPfw/s0hESY9o85dGdobjysguzqrgGx+UAE31iMZ0i+7W4Yp7rLD91KGI+McdnAhwD3viMY81Lrcvh8jmB2PvGxLC3u7gTl9omGDqM2fRj+HKa9XQOmHLcxKGb7yh2WariiZ2ggf/6E7w5crcQRAZIKOcJdRHwAAAABJRU5ErkJggg=="/></a><a href="https://t.me/DarwiniaNetwork" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAIVBMVEVHcEx7cK95cK97cK57cK57cK98cK97cK97cK57cK97cK6mrj9uAAAACnRSTlMAhw7iKK5Iye5eWDkJwgAAAR1JREFUOMvt1b9rwkAUB/Bvok3rJtR2uCkZiq2b0EGcshU6FQcHp4Bbx9JFN0E6ZAod3UIIhvdXej+C7em7m9zaN+TgPtzdy0vuDuEtOWIcY0jO+IBwY4mpGyuQJ/7x4jh/cmI1QOjCOoMTxymAiMc5VAQcyuWAlxRXDNaFtOQL6JzjRi83kQmNznClVgvFVj7fT7AZ6FSWlRoubNwX2hJ6Vs3CwjLVFk33sWpzC42FC7kDZHTtwptJl2QGRjZW97LvgWhmFeiY7Sbr5VRrOxbo5z2bNdGbwRvuY5fG8MphOxA7DvstCg6LFtc+zDnMcBf/LpCFaaDr3uNR6KkDFhP1q8S4ZlFn+YlH93ZovsXfOxO8h7H3GPdeAL6r4wA5SoNsrYNlIwAAAABJRU5ErkJggg=="/></a><a href="https://twitter.com/DarwiniaNetwork" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJFBMVEVHcEx7cK56bbB7cK57cK57cK97cK97b697cK57cK97cK97cK6/O/qOAAAAC3RSTlMA8AngmXxTGcgxrQuz9RgAAAHNSURBVDjLjVW7S8NAGD+LbY1TkZaCWSKIoG6C9dFFpBW0SwU3l6AgYpeqILgp4tTFB04uRUGETiFGkt4/5+Xu+y53uTT4m5L73fd+HCESy0cPtrfZfiImChc25fC+DK58SCXW+yk5haO05mjkKdXQULlFmsKuYnCQJsPE7Cs1sIGcZZukj6LXlE4ULQyyyFCEM00zscPJXjb5y7U2s0k/1lukE9Bl5KV+NN9CTXVGHutZdYg1oLU48oCZ5BmIbCWA4t4SGC3xw+GzINdE6OLPJbPCuNWEf57PNg9vSBbAsxXeIo6a7Qp5x3TE9R5rZYrA2Tt2ck7pj1amgHTgEsPbPUgKJ9lVUZJQnN5qZEiEl98faktBRn0i1LtXKglF9IhaPMQM5BLIOY1cRUkbHFPRQ7KZFE9ihA5Bd42V4Sljj0ESaHXfiITZglpHilbsjQASj23KAcqYwBR8JSkqYctUoNjMNTetlRVb3vNhJsuyj11oMGXW5VjFbQHuPgJXkvMYgInx2QsmoCNbuI4hNxxz43TlIFVPYu5mlBokrMF26+DTGMH84c0d+9yFoeQkgSc3a4bo1v/WW+5izF+p+ctYS2qtn/MAOBnvg2U8HX8bGacuzEIM4QAAAABJRU5ErkJggg=="/></a><a href="https://github.com/darwinia-network" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAKlBMVEVHcEx7cK57cK57cK58bq57cK57cK5/a7F7cK97cK57cK98cbB7cK97cK5qBv59AAAADXRSTlMA9OK4FZ5zCUXNXSmEsKrC2AAAAglJREFUOMt1lLtLxEAQxhfNmXvYiIXIIQiCjQbEwsqDu1JEsFIbQTxULAQFFTwsTtFCULAQ5JSD66wEBRsLwUpsLJJ7cA/3f3F2ZpPsbuIUybK/7O7MN9+GsSAyW7NDQxMrLywmLh2O4a1FkL3Jg5jcN6DCgOrsnWvxqLIBbsSGcmDOhPXw2AUeiTufWdUo7OQlPOExcS/hehxsEkvD0B2L0BrCVxg1Mrvh9PTFBzyzCEUdt4xd+Rs8MNYnqhEsKT5ehkHx+42xxet5KDEh5sowlxKDT13NQU67sRtDrkDOtjwydiUcmsEEZ3TYj5MvsiHjOkzJ1tC7rEOsADJaUrQKAxVtULI9ExYo3Z+YfKQKv7TBhgnTdFiVkjbCwoYztHI+4mPRAQ+fPOp/scZl/H/IaWX8ti7BSEI2R+iEfjH186hjyyaUPUMRRkzYRyLsiVfLhM80i8K7RrqWQ8IfxDkBdYfD+nlMQ3/kijS5fFVlR/6FsOmWeIpRkvRfcfeFI5qHsE3nyWclec9/YfwBq5Kw3J3DlK2if+F6lFkL65L/geD/IIxuwZe1RHDn7IJkVDtoNG5XA4ETEnZ977fZqTNaVg3t6wJa1U1vQW1S0TPtltkEs6FJm4ryXL89UMjw17YGu6G/NX9iHYpxzk04pWaY02Fda37aUaFnuPHYCaG3Y1qqVPFHlaB5f4TVPVm1Z2ZDAAAAAElFTkSuQmCC"/></a></div><div><a href="https://bihu.com/people/1100617" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJ1BMVEVHcEx7cK56cq97cK97cK97cK97ca57cK57cK58cK97cK57cK97cK75Og5xAAAADHRSTlMA7g+TrSJnethIxTKkC5eQAAABvElEQVQ4y5WVv0tCURTHD2aWOUVUBG+IGsImESIIl8gmHYTaaqihWhqkGhuiJYI3SEM0NAehg0VtLaLpy+4f1T3X++O8e98V+i763sf3zo97zlcAqtXZu2XwaCpgrOlh2ZBxFRNZroWMdY4SWKrERhq2XXjMlLpOUk/MaMFi+4zqNV4gi2uXsExgwU7dLoIqakg2WWWuerURLLEkLQmWTmSsI3rxbAJtnl6Z1G4R6ohzGCangwwQBvEUdHpDvFK/VKeRUUEI/NFln8uMCMQH82cnOBAO7PFve7LnVRvO8zERqRUADm1YUAV3ASZsWIOUrKkBWQtGOg92I0s3kL9sWsJfgBUhDQcqDdk2JXGnD/Clhu9/cOxr4wkdvPPT+fSVwqPMkCa0IRWaJliQt+9NhUzb8JtPiHi0jnlbEI9sjbetwj9bNsQnIPf4AOJQonJ5m8K+ru1a3qEDpnZnghEYxtfdbBWI8GpwcbPyesYjMol4vDuXW2YdxAGsJy8SjhzvcGvMlrlLL9iFxy5QGx6jQTU9FoW695gbatFji4nmR/wmwTazoe1P4HoccTbXHYsek8dyK75/B/gIXujlHztymte5NqsQAAAAAElFTkSuQmCC"/></a><a href="https://weibo.com/DarwiniaNetwork" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJFBMVEV7cK5HcEx7cK57cK17cK97cK97cK97cK57cK57cK97ca97cK6hJEZ6AAAADHRSTlP/AOYQxHoqZ6Y/UZKe82coAAACIUlEQVQ4y41VvW/TUBC/Oi5NYfrxkpC0i0MoArE0FahUXXAkvtSFAAHERPioBCxEUCTEElhYCUggxFIzdcRC4u/j7n3Ez5FtcYNl3+/u3t3v7p0J2B5QgZx5DRDWIiqUIGHwFpXIMmiNSiWhrXKwR6/KwRW6Ug6GFJWDQYHu3OjgY5n9CbC8LAFrAuJyMbiqQRRXEYwGN5jXcnKCO4uu15/szIsOx2j42F8+SCvC+w8i6qHjYTclC61YAnYpBKJ8dVA6XQVMaYbfXme1mK86NinNMjprsJaQd5do2KAYh85xbMBOcI+fnylep+4ctI5AXx5N6growo7hS4viNoe1w3U8h3HOq49pyBlrGeZBXe3M1hka3fOD0Tsdvy3KScs4HhPNtu5+8KlvSdx4k0XddWRt8MdPrz9s3IzmA3WN0ac+rYozu/AVO1NLiJr3jo+8yHxK/br9Mb88cmAX0oBUZ3xoh2jdgR+E78CU07DdO+XAVOxWhLZEK+vwxisV+xpU/+SSJqfue8YCdtU0vDSRA3SQdpYQg9xBmphwMvJb2Yg32YINEpNl6s97CBVRranP2uRPLlhlk5ew4TK+zwwzPTe/9u5L3ImU+cU4uj5b5n9R8BY4ImOUu3/noW4TnY7MDUInvwr+QB2JZk9muzVduHJyi/Z/6MFcxFiuuul8Vrhe9h5+23/xfkD/LZVLqnK9VS7GypVauYwr13j1D6Di1/EPT15bwQ40s+UAAAAASUVORK5CYII="/></a><a href="#" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJ1BMVEVHcEx7cK57cK97cK56cbB7cK57cK97cK97cK57cK57cK97cK57cK5LMTsCAAAADHRSTlMA32q3EDaNTe/LoSSkSkY9AAAByUlEQVQ4y32VO0/DMBCAr6UvqQsIUIXIUCEQSwcojB1SsSGGwIDKY0CwQNWhA0OLWFCRkCADFLF1KEIMoA4ZWaOqJS3+UZxjO3GeN1zsfPH5fHc5A0Byk4TI/CqgZBUSKlYRYYlEyBgXkkgpQjUaPkVbpXYr0dAEJRoScEZLWy9RsKvhqdJXofATmByHwDcQchSAY3Cl4YdFCSZ9UF7oiTWFG/gqZQOqMx5oGQD53jI1qeN3KUWG1OoMmaLeI7+ob2X454MJGT6DMJvV+55NEZ55nD2of8hQPmX+cnK+vvLuwqbLUo2uSp+HegjcL/DBbtBsuqOKYSvg0E/f3VxhcNZ58yq5VmNw5CTk3pcdhEMxT+DuyTusl9YDznosK8LdGrqTozmqmCzEFC5wWLdjh8tLNBc5Bif8AGWqTuiRDDsXrEy2GSx4gpzh0DTs6WIotLPmXynM8iCVPTAhoAY3aypceOAphxa0Uc3pqgwHHE7bRLLOMyQq3uKZH0mw6vk/6ZEkuxU/dAIJsEMC0NREMfWCkEwN150AJI/XFDVZH4FgR/z+IhNtEA5tGZZiIK/42CYV295iG2NsS41txrFtPP4CiLg6Onh1/AOW8A5j2jJ12wAAAABJRU5ErkJggg=="/></a><a href="mailto:hello@darwinia.network" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJ1BMVEVHcEx7cK96cK97cK57cK56b697cK57cK57cK98cLB8ca97cK97cK7X/FnnAAAADHRSTlMAcmbD4BTzooYoQlTd6cQGAAABcElEQVQ4y83VP0+DUBAA8GubhkKXOpg4dPADdCyDkc04kDBgSvwAJg41DLgzkLg6OBhnJ1ydOrmY9wLV3ofyoIX3R3ir3kKbH+X13bs7AOBqiR1xcQwUgxg7o5gRptgTJf0Qe2MG1/14C/N+/ASvHxkE/cgBDfF3yI7UOPEk3IIWjwI5JqpZGLToeiyUbeyxVYuZhb6MESaTFk8hLV6F2cEWhhIO8EZgTicpI3xg1tgQd6CiE5ftNqolFIRndJtt+KCjHfCn/Tbqq4qwwjsQT9DQjuu1gyLsQKomSvGGKqcLKZ3nb1XldOAUOTVGsdx/0zBnIVW/D5vv32jHbn0DOHWaVYw4/Uv7nT4t1jqOvXWTvkmVBQVH0pmllxqmO3FkI1pBxslhr4cqcRVcKPUXMRkdtfzsOBGYvTC1NPNSFNhZ4Ko4xYcWCx5qFT+X2uFLbwdLQn5vaKT/1PbGIWUcb8bBaBypxmFsHOPmF4Dh1fEDXvxFF7KNXsoAAAAASUVORK5CYII="/></a></div></div><div class="social"><a href="https://twitter.com/DarwiniaNetwork" class="twitter-follow-button">Follow @DarwiniaNetwork</a></div><a class="github-button" href="https://github.com/darwinia-network/darwinia" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/docs/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2020 Darwinia Network</section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>

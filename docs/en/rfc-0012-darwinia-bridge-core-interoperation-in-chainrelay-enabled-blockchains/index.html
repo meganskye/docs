@@ -1,0 +1,277 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>0012 Darwinia Bridge Core Interoperation In Chainrelay Enabled Blockchains · Darwinia Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="- rfc: 12"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="0012 Darwinia Bridge Core Interoperation In Chainrelay Enabled Blockchains · Darwinia Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.darwinia.network/docs/"/><meta property="og:description" content="- rfc: 12"/><meta property="og:image" content="https://docs.darwinia.network/docs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.darwinia.network/docs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docs/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://docs.darwinia.network/docs/blog/atom.xml" title="Darwinia Documentation Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://docs.darwinia.network/docs/blog/feed.xml" title="Darwinia Documentation Blog RSS Feed"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-159909608-2', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/docs/css/main.css"/><script src="/docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docs/en"><img class="logo" src="/docs/img/logo.png" alt="Darwinia Documentation"/></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/blog/" target="_self">Blog</a></li><li class="siteNavGroupActive"><a href="/docs/docs/en/wiki-intro" target="_self">Wiki</a></li><li class=""><a href="/docs/docs/en/crab-home" target="_self">Crab Network</a></li><li class=""><a href="/docs/docs/en/dev-home" target="_self">Developers</a></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/docs/img/language.svg" alt="Languages icon"/>English</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/docs/docs/zh-CN/rfc-0012-darwinia-bridge-core-interoperation-in-chainrelay-enabled-blockchains">中文</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(event) {
+          event.preventDefault();
+
+          if (languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>RFCs</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Get Started<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/docs/en/wiki-intro">Introduction</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/wiki-faq">FAQ</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/wiki-community">Community</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/wiki-roadmap">Roadmap</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/wiki-tut-index">Tutorials</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/wiki-tool-index">Tools</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/misc-sample">Sample Article</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/wiki-contribute">How to contribute</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Understanding Darwinia<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/docs/en/wp-home">Overview</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">RFCs</h4><ul><li class="navListItem"><a class="navItem" href="/docs/docs/en/wiki-rfc-index">RFCs</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/rfc-0001-darwinia-developement-structure">0001 Darwinia Developement Structure</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/rfc-0007-dawinia-token-staking-model">0007 Dawinia Token Staking Model</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/rfc-0009-dawinia-liquid-kton-reward">0009 Dawinia Liquid Kton Reward</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/rfc-0010-darwinia-cross-chain-nft-bridge-protocol">0010 Darwinia Cross Chain Nft Bridge Protocol</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/rfc-0011-using-harberger-tax-to-find-price-for-xclaim-vault-collaterals">0011 Using Harberger Tax To Find Price For Xclaim Vault Collaterals</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/docs/en/rfc-0012-darwinia-bridge-core-interoperation-in-chainrelay-enabled-blockchains">0012 Darwinia Bridge Core Interoperation In Chainrelay Enabled Blockchains</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/rfc-0013-darwinia-cross-chain-nft-standards">0013 Darwinia Cross Chain Nft Standards</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/en/rfc-0014-darwinia-token-migration-by-cross-chain-redeem-protocol">0014 Darwinia Token Migration By Cross Chain Redeem Protocol</a></li></ul></div><li class="navListItem"><a class="navItem" href="/docs/docs/en/wiki-glossary">Glossary</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Tutorials<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/docs/en/wiki-tut-p1">P1</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/darwinia-network/rfc/edit/master/RFC/src/0012-darwinia-bridge-core-interoperation-in-chainrelay-enabled-blockchains.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">0012 Darwinia Bridge Core Interoperation In Chainrelay Enabled Blockchains</h1></header><article><div><span><ul>
+<li>rfc: 12</li>
+<li>title: 0012-darwinia-bridge-core-interoperation-in-chainrelay-enabled-blockchains</li>
+<li>status: Draft</li>
+<li>desc: Darwinia Bridge Core - Interoperation in ChainRelay Enabled Blockchains</li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="darwinia-bridge-core-interoperation-in-chainrelay-enabled-blockchains"></a><a href="#darwinia-bridge-core-interoperation-in-chainrelay-enabled-blockchains" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Darwinia Bridge Core: Interoperation in ChainRelay Enabled Blockchains</h1>
+<h2><a class="anchor" aria-hidden="true" id="i-abstract"></a><a href="#i-abstract" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>I. Abstract</h2>
+<p>XClaim[5] 针对 ACCS 的缺点，设计了通用的、高效低成本的跨链框架，并提出了Cryptocurrency-Bakced Assets (CBAs)的概念。其设计主要分成三个部分：</p>
+<ul>
+<li>提出的CBA概念对跨链资产和原生资产的关系做了清晰的概括，是原生资产在另外一个区块链网络中存在形式的精简表达。</li>
+<li>在发行链(Issuing Blockchain)一端，通过借助Chain Relay对另外一个链上的交易证明进行存在性和共识性的直接验证，而无需信任第三方。</li>
+<li>在背书链(Backing Blockchain)一端，通过引入Vault、质押物(Collateral)和喂价等经济机制，对赎回过程的安全性实现了理性经济假设下的保证。由于存在质押物和喂价机制的约束，所以只能支持流动性较好的Fungible Token。</li>
+</ul>
+<p>XClaim 虽然某种程度上解决了 ACCS 的缺点，但是也存在其自身的局限性：只针对Fungible Token有效，不支持NFT和其他流动性较差无法喂价和平仓的Fungible Token。此外，XClaim方案中因为Vault的质押物在跨链资产赎回之前都是锁定的，导致存在较高的质押成本，抵押物可能存在收益率不足的问题。</p>
+<p>针对XClaim的以上问题，本文在保留CBA概念和大部分发行链的设计的同时，将背书链一端进行重新设计，增加对Backing Blockchain引入更多合理假设，即支持智能合约和Chain Relay(非BTC)，在背书链一端引入Chain Relay来验证发行链的交易，同时对背书锁定资产的赎回进行链上合约化的约束。通过这样的新方式，去除Vault、流动性质押、喂价等设计和模块，实现了对更广泛的Token的支持，包括NFT和流动性不好的Fungible Token。</p>
+<h2><a class="anchor" aria-hidden="true" id="ii-introduction"></a><a href="#ii-introduction" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>II. Introduction</h2>
+<p>对于不同区块链上的token交换，目前虽然中心化交易所可以帮助执行，但是这样的服务需要高度的信任，且易发生主动作恶、单点故障等问题。随着Cosmos、Polkadot这样一批优秀的跨链项目的落地，架构在跨链基础设施之上的去中心化token流通协议/方案也成为重要的研究内容。</p>
+<p>在已有的方案中，atomic cross-chain swaps (ACCS) 是最早提出的可行性方案，但由于其跨链效率低、成本高，实际使用场景并不多。随后，XClaim (Cross Claim) 针对 ACCS 的缺点，提出了通用的、高效低成本的跨链框架，使用了Cryptocurrency-Bakced Assets (CBAs).</p>
+<p>XClaim 虽然某种程度上解决了 ACCS 的缺点，但是也存在其自身的局限性：只针对Fungible Token有效，并且。目前针对NFT的跨链流通还没有通用框架。本文以双链互跨为例，通过对Backing Blockchain引入更多假设，即假设Backing Blockchain支持智能合约，提出基于双Chain Relay的改进版通用XClaim方案（同时适用于Fungible Token和NFT）。</p>
+<p>该方案将展示Two chainRelay Model的设计思路和过程实现。<a href="https://eprint.iacr.org/2018/643.pdf">XClaim</a>跨链方案已经可以保证了在大部分场合下的NFT的跨链安全操作，但是依然无法保证通证资产价格产生剧烈波动时，整个系统的鲁棒性和可持续性。</p>
+<p>同时，本文还将着重分析chainRelay的实现成本和其改进方案，目前改进思路包括两个方案的探讨，其一，通过批量提交<em>block headers</em>，或对<em>block headers</em>构建<em>merkle tree</em>的方式压缩成本，其二，通过借助零知识证明的技术，将上传<em>block headers</em>成本降低，并提高链上验证交易的速度。</p>
+<h2><a class="anchor" aria-hidden="true" id="iii-overview"></a><a href="#iii-overview" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>III. Overview</h2>
+<p>在这一章节，我们首先回顾和定义一些XClaim中与本文有关的概念，以及系统的模型和参与其中的角色。</p>
+<h3><a class="anchor" aria-hidden="true" id="a-cryptocurrency-backed-assetscba"></a><a href="#a-cryptocurrency-backed-assetscba" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>A. Cryptocurrency-backed Assets(CBA)</h3>
+<p><strong>Definition.</strong> We define <em>cryptocurrency-backed assets</em> (CBAs) as assets deployed on top of a blockchain <em>I</em> that are backed by a cryptocurrency on blockchain <em>B</em>. We denote assets in <em>I</em> as <em>i</em>, and cryptocurrency on <em>B</em> as <em>b</em>. We use <em>i(b)</em> to further denote when an asset on <em>I</em> is backed by <em>b</em>. We describe a CBA through the following fields:</p>
+<ul>
+<li><p><em>issuing blockchain</em>, the blockchain <em>I</em> on which the CBA <em>i(b)</em> is issued.</p></li>
+<li><p><em>backing blockchain</em>, the blockchain <em>B</em> that backs <em>i(b)</em> using cryptocurrency <em>b</em>.</p></li>
+<li><p><em>asset value</em>, the units of the backing cryptocurrency <em>b</em> used to generate the asset <em>i(b)</em>.</p></li>
+<li><p><em>asset redeemability</em>, whether or not <em>i(b)</em> can be redeemed on <em>B</em> for <em>b</em>.</p></li>
+<li><p><em>asset owner</em>, the current owner of <em>i(b)</em> on <em>I</em>.</p></li>
+<li><p><em>asset fungibility</em>, whether or not units of <em>i(b)</em> are inter-</p>
+<p>changeable.</p></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="b-system-model-and-actors"></a><a href="#b-system-model-and-actors" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>B. System Model and Actors</h3>
+<p>XCLAIM operates between a backing blockchain <em>B</em> of cryptocurrency <em>b</em> and an issuing blockchain <em>I</em> with underlying CBA <em>i(b)</em>. To operate CBAs, XCLAIM further differentiates between the following actors in the system:</p>
+<ul>
+<li><p>CBA Requester. Locks b on B to request i(b) on I.</p></li>
+<li><p>CBA Sender. Owns i(b) and transfers ownership to another</p>
+<p>user on I.</p></li>
+<li><p>CBA Receiver. Receives and is assigned ownership over</p>
+<p>i(b) on I.</p></li>
+<li><p>CBA Redeemer. Destroys i(b) on I to request the corre-</p>
+<p>sponding amount of b on B.</p></li>
+<li><p>CBA Backing Smart Constract(bSC). A public smart contract responsible for trust-free locking/releasing <em>b</em> as protocol design requires and liable for fulfilling redeem requests of i(b) for b on B, with support of chain relay to honestly follow the instructions from redeem requests from I. <em>bSC</em> is registered on <em>I</em> so that the issuing contracts on <em>I</em> will know the transactions happen to bSC.</p></li>
+<li><p>Issuing Smart Contract (iSC). A public smart contract responsible for managing the correct issuing and exchange of i(b) on I. The <em>iSC</em> is required to register on <em>bSC</em> so that the backing contracts on <em>B</em> will know the transactions happen to <em>iSC</em>, in this way, <em>iSC</em> ensures correct behaviour of the <em>bSC</em>, e.g. the release action in redeem protocol.</p>
+<p>To perform these roles in XCLAIM, actors are identified on a blockchain using their public/private key pairs. As a result, the requester, redeemer must maintain key pairs for both blockchains B and I. The sender and receiver only need to maintain key pairs for the issuing blockchain <em>I</em>. <em>iSC</em> exists as a publicly verifiable smart contract on <em>I</em>, and <em>bSC</em> exists as a publicly verifiable smart contract on <em>B</em>.</p></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="c-什么是-chain-relay"></a><a href="#c-什么是-chain-relay" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>C. 什么是 <em>chain relay</em></h3>
+<p>XClaim 给出了对 <em>chain relay</em> [7]的定义：</p>
+<blockquote>
+<p>Chain relays: Cross-Chain State Verification. It is capable of interpreting the statte of the backing blockchain B and provide functionality comparable to an SPV or light client[10].</p>
+</blockquote>
+<p>因此，<em>chain relay</em> 可以被认为是由包含root of merkle tree的区块头组成。它为 iSC 提供了两种功能： <em>交易存在证明</em> 以及 <em>共识证明</em>。</p>
+<ul>
+<li><strong><em>交易存在证明</em></strong>： <em>chain relay</em> 存储着区块链的每一个区块头，以及区块头里的root of merkle tree. 在提供merkle tree路径的情况下，这已经足够可以证明一笔交易是否存在于这条链的某个区块中。</li>
+<li><strong><em>共识证明</em></strong>： 以比特币为例，因为每个节点通常不能即时看到全网的情况，因此经常会发生产生孤块，又在重组中被丢弃的情况。为了避免这种情况带来的攻击/漏洞，<em>chain relay</em> 必须要验证给定的区块头是否为完整区块链的一部分，例如被大部分节点认可。对于共识为Proof-of-Work的区块链，<em>chain relay</em> 必须：(i) 知道挖矿难度调整策略  (ii) 验证收到的区块头是否在具有最多累计工作量证明的链上。 对于共识为Proof-of-Stake的区块链，<em>chain relay</em> 必须：(i) 知道协议要求/staking的阶段，例如epoch  (ii) 验证区块头中验证人签名数量是否满足区块的阈值要求。</li>
+</ul>
+<p><img src="/docs/docs/assets/rfc-en-chain_relay.svg" alt="Chain Relay"></p>
+<p>[TODO: 图片来自于网络]</p>
+<h3><a class="anchor" aria-hidden="true" id="d-区块链模型和假设"></a><a href="#d-区块链模型和假设" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>D. 区块链模型和假设</h3>
+<p>在目前已经上线的区块链项目中，几乎没有NFT作为链的原生资产的，所有的NFT几乎都是在智能合约内实现的。因此，对原生资产所在的chain $B$, 可以引入全新且合理的假设：</p>
+<ul>
+<li><em>Backing blockchain</em> 和 <em>Issuing blockchain</em>:  都支持图灵完备的智能合约</li>
+</ul>
+<p>这样我们就可以通过在 $B$ 和 $I$ 上放置独立的智能合约 bSC 和 iSC 来提供更强的技术约束，保证跨链的安全性。</p>
+<h3><a class="anchor" aria-hidden="true" id="e-system-goals"></a><a href="#e-system-goals" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>E. System Goals</h3>
+<ol>
+<li>Support General Tokens
+<ul>
+<li>Workable for NFT</li>
+<li>Workable for Fungible Tokens without liquidations on outside exchanges.</li>
+</ul></li>
+<li>Economic Feasible
+<ul>
+<li>Backing contract does not require to provide a lot of collateral for the safety of redeem protocol</li>
+<li>Feasible solutions for to support running low cost chain relay on backing blockchain.</li>
+</ul></li>
+<li>Securty Properties(Ignore, refer the section in XClaim paper):
+<ul>
+<li>Audiability</li>
+<li>Consitency</li>
+<li>Redeemability</li>
+<li>Liveness</li>
+<li>Atomic Swaps</li>
+<li>Scale-out</li>
+<li>Compatiblity</li>
+</ul></li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="iv-backing-contract-solution"></a><a href="#iv-backing-contract-solution" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>IV. Backing Contract Solution</h2>
+<p><strong>Backing Contract Solution</strong>(two chain relay model)通过在Backing Blockchain上引入一个支持chain relay的智能合约，以实现背书资产<em>b</em>的托管锁定和赎回释放功能。因为有了chain relay的支持，所以Backing Contract将可以忠实的执行发行链<em>I</em>上的赎回指令，而不需担心资产的安全问题，也不用要求Backing Contract需要质押资产，因为Backing Contract 是可审计的，并且注册在<em>iSC</em>中，因此避免了中间人信任风险和单点故障问题。</p>
+<p>相较于XClaim原始的方案，我们引入了完全无 $vault$ 质押的跨链方案，通过在backing blockchain上引入chain-relay来保证可赎回性和安全性。<em>chainRelay</em> 可以提供区块链的交易存在证明和共识证明，在XClaim的方案中，对chain $B$ 没有任何额外的要求，导致在 chain $B$ 上的安全只能由在 chain $I$ 上抵押 $i_col$ 的 $vault$ 来提供。通过III-D中对 chain $B$ 引入的新的假设约束，可以在转接桥中实现<strong><em>bSC + iSC</em></strong>双向互相验证和互操作。例如，在赎回协议中， chain $B$ 上的资产安全可以非互操作性地实现，降低对 $vault$ 的依赖。</p>
+<h3><a class="anchor" aria-hidden="true" id="a-protocols"></a><a href="#a-protocols" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>A. Protocols</h3>
+<p>本方案提供五个协议：Register, Issue, Transfer, Swap and Redeem.</p>
+<p><strong>Protocol: Register.</strong> <em>bSC</em>需要在<em>iSC</em>中注册，<em>iSC</em>也需要在<em>bSC</em>中注册，这个相互注册过程需要公开可审计的，并通过注册完成之后的关闭外部(中心化的key的)注册权限的方式完成注册。Alice deploy an backing contract on B, and Dave deploy and issuing contract on I, and the backing contract and issuing contract require to register with each other.</p>
+<ol>
+<li>Deploy. First, Alice deploy the backing contract on B, and Dave deploy the issuing contract on I.</li>
+<li>Verify. Alice and Dave verify the counterpart's smart contracts.</li>
+<li>Register&amp;Setup. Alice register Backing contract on I and associate with Issuing contract. Dave register Issuing contract on B and associate with backing contract.</li>
+<li>Finish. Backing and Issuing Contracts finish the permission-less register process. (Some permission closing TX may be required.)</li>
+</ol>
+<p><strong>Protocol: Issue.</strong> Alice (<em>requester</em>) locks units of <em>b</em> with the <em>backing contract</em> on B to create <em>i(b)</em> on I:</p>
+<ol>
+<li>Lock. Alice generates a new pulic/private key pare on <em>I</em> and locks funds <em>b</em> with the backing contract on B in a publicly verifiable manner. i.e., by send <em>b</em> to the lock contract associated with backing contract. As part of locking these funds, Alice also specifies where the to-be-generated <em>i(b)</em> should be sent, i.e, Alice associates her public key on <em>I</em> with the transfer of <em>b</em> to the lock contract (linked to backing contract).</li>
+<li>Check Finalization. Alice (or her running client) check the the finalization vailid status of the lock transaction before she do the next step.</li>
+<li>Send Lock TX Proof. Alice send the lock transaction proof to <em>Issuing Contract</em> on <em>I</em> , the instruction in the proof and transaction also include the issue instructions.</li>
+<li>Verify &amp; Issue. After the issuing contract confirms via the TX proof and verify the validation that Alice has correctly locked her funds and forwards Alice's public key on I to iSC. The iSC verifies the proof, then issues and send i(b) to Alice, such that $||i(b)|| = ||b||$</li>
+</ol>
+<p><strong>Protocol: Transfer.</strong>Alice (<em>sender</em>) transfers <em>i(b)</em> to Dave (<em>receiver</em>) on I:</p>
+<ol>
+<li><em>Transfer.</em> Alice notifies the iSC that she wishes to transfer her i(b) to Dave (public key) on I. The state of the iSC is updated and Dave becomes the new owner of i(b).</li>
+<li><em>Witness.</em> The backing contract witnesses the change of ownership on I through iSC, and no longer allows Alice to withdraw the associated amount of locked b on B. The process for any further transfers from Dave to other users is analogous.</li>
+</ol>
+<p><strong>Protocol: Swap</strong>.Alice (sender) atomically swaps i(b) against Dave’s (receiver) i on I:</p>
+<ol>
+<li><p><em>Lock.</em> Alice locks i(b) with the iSC.</p></li>
+<li><p><em>Swap.</em> If Dave locks the agreed upon units of i (or any other asset on I) with the iSC within delay ∆swap, the iSC updates the balance of Dave, making him the new owner of i(b), and assigns Alice ownership over i.</p></li>
+<li><p><em>Revoke.</em> If Dave does not correctly lock i with the iSC within ∆swap, the iSC releases locked i(b) to Alice.</p></li>
+<li><p><em>Witness.</em> If the swap is successful, the backing contract witnesses the change of ownership of i(b) and no longer allows Alice to redeem the associated amount.</p></li>
+</ol>
+<p><strong>Protocol: Redeem.</strong>Dave (redeemer) burn i(b) with the iSC on I to receive b from the vault on B:</p>
+<ol>
+<li><p>Burn &amp; Redeem. Dave creates a new public/private key pair on B. and locks <em>i(b)</em> with the <em>iSC</em> on I and requests the redemption of <em>i(b)</em>. There by, Dave also specifies his new public key on <em>B</em> as the target for the redeem.</p></li>
+<li><p>Check Finalization. Dave (or her running client) check the the finalization valid status of the lock transaction before she do the next step.</p></li>
+<li><p>Send Burn TX Proof. Dave send the burn transaction proof to <em>bSC</em> on <em>B</em> , the instruction in the proof and transaction also include the redeem instructions.</p></li>
+<li><p>Verify &amp; Release.  After the backing contract confirms via the TX proof and verify the validation that Dave has correctly locked her funds and forwards Dave's public key on B to <em>bSC</em>. The <em>bSC</em> verifies the proof, then release funds <em>b</em> to Dave's specified public key on <em>B</em>, such that $||b|| = ||i(b)||$</p></li>
+</ol>
+<p><img src="/docs/docs/assets/rfc-en-xclaim_new_protocol_overview.png" alt="Solution Protocols"></p>
+<h3><a class="anchor" aria-hidden="true" id="b-issue-contract"></a><a href="#b-issue-contract" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>B. Issue Contract</h3>
+<p>由于有了Backing Contract，并消除了只需要质押资产的部分，因为相较于原先XClaim的方案，新的Issuing Contract得到了很大的简化。</p>
+<p><img src="/docs/docs/assets/rfc-en-issuing_contract.png" alt="Issuing Contract"></p>
+<h3><a class="anchor" aria-hidden="true" id="c-backing-contract"></a><a href="#c-backing-contract" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>C. Backing Contract</h3>
+<p>Backing Contract用于替换原先XClaim中Vault的部分，并增加了智能合约和chain relay支持，通过在Backing Blockchain中引入chain relay，当发生赎回时，Backing Contract能够监听到Issuing Blockchain上的销毁动作，并进行交易验证，确认之后进行相应的背书资产释放动作。</p>
+<p><img src="/docs/docs/assets/rfc-en-backing_contract.png" alt="Backing Contract"></p>
+<h4><a class="anchor" aria-hidden="true" id="d--chain-relay-如何去信任"></a><a href="#d--chain-relay-如何去信任" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>D.  <em>chain relay</em> 如何去信任</h4>
+<p>这里以章节IV.A中的 <em>Protocol Issue</em> 为例，当 <em>requester</em> 把 $b$ 锁定在 $bSC$ 时，会产生一笔交易: $lock(backing_contract_address, lock_amount) - &gt; T_l$ ，随后backing chain relay的 <em>witness</em> 会向 <em>chain relay</em> 提交这笔交易$T_l$ ，之后 <em>chain relay</em> 会检验 $T_l$ 确实是存在于给定区块的交易中(交易存在证明)，这个区块也存在于最长链中并有良好的终结性（共识证明），那么就证明背书资产&amp;&amp;b已经被安全地锁定了。如果验证通过，会原子地触发 <em>iSC</em> 中的资产发行操作。</p>
+<h2><a class="anchor" aria-hidden="true" id="v-darwinia-bridge-core---chain-relay-topology-optimization"></a><a href="#v-darwinia-bridge-core---chain-relay-topology-optimization" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>V. Darwinia Bridge Core - Chain Relay Topology Optimization</h2>
+<p>在两条公链中跨链转移token，需要在chain $I$ 维护 <em>chain relay</em> 的成本是很高的，例如以太坊上每笔交易需要gas。如果把两条公链之间的跨链行为扩展到任意 $n$ 公链的话，那么每条链上都需要单独维护 $n-1$ 个 iSC，总共将需要$C_n^2$个chain relay合约。为了降低系统的维护成本，考虑在基于substrate的平行链上实现跨链的核心功能。</p>
+<h3><a class="anchor" aria-hidden="true" id="a-darwinia-bridge-core-架构"></a><a href="#a-darwinia-bridge-core-架构" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>A. <em>Darwinia Bridge Core</em> 架构</h3>
+<p>那么整个系统的架构如下：</p>
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g7fe8rjjzvj30kb0bfgmc.jpg" alt="chain-relay-framework"></p>
+<p>图中 <strong>Bridge Core</strong> 即为平行链上包含通证跨链和各chain relay的核心模块；<strong>vSC</strong> 为 <strong>Bridge Core</strong> 的对应链的资产的发行模块。和以前的跨链方案不同的是，在上图的架构中，所有链的token需要先跨入<strong>Bridge Core</strong>, 而后在 <strong>Bridge Core</strong> 内部转换到目的公链对应的iSC 中，最后再在对应公链上发行对应的资产，整个跨链操作即完成。</p>
+<h3><a class="anchor" aria-hidden="true" id="b-overview"></a><a href="#b-overview" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>B. Overview</h3>
+<p>[WIP]</p>
+<h2><a class="anchor" aria-hidden="true" id="vi-chain-relay-maintenance-cost-and-improments"></a><a href="#vi-chain-relay-maintenance-cost-and-improments" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>VI. Chain Relay Maintenance Cost and Improments</h2>
+<p>与XClaim方案相比，最终的区别是在Backing Blockchain中引入了Chain Relay和智能合约，用于验证交易存在证明和共识证明。这个方案最大的一个挑战就是就是如何降低维护chain relay的成本，尤其是像以太坊这样的燃料费比较贵的区块链网络。</p>
+<p>为了验证交易，像Bitcoin和以太坊需要节点来验证一条链是有效的，其中牵涉到下载并并验证区块的有效性，可能会花费服务器数小时的时间和很多的带宽和存储，不用说链上的合约，即使是像普通的移动端这样仅有有限资源的客户端都无法支持。因此像Bitcoin和以太坊这样的大部分公链提供了轻客户端，也就是SPV(Simplified payment verification)客户端，可以只需要下载区块头就可以进行交易验证。但是即使如此，简单的SPV客户端仍需要下载很多的区块头数据，面对智能合约高昂的燃料费来说，实现起来仍然不切实际。</p>
+<p>因此，本章节将注重于对不同的Chain Relay实现进行评估和分析，以求找到链上成本最低的方案。</p>
+<h3><a class="anchor" aria-hidden="true" id="a-cost-estimation"></a><a href="#a-cost-estimation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>A. Cost Estimation</h3>
+<p>根据FlyClient[6]的描述，至2019年7月，一个以太坊的SPV客户端需要下载并存储4G的数据，如果采取类似的结构和设计，一个链上Chain Relay所需要下载并存储存储的数据也基本线性相关。</p>
+<p>另一个可以评估的方案是<a href="[http://btcrelay.org](http://btcrelay.org/)">BTCRelay</a>的成本。[WIP]</p>
+<h3><a class="anchor" aria-hidden="true" id="b-improvements-using-flyclient6"></a><a href="#b-improvements-using-flyclient6" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>B. Improvements using FlyClient[6]</h3>
+<p>FlyClient[6]介绍了一种新的交易验证的轻客户端方案，可以支持多种区块链网络，包括POW区块链和POS区块链。</p>
+<p>目前阶段，主要SPV客户端和BTCRelay方案的是，因为需要存储每一个区块头，导致其算法需要的存储和带宽要求是线性增长的。Fly Client通过组合 Merkle Moutain Range(MMR)[2]，最佳概率块抽样(Optimal probabilistic block sampling)，Fiat–Shamir heuristic等技术，可以实现算法性能达到对数级，也就是在每次执行校验期间只需要下载对数个区块头。</p>
+<p>详细设计可参考<a href="https://eprint.iacr.org/2019/226">FlyClient: Super-Light Clients for Cryptocurrencies</a></p>
+<p>FlyClient提供了super light client的方案，但是Chain Relay需要在区块链内置合约(模块)或者用户合约中实现super light client，因此在设计方案上需要增加一些考虑点：</p>
+<ul>
+<li><p>Asymptotically and on Demand Proof Summit and Challenge Time</p>
+<p>ChainRelay提交块头的如果只是一个人，则无法确认是诚实或是作恶的，或者说即使是善意的，提交的头也可能由于自然分叉而无效。在轻钱包协议中一个重要假设是轻钱包可以和多个全节点连接获得数据，并且至少其中一个是诚实的。所以，在我们的实现中，只有一个人提交头类似与只有一条连接，不足以确保数据的有效性。因此在用户使用这个ChainRelay的最新区块头及相关默克尔证明之前，需要增加一个Challenge时间，也就是最新的区块头被提交后，处于质疑状态，需要有一个challenge时段，在此时间过后没有人提交反对块（符合块基本交易且拥有更高难度，但MMR中不包含质疑块）或者收到赞同块（难度更高，但是MMR包含质疑块），最新提交的区块才被确认。此时，用户将可以使用这个Chain Relay验证在此最新块之前发生的交易是否存在。</p></li>
+</ul>
+<p>为了防止攻击者攻击，在提交块时需要附带一定金额的押金，在块被信任后，押金返回并附带一定比例的手续费池金额作为奖励；如果块被否决，则押金扣除，扣除的押金一部分进入手续费池，一部分直接奖励否决块的提交人（否决块也需要被信任后才成为否决块）。</p>
+<ul>
+<li><p>External Blockchain HardFork和治理机制</p>
+<p>一些公链可能会出现硬分叉的情况，这些硬分叉可能会导致共识机制的改变，相应的，其轻节点也需要升级，但是Chain Relay一般以去中心化的智能合约形式存在，例如在跨链转接桥中为去中心化的背书技术提供支持。如果提供升级权限账户，就会削弱其去中心化程度并引入单点故障，如果不提供，则改Chain Relay将升级以应对外部链的硬分叉。因此需要引入治理机制来处理升级问题。</p></li>
+</ul>
+<p>一般来说建议在应用状态验证合约进行治理升级的支持，例如如果出现硬分叉，则实现一个新的Chain Relay并部署，这个新的Chain Relay的Genesis则指向硬分叉块，所有依赖这个Chain Relay的应用状态验证合约，通过调整其Chain Relay指向逻辑，在硬分叉时，将旧的Chain Relay替换为新的Chain Relay，从而在保证Chain Relay去中心化的同时，提供应用层面升级的灵活性，应用层面可以选择应用不同的治理机制以及在治理和去中心化之间进行权衡。</p>
+<ul>
+<li><p>On-chain Crypto Verification Support</p>
+<p>Chain Relay需要对外部链上的交易证明进行验证，但是由于是在不同的链上，Chain Relay所在链可能不支持外部链交易所需的加密库，例如Ethereum 1.0目前还不支持BLS算法。因此如果需要广泛的支持不同的公链，需要考虑Chain Relay运行链是否支持相应的加密库。</p></li>
+</ul>
+<ul>
+<li><p>Consensus Support</p>
+<p>在Fly Client中，只针对类似Bitcoin和Ethereum这样的POW链提供了设计，针对其他的区块链共识(Poof of X)，例如POS，DPOS, PBFT等则没有详细描述，因此需要针对这些共识算法，设计相应的Super Light Client解决方案。[WIP]</p>
+<p>对于Darwinia 来说，为了方便的在不同的公链上开发针对Darwinia的Chain Relay，并保证较低的成本和复杂度，因此需要将Darwinia的共识算法设计成Super Light Client Friendly的共识算法。[WIP]</p></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="c-improvements-using-zero-knowledge-proofs"></a><a href="#c-improvements-using-zero-knowledge-proofs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>C. Improvements using Zero-knowledge Proofs</h3>
+<p>[WIP]</p>
+<h2><a class="anchor" aria-hidden="true" id="vi-参考"></a><a href="#vi-参考" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>VI. 参考</h2>
+<ol>
+<li><a href="https://github.com/sec-bit/zkPoD-lib">https://github.com/sec-bit/zkPoD-lib</a></li>
+<li><a href="https://github.com/mimblewimble/grin/blob/master/doc/mmr.md">https://github.com/mimblewimble/grin/blob/master/doc/mmr.md</a></li>
+<li><a href="https://github.com/ipfs/specs/tree/master/merkledag">https://github.com/ipfs/specs/tree/master/merkledag</a></li>
+<li><a href="https://hackernoon.com/ipfs-and-merkle-forest-a6b7f15f3537">https://hackernoon.com/ipfs-and-merkle-forest-a6b7f15f3537</a></li>
+<li>XClaim, <a href="https://eprint.iacr.org/2018/643.pdf">https://eprint.iacr.org/2018/643.pdf</a></li>
+<li>FlyClient, <a href="https://eprint.iacr.org/2019/226">https://eprint.iacr.org/2019/226</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/72620891">https://zhuanlan.zhihu.com/p/72620891</a></li>
+<li><a href="https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2016-May/012715.html">https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2016-May/012715.html</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Fiat–Shamir_heuristic">Fiat Shamir heuristic</a></li>
+<li><a href="https://medium.com/blockchain-research-newsletter/blockchain-research-newsletter-3-nipopow-and-flyclient-ac202f7624a7">https://medium.com/blockchain-research-newsletter/blockchain-research-newsletter-3-nipopow-and-flyclient-ac202f7624a7</a></li>
+<li><a href="https://blog.kyber.network/waterloo-a-decentralized-practical-bridge-between-eos-and-ethereum-1c230ac65524">https://blog.kyber.network/waterloo-a-decentralized-practical-bridge-between-eos-and-ethereum-1c230ac65524</a></li>
+<li><a href="https://medium.com/@loiluu/peacerelay-connecting-the-many-ethereum-blockchains-22605c300ad3">https://medium.com/@loiluu/peacerelay-connecting-the-many-ethereum-blockchains-22605c300ad3</a></li>
+<li><a href="https://steemit.com/eos/@attic-lab/eos-io-consensus-algorithm">https://steemit.com/eos/@attic-lab/eos-io-consensus-algorithm</a></li>
+</ol>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2020-3-26</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/docs/en/rfc-0011-using-harberger-tax-to-find-price-for-xclaim-vault-collaterals"><span class="arrow-prev">← </span><span>0011 Using Harberger Tax To Find Price For Xclaim Vault Collaterals</span></a><a class="docs-next button" href="/docs/docs/en/rfc-0013-darwinia-cross-chain-nft-standards"><span>0013 Darwinia Cross Chain Nft Standards</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#i-abstract">I. Abstract</a></li><li><a href="#ii-introduction">II. Introduction</a></li><li><a href="#iii-overview">III. Overview</a><ul class="toc-headings"><li><a href="#a-cryptocurrency-backed-assetscba">A. Cryptocurrency-backed Assets(CBA)</a></li><li><a href="#b-system-model-and-actors">B. System Model and Actors</a></li><li><a href="#c-什么是-chain-relay">C. 什么是 <em>chain relay</em></a></li><li><a href="#d-区块链模型和假设">D. 区块链模型和假设</a></li><li><a href="#e-system-goals">E. System Goals</a></li></ul></li><li><a href="#iv-backing-contract-solution">IV. Backing Contract Solution</a><ul class="toc-headings"><li><a href="#a-protocols">A. Protocols</a></li><li><a href="#b-issue-contract">B. Issue Contract</a></li><li><a href="#c-backing-contract">C. Backing Contract</a></li></ul></li><li><a href="#v-darwinia-bridge-core---chain-relay-topology-optimization">V. Darwinia Bridge Core - Chain Relay Topology Optimization</a><ul class="toc-headings"><li><a href="#a-darwinia-bridge-core-架构">A. <em>Darwinia Bridge Core</em> 架构</a></li><li><a href="#b-overview">B. Overview</a></li></ul></li><li><a href="#vi-chain-relay-maintenance-cost-and-improments">VI. Chain Relay Maintenance Cost and Improments</a><ul class="toc-headings"><li><a href="#a-cost-estimation">A. Cost Estimation</a></li><li><a href="#b-improvements-using-flyclient6">B. Improvements using FlyClient[6]</a></li><li><a href="#c-improvements-using-zero-knowledge-proofs">C. Improvements using Zero-knowledge Proofs</a></li></ul></li><li><a href="#vi-参考">VI. 参考</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><div><h5>Docs</h5><a href="/docs/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docs/docs/en/doc2.html">Guides (or other categories)</a><a href="/docs/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/docs/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><a href="/docs/" class="nav-home"><img src="/docs/img/logo.png" alt="Darwinia Documentation" width="160"/></a><div class="share-links"><div><a href="https://medium.com/@DarwiniaNetwork" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJFBMVEVHcEx7cK97cK98bbZ7ca57ca97ca98cK97ca97cK57ca97cK5wzXcXAAAAC3RSTlMA6c8Mn1yPbyW6RucScUEAAAExSURBVDjL7ZShb8JQEMZfgG60iqVbQlJDgqxhODKDmJvBz5CQYDB4TBNkzTxmHlUGpI/753jfvZUWesUQHKeu3y/Xu/e9axVdCfWAN0P9iQj/pfyB4VYh1pZp5PVV/to5hJqFO+SDQs8DBMdCH4VhASYRlIDzsUnds2m7KF1wGuUdVKHR+2keAT6dMgE2s3kuoQftC/Msy9AZGS3GPBMBduwJdN0XIHzwkPwJkI8Qku9KkA//TeNYhEO2IZqJMDXis1aBCPfw/s0hESY9o85dGdobjysguzqrgGx+UAE31iMZ0i+7W4Yp7rLD91KGI+McdnAhwD3viMY81Lrcvh8jmB2PvGxLC3u7gTl9omGDqM2fRj+HKa9XQOmHLcxKGb7yh2WariiZ2ggf/6E7w5crcQRAZIKOcJdRHwAAAABJRU5ErkJggg=="/></a><a href="https://t.me/DarwiniaNetwork" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAIVBMVEVHcEx7cK95cK97cK57cK57cK98cK97cK97cK57cK97cK6mrj9uAAAACnRSTlMAhw7iKK5Iye5eWDkJwgAAAR1JREFUOMvt1b9rwkAUB/Bvok3rJtR2uCkZiq2b0EGcshU6FQcHp4Bbx9JFN0E6ZAod3UIIhvdXej+C7em7m9zaN+TgPtzdy0vuDuEtOWIcY0jO+IBwY4mpGyuQJ/7x4jh/cmI1QOjCOoMTxymAiMc5VAQcyuWAlxRXDNaFtOQL6JzjRi83kQmNznClVgvFVj7fT7AZ6FSWlRoubNwX2hJ6Vs3CwjLVFk33sWpzC42FC7kDZHTtwptJl2QGRjZW97LvgWhmFeiY7Sbr5VRrOxbo5z2bNdGbwRvuY5fG8MphOxA7DvstCg6LFtc+zDnMcBf/LpCFaaDr3uNR6KkDFhP1q8S4ZlFn+YlH93ZovsXfOxO8h7H3GPdeAL6r4wA5SoNsrYNlIwAAAABJRU5ErkJggg=="/></a><a href="https://twitter.com/DarwiniaNetwork" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJFBMVEVHcEx7cK56bbB7cK57cK57cK97cK97b697cK57cK97cK97cK6/O/qOAAAAC3RSTlMA8AngmXxTGcgxrQuz9RgAAAHNSURBVDjLjVW7S8NAGD+LbY1TkZaCWSKIoG6C9dFFpBW0SwU3l6AgYpeqILgp4tTFB04uRUGETiFGkt4/5+Xu+y53uTT4m5L73fd+HCESy0cPtrfZfiImChc25fC+DK58SCXW+yk5haO05mjkKdXQULlFmsKuYnCQJsPE7Cs1sIGcZZukj6LXlE4ULQyyyFCEM00zscPJXjb5y7U2s0k/1lukE9Bl5KV+NN9CTXVGHutZdYg1oLU48oCZ5BmIbCWA4t4SGC3xw+GzINdE6OLPJbPCuNWEf57PNg9vSBbAsxXeIo6a7Qp5x3TE9R5rZYrA2Tt2ck7pj1amgHTgEsPbPUgKJ9lVUZJQnN5qZEiEl98faktBRn0i1LtXKglF9IhaPMQM5BLIOY1cRUkbHFPRQ7KZFE9ihA5Bd42V4Sljj0ESaHXfiITZglpHilbsjQASj23KAcqYwBR8JSkqYctUoNjMNTetlRVb3vNhJsuyj11oMGXW5VjFbQHuPgJXkvMYgInx2QsmoCNbuI4hNxxz43TlIFVPYu5mlBokrMF26+DTGMH84c0d+9yFoeQkgSc3a4bo1v/WW+5izF+p+ctYS2qtn/MAOBnvg2U8HX8bGacuzEIM4QAAAABJRU5ErkJggg=="/></a><a href="https://github.com/darwinia-network" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAKlBMVEVHcEx7cK57cK57cK58bq57cK57cK5/a7F7cK97cK57cK98cbB7cK97cK5qBv59AAAADXRSTlMA9OK4FZ5zCUXNXSmEsKrC2AAAAglJREFUOMt1lLtLxEAQxhfNmXvYiIXIIQiCjQbEwsqDu1JEsFIbQTxULAQFFTwsTtFCULAQ5JSD66wEBRsLwUpsLJJ7cA/3f3F2ZpPsbuIUybK/7O7MN9+GsSAyW7NDQxMrLywmLh2O4a1FkL3Jg5jcN6DCgOrsnWvxqLIBbsSGcmDOhPXw2AUeiTufWdUo7OQlPOExcS/hehxsEkvD0B2L0BrCVxg1Mrvh9PTFBzyzCEUdt4xd+Rs8MNYnqhEsKT5ehkHx+42xxet5KDEh5sowlxKDT13NQU67sRtDrkDOtjwydiUcmsEEZ3TYj5MvsiHjOkzJ1tC7rEOsADJaUrQKAxVtULI9ExYo3Z+YfKQKv7TBhgnTdFiVkjbCwoYztHI+4mPRAQ+fPOp/scZl/H/IaWX8ti7BSEI2R+iEfjH186hjyyaUPUMRRkzYRyLsiVfLhM80i8K7RrqWQ8IfxDkBdYfD+nlMQ3/kijS5fFVlR/6FsOmWeIpRkvRfcfeFI5qHsE3nyWclec9/YfwBq5Kw3J3DlK2if+F6lFkL65L/geD/IIxuwZe1RHDn7IJkVDtoNG5XA4ETEnZ977fZqTNaVg3t6wJa1U1vQW1S0TPtltkEs6FJm4ryXL89UMjw17YGu6G/NX9iHYpxzk04pWaY02Fda37aUaFnuPHYCaG3Y1qqVPFHlaB5f4TVPVm1Z2ZDAAAAAElFTkSuQmCC"/></a></div><div><a href="https://bihu.com/people/1100617" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJ1BMVEVHcEx7cK56cq97cK97cK97cK97ca57cK57cK58cK97cK57cK97cK75Og5xAAAADHRSTlMA7g+TrSJnethIxTKkC5eQAAABvElEQVQ4y5WVv0tCURTHD2aWOUVUBG+IGsImESIIl8gmHYTaaqihWhqkGhuiJYI3SEM0NAehg0VtLaLpy+4f1T3X++O8e98V+i763sf3zo97zlcAqtXZu2XwaCpgrOlh2ZBxFRNZroWMdY4SWKrERhq2XXjMlLpOUk/MaMFi+4zqNV4gi2uXsExgwU7dLoIqakg2WWWuerURLLEkLQmWTmSsI3rxbAJtnl6Z1G4R6ohzGCangwwQBvEUdHpDvFK/VKeRUUEI/NFln8uMCMQH82cnOBAO7PFve7LnVRvO8zERqRUADm1YUAV3ASZsWIOUrKkBWQtGOg92I0s3kL9sWsJfgBUhDQcqDdk2JXGnD/Clhu9/cOxr4wkdvPPT+fSVwqPMkCa0IRWaJliQt+9NhUzb8JtPiHi0jnlbEI9sjbetwj9bNsQnIPf4AOJQonJ5m8K+ru1a3qEDpnZnghEYxtfdbBWI8GpwcbPyesYjMol4vDuXW2YdxAGsJy8SjhzvcGvMlrlLL9iFxy5QGx6jQTU9FoW695gbatFji4nmR/wmwTazoe1P4HoccTbXHYsek8dyK75/B/gIXujlHztymte5NqsQAAAAAElFTkSuQmCC"/></a><a href="https://weibo.com/DarwiniaNetwork" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJFBMVEV7cK5HcEx7cK57cK17cK97cK97cK97cK57cK57cK97ca97cK6hJEZ6AAAADHRSTlP/AOYQxHoqZ6Y/UZKe82coAAACIUlEQVQ4y41VvW/TUBC/Oi5NYfrxkpC0i0MoArE0FahUXXAkvtSFAAHERPioBCxEUCTEElhYCUggxFIzdcRC4u/j7n3Ez5FtcYNl3+/u3t3v7p0J2B5QgZx5DRDWIiqUIGHwFpXIMmiNSiWhrXKwR6/KwRW6Ug6GFJWDQYHu3OjgY5n9CbC8LAFrAuJyMbiqQRRXEYwGN5jXcnKCO4uu15/szIsOx2j42F8+SCvC+w8i6qHjYTclC61YAnYpBKJ8dVA6XQVMaYbfXme1mK86NinNMjprsJaQd5do2KAYh85xbMBOcI+fnylep+4ctI5AXx5N6growo7hS4viNoe1w3U8h3HOq49pyBlrGeZBXe3M1hka3fOD0Tsdvy3KScs4HhPNtu5+8KlvSdx4k0XddWRt8MdPrz9s3IzmA3WN0ac+rYozu/AVO1NLiJr3jo+8yHxK/br9Mb88cmAX0oBUZ3xoh2jdgR+E78CU07DdO+XAVOxWhLZEK+vwxisV+xpU/+SSJqfue8YCdtU0vDSRA3SQdpYQg9xBmphwMvJb2Yg32YINEpNl6s97CBVRranP2uRPLlhlk5ew4TK+zwwzPTe/9u5L3ImU+cU4uj5b5n9R8BY4ImOUu3/noW4TnY7MDUInvwr+QB2JZk9muzVduHJyi/Z/6MFcxFiuuul8Vrhe9h5+23/xfkD/LZVLqnK9VS7GypVauYwr13j1D6Di1/EPT15bwQ40s+UAAAAASUVORK5CYII="/></a><a href="#" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJ1BMVEVHcEx7cK57cK97cK56cbB7cK57cK97cK97cK57cK57cK97cK57cK5LMTsCAAAADHRSTlMA32q3EDaNTe/LoSSkSkY9AAAByUlEQVQ4y32VO0/DMBCAr6UvqQsIUIXIUCEQSwcojB1SsSGGwIDKY0CwQNWhA0OLWFCRkCADFLF1KEIMoA4ZWaOqJS3+UZxjO3GeN1zsfPH5fHc5A0Byk4TI/CqgZBUSKlYRYYlEyBgXkkgpQjUaPkVbpXYr0dAEJRoScEZLWy9RsKvhqdJXofATmByHwDcQchSAY3Cl4YdFCSZ9UF7oiTWFG/gqZQOqMx5oGQD53jI1qeN3KUWG1OoMmaLeI7+ob2X454MJGT6DMJvV+55NEZ55nD2of8hQPmX+cnK+vvLuwqbLUo2uSp+HegjcL/DBbtBsuqOKYSvg0E/f3VxhcNZ58yq5VmNw5CTk3pcdhEMxT+DuyTusl9YDznosK8LdGrqTozmqmCzEFC5wWLdjh8tLNBc5Bif8AGWqTuiRDDsXrEy2GSx4gpzh0DTs6WIotLPmXynM8iCVPTAhoAY3aypceOAphxa0Uc3pqgwHHE7bRLLOMyQq3uKZH0mw6vk/6ZEkuxU/dAIJsEMC0NREMfWCkEwN150AJI/XFDVZH4FgR/z+IhNtEA5tGZZiIK/42CYV295iG2NsS41txrFtPP4CiLg6Onh1/AOW8A5j2jJ12wAAAABJRU5ErkJggg=="/></a><a href="mailto:hello@darwinia.network" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJ1BMVEVHcEx7cK96cK97cK57cK56b697cK57cK57cK98cLB8ca97cK97cK7X/FnnAAAADHRSTlMAcmbD4BTzooYoQlTd6cQGAAABcElEQVQ4y83VP0+DUBAA8GubhkKXOpg4dPADdCyDkc04kDBgSvwAJg41DLgzkLg6OBhnJ1ydOrmY9wLV3ofyoIX3R3ir3kKbH+X13bs7AOBqiR1xcQwUgxg7o5gRptgTJf0Qe2MG1/14C/N+/ASvHxkE/cgBDfF3yI7UOPEk3IIWjwI5JqpZGLToeiyUbeyxVYuZhb6MESaTFk8hLV6F2cEWhhIO8EZgTicpI3xg1tgQd6CiE5ftNqolFIRndJtt+KCjHfCn/Tbqq4qwwjsQT9DQjuu1gyLsQKomSvGGKqcLKZ3nb1XldOAUOTVGsdx/0zBnIVW/D5vv32jHbn0DOHWaVYw4/Uv7nT4t1jqOvXWTvkmVBQVH0pmllxqmO3FkI1pBxslhr4cqcRVcKPUXMRkdtfzsOBGYvTC1NPNSFNhZ4Ko4xYcWCx5qFT+X2uFLbwdLQn5vaKT/1PbGIWUcb8bBaBypxmFsHOPmF4Dh1fEDXvxFF7KNXsoAAAAASUVORK5CYII="/></a></div></div><div class="social"><a href="https://twitter.com/DarwiniaNetwork" class="twitter-follow-button">Follow @DarwiniaNetwork</a></div><a class="github-button" href="https://github.com/darwinia-network/darwinia" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/docs/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2020 Darwinia Network</section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>

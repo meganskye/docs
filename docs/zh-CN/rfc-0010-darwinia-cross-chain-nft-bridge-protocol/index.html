@@ -1,0 +1,307 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>0010 Darwinia Cross Chain Nft Bridge Protocol · Darwinia Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="- rfc: 10"/><meta name="docsearch:language" content="zh-CN"/><meta property="og:title" content="0010 Darwinia Cross Chain Nft Bridge Protocol · Darwinia Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.darwinia.network/docs/"/><meta property="og:description" content="- rfc: 10"/><meta property="og:image" content="https://docs.darwinia.network/docs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.darwinia.network/docs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docs/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://docs.darwinia.network/docs/blog/atom.xml" title="Darwinia Documentation Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://docs.darwinia.network/docs/blog/feed.xml" title="Darwinia Documentation Blog RSS Feed"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-159909608-2', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/docs/css/main.css"/><script src="/docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docs/zh-CN"><img class="logo" src="/docs/img/logo.png" alt="Darwinia Documentation"/></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/blog/" target="_self">动态</a></li><li class="siteNavGroupActive"><a href="/docs/docs/zh-CN/wiki-intro" target="_self">知识库</a></li><li class=""><a href="/docs/docs/zh-CN/crab-home" target="_self">Crab 网络</a></li><li class=""><a href="/docs/docs/zh-CN/dev-home" target="_self">开发者</a></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/docs/img/language.svg" alt="Languages icon"/>中文</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/docs/docs/en/rfc-0010-darwinia-cross-chain-nft-bridge-protocol">English</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(event) {
+          event.preventDefault();
+
+          if (languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>RFC</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">概述<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wiki-intro">达尔文网络介绍</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wiki-faq">常见问题</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wiki-community">社区</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wiki-roadmap">路线图</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wiki-tut-index">教程</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wiki-tool-index">工具集</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/misc-sample">示例文章</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wiki-contribute">参与内容贡献</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">深入理解达尔文网络<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wp-home">概述</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">RFC</h4><ul><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wiki-rfc-index">RFCs</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/rfc-0001-darwinia-developement-structure">0001 Darwinia Developement Structure</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/rfc-0007-dawinia-token-staking-model">0007 Dawinia Token Staking Model</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/rfc-0009-dawinia-liquid-kton-reward">0009 Dawinia Liquid Kton Reward</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/docs/zh-CN/rfc-0010-darwinia-cross-chain-nft-bridge-protocol">0010 Darwinia Cross Chain Nft Bridge Protocol</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/rfc-0011-using-harberger-tax-to-find-price-for-xclaim-vault-collaterals">0011 Using Harberger Tax To Find Price For Xclaim Vault Collaterals</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/rfc-0012-darwinia-bridge-core-interoperation-in-chainrelay-enabled-blockchains">0012 Darwinia Bridge Core Interoperation In Chainrelay Enabled Blockchains</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/rfc-0013-darwinia-cross-chain-nft-standards">0013 Darwinia Cross Chain Nft Standards</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/rfc-0014-darwinia-token-migration-by-cross-chain-redeem-protocol">0014 Darwinia Token Migration By Cross Chain Redeem Protocol</a></li></ul></div><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wiki-glossary">术语表</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">教程列表<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wiki-tut-p1">教程1</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/darwinia-network/rfc/edit/master/RFC/src/0010-darwinia-cross-chain-nft-bridge-protocol.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">0010 Darwinia Cross Chain Nft Bridge Protocol</h1></header><article><div><span><ul>
+<li>rfc: 10</li>
+<li>title: 0010-darwinia-cross-chain-nft-bridge-protocol</li>
+<li>status: Draft</li>
+<li>desc: Cross-chain NFT Bridge Protocol</li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="cross-chain-nft-bridge-protocol"></a><a href="#cross-chain-nft-bridge-protocol" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Cross-chain NFT Bridge Protocol</h1>
+<h3><a class="anchor" aria-hidden="true" id="v-030"></a><a href="#v-030" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>v 0.3.0</h3>
+<h2><a class="anchor" aria-hidden="true" id="i-概述"></a><a href="#i-概述" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>I. 概述</h2>
+<p>基于XClaim的框架给通证跨链提供了一个思路，但是对于NFT仍有很多问题，其中主要包括Backing Blockchain上 Vault抵押物设计的问题。通过在Backing Blockchain上引入chain-Relay合约可以有效的解决这个问题，本文将基于这个改进的跨链转接桥方案，设计跨链NFT的方案和标准。</p>
+<p><strong>关键词</strong>：Blockchain, NFT, cross chain, multi-chain</p>
+<h2><a class="anchor" aria-hidden="true" id="ii-背景"></a><a href="#ii-背景" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>II. 背景</h2>
+<h3><a class="anchor" aria-hidden="true" id="a-研究历史"></a><a href="#a-研究历史" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>A. 研究历史</h3>
+<p>比特币[1]的出现，允许每个人只要拥有私钥，就可以不依赖任何信任地操作自己的资产。整个比特币系统，由一系列记录着自己前序区块hash的区块构成，共同维护着同一份去中心化的全球“账本”。</p>
+<p>比特币的出现之后，紧接着的就是区块链的飞速发展，出现了支持智能合约的公链——以太坊[2]，PoS的公链——EOS[3]等。这些公链的爆发，带来了整个token交易市场的繁荣。</p>
+<p>主流的token交易/交换方式仍然是中心化交易所，用户的token由中心化交易所代为管理。信任和维护成本很高，并且还需要面临源源不断的黑客攻击的威胁。</p>
+<p>为了克服中心化交易所的弊端，去中心化交易所 (DEX) 开始涌现。绝大部分去中心化交易所只支持在一条链上进行链内的token交易/转换，比如以太坊上的ERC20[4], ERC721 token[5]. 这一定程度上实现了去中心化，降低了信任成本（从相信机构变成了相信代码），但是使用场景十分有限，并且还要受限于公链的tps和交易费用。</p>
+<p>当然也有一部分的去中心化交易所实现了ACCS，允许token跨链交换。它们使用了hashed timelock contracts (HTLCs)[6].  HTLCs的优点同它的缺点一样，都很明显。HTLCs可以在不需要信任的情况下实现跨链token的原子交换，这既实现了去中心化，又拓展了单条链上的DEX的功能。它的缺点就是成本太高，并且限制条件很多：(i) 所有参与方都必须保持全过程在线  (ii) 对粉尘交易失效  (iii) 通常锁定时间较长。这样的token跨链交换既昂贵又低效。在实际使用中，HTLCs的使用范例也非常少。</p>
+<p>为了实现去信任的、低成本的、高效率的token跨链操作，XClaim团队提出了cross claim方案，基于CBA。并且在XClaim的论文中详述了XClaim是如何完成以下四种操作的：Issue, Transfer, Swap and Redeem.</p>
+<p>XClaim系统中保证经济安全的角色被称为 $vault$,  如果任何人想要把chain $B$ 上的原生token $b$ 跨到 chain $I$ 变成 $i(b)$ ，那么就需要 $vault$ 在chain $I$ 上超额抵押 $i$ 。 在赎回操作中，如果 $vault$ 存在恶意行为，则罚掉 $vault$ 抵押的 $i$ ，用于赎回操作发起者。其他细节详见XClaim的论文[7]。</p>
+<p>至此，对于流动性较好的Fungible token的跨链，已经得到一个可靠的、可实现的方案。</p>
+<h3><a class="anchor" aria-hidden="true" id="b-xclaim框架存在的问题"></a><a href="#b-xclaim框架存在的问题" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>B. XClaim框架存在的问题</h3>
+<p>XClaim方案中有着一个基本假设，即跨链锁定的chain $B$ 的原生token $b$ 的总价值， 与在 $I$ 上发行出的 $i(b)$ 的总价值相等，在XClaim中被称为<em>symmetric</em>, 即 $|b| = |i(b)|$。这样的假设是的XClaim在NFT的跨链中存在着天然的困境：</p>
+<ul>
+<li>NFT的不可替代性。正因为NFT具有可识别性、不可替代性等特点，使得 $vault$ 在 chain $I$ 上抵押chain $B$ 上的 NFT $nft_b$ 成了一件不可能的事情。</li>
+<li>NFT的价值难以评估。在XClaim中，判断 $vault$ 的抵押是否足额/超额，是通过Oracle $O$ 实现的。这也存在一个潜在的假设：token $b$ 和 token $i$ 可以被正确地评估价值。基于目前繁荣的中心化和去中心化交易所，在提供了良好的流动性的情况下，是可以基本满足该潜在假设的。但是NFT交易所市场尚未成熟，即使中心化交易所也无法比较真实地反应市场对NFT的价格判断。NFT如何定价本身就是一个难题。</li>
+<li>NFT定价不具有连续性和可预测性。即使某个NFT在市场上有了一次成交记录，即有了一个价格，因为NFT被售出的频次远低于FT，即使在市场流动性非常好的情况下，该NFT下一次的成交价格既不连续，也不可预测。</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="c-解决方案和思路"></a><a href="#c-解决方案和思路" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>C. 解决方案和思路</h3>
+<p>解决以上问题的NFT跨链方案有两种思路，一种是基于XClaim框架并保留桥质押机制的的NFT扩展，通过引入哈伯格机制来解决NFT定价问题，详细的解决方案见<a href="./rfc-0011-using-harberger-tax-to-find-price-for-xclaim-vault-collaterals">RFC-0011: Using Harberger Tax to find price for XClaim Vault Collaterals</a>. 但这个方案仍然无法很好的解决由于NFT价格变化太大，导致的质押物不足问题。</p>
+<p>另一个思路是通过在Backing Blockchain引入chainRelay的方案，对背书的资产做更多的保护，使得不再需要质押机制，简称为<a href="./rfc-0012-darwinia-bridge-core-interoperation-in-chainrelay-enabled-blockchains">RFC-0012: Darwinia Bridge Core: Interoperation in ChainRelay Enabled Blockchains</a>，详细的介绍将不在本文进行详细介绍，本文将着重基于这个改进的跨链转接桥方案，设计一个跨链的NFT标准，并且在多链互跨的情况下，提出了更低成本、功能具备扩展性的跨链协议。</p>
+<p>其中，在<a href="./rfc-0012-darwinia-bridge-core-interoperation-in-chainrelay-enabled-blockchains">RFC-0012</a> V.A中，我们引入了Darwinia Bridge Core的模型，用来优化区块链网络拓扑中的chainRelay数量。本文将基于Darwinia Bridge Hub，并针对NFT特定领域的问题，进行细化设计。</p>
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g7fe8rjjzvj30kb0bfgmc.jpg" alt="chain-relay-framework" style="zoom:80%;" /></p>
+<h2><a class="anchor" aria-hidden="true" id="iii-nft-in-darwinia-bridge-core"></a><a href="#iii-nft-in-darwinia-bridge-core" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>III. NFT in Darwinia Bridge Core</h2>
+<p>NFT跨链操作的难点在于，不同的公链有着自己的NFT标准，甚至不同公链上的NFT的token id连长度都是不相等的，NFT在跨到不同公链时，必然会经历token id的转换。如何在跨链的过程中不丢失NFT的可识别性，是一个值得研究的命题。</p>
+<p>在设计Bridge Core内的NFT流转逻辑时，我们想解决以下三个问题：</p>
+<ul>
+<li>保留NFT的跨链流转路径/历史，不损失NFT的可识别性；</li>
+<li>计算和验证解耦，拥有更高的处理速度；</li>
+<li>实现额外功能，例如NFT在跨链的同时完成分解、合并等操作；</li>
+</ul>
+<p>为此，我们选择为每个经过Bridge Core跨链的NFT引入一些中间解析状态，称为UNFO (Unspent NFT Ouput)，这些UNFO状态将维护一个Bridge Core上全局的ID，并借由跨链流通证明记录全局ID和NFT外部本地ID的映射关系。UNFO并不一定具体负责该NFT在Bridge Core范围内的所有权管理(Ownership Management)，但也可以借由一个$lock_script$进行扩展，例如通过将$lock_script$指向Bridge Core内部的一个所有权管理合约。</p>
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g7fe8qjwd9j30fe0gh3zg.jpg" alt="0010-framework-of-bridge-core" style="zoom:50%;" /></p>
+<h3><a class="anchor" aria-hidden="true" id="a-组件定义"></a><a href="#a-组件定义" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>A. 组件定义</h3>
+<ul>
+<li><em>Issuing Smart Contract</em>,  $iSC_N$:  表示在 chain <em>N</em> 上的资产发行合约；</li>
+<li><em>Backing Smart Contract</em>,  $bSC_N$ : 表示在 chain $N$ 上的资产锁定合约；</li>
+<li><em>Verifying Smart Contract</em>,  $vSC_N$ : 表示在Bridge Core上负责验证 chain <em>N</em> 上交易的资产发行合约/模块；</li>
+<li><em>Global identifier</em> ,  $GID$ , The global idendifier for the NFT in Darwinia Bridge Core</li>
+<li><em>Unspent Non-Fungible Output</em> ,  $UNFO$, Intermediate Resolution State for the NFT in Darwinia Bridge Core, aka. unspent NFT output. 该想法源于UTXO，当一个UNFO被销毁时，意味着同时会产生一个新的UNFO.</li>
+<li><em>External Backing NFT</em>,  $nft_B^{x,n}$,  表示在chain $B$ 上，在合约 $x$ 中标识为 $n$ 的NFT</li>
+<li><em>Bridge Core Mirror for Backing NFT</em>, $nft_{BC(unfo_{gid})}^{B,x,n}$,  或简称$nft_{BC}^{B, n}$ ，跨链到Bridge Core中的中间状态的NFT, 并且和 chain $B$ 上的 $nft_B^{x,n}$ 互为镜像，表示在对应 chain $B$ 中有一个即将被发行/已锁定的 NFT.  $unfo_{gid}$ 表示该NFT在 Bridge Core 内的中间态UNFO.</li>
+<li><em>External Issueing NFT</em>,  $nft_I^{x',n'}$,  表示跨链后在chain $I$ 上新增发的、在合约 $x'$ 中标识为 $n'$ 的NFT</li>
+<li><em>Bridge Core Mirror for Issuing NFT</em>,$nft_{BC(unfo_{gid})}^{I,x',n'}$, 或简称 $nft_{BC}^{I, n'}$ ，跨链到Bridge Core中的中间状态的NFT, 并且和 chain $I$ 上的 $nft_I^{x',n'}$ 互为镜像，表示在对应 chain $I$ 中有一个即将被发行/已锁定的 NFT.  $unfo_{gid}$ 表示该NFT在 Bridge Core 内的中间态UNFO.</li>
+<li><em>Locking Transaction</em> ,  $T_{B}^{lock}$,  在 chain <em>B</em> 上把 NFT 锁定在 $bSC_B$ 中的交易</li>
+<li><em>Redeem Transaction</em> ,  $T_I^{redeem}$， 在chain <em>I</em> 上把 NFT 锁定在 $bSC_I$ 中的交易</li>
+<li><em>Extrinsic Issue</em>,  $EX_{issue}$ , Bridge Core上的 issue 的交易</li>
+<li><em>Extrinsic redeem</em>,  $EX_{redeem}$ , Bridge Core上的 redeem 的交易</li>
+</ul>
+<p>参与方：</p>
+<ul>
+<li><em>validator</em>,  维护 Bridge Core 的参与方；</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="b-unfo-实现和作用"></a><a href="#b-unfo-实现和作用" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>B. UNFO 实现和作用</h3>
+<h4><a class="anchor" aria-hidden="true" id="bi-unfo的数据结构"></a><a href="#bi-unfo的数据结构" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>B.I UNFO的数据结构</h4>
+<pre><code class="hljs css language-rust"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">UNFO</span></span> {
+  <span class="hljs-keyword">pub</span> local_id, <span class="hljs-comment">// chain_id + smart_cotnract_id + token_id</span>
+  <span class="hljs-keyword">pub</span> global_id,
+  <span class="hljs-keyword">pub</span> phase, <span class="hljs-comment">// current phase</span>
+  <span class="hljs-keyword">pub</span> lock_script, <span class="hljs-comment">// e.g. ownership or state management</span>
+}
+</code></pre>
+<ul>
+<li><strong>local_id</strong>：表示该UNFO对应着某个外部区块链 <em>chain_id</em> 上某个 <em>smart_contract_id</em> 里的 <em>token_id</em></li>
+<li><strong>global_id</strong>：表示该UNFO在Bridge Core和所有被夸的区块链范围内的全局唯一标识</li>
+<li><strong>phase</strong>：表示该UNFO在跨链过程中所处的阶段。比如：
+<ul>
+<li>1: 该UNFO对应区块链 <em>chain_id</em> 上的NFT被锁定/销毁；跨链过程处于中间状态；</li>
+<li>2: 该UNFO对应区块链 <em>chain_id</em> 上的NFT待发行/已发行；跨链过程即将完成/已完成</li>
+</ul></li>
+<li><strong>lock_script</strong>：用于更加复杂逻辑、细粒度的控制脚本，保持UNFO的可扩展性。lock_script表达的是这个NFT的所有者是谁，当该NFT在Bridge Core之内流转时，该lock_script指向的可能是某个ownership contract，当NFT被锁定在backing contract里面时，lock_script指向的可能是backing contract的redeem合约</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="bii-unfo的转换"></a><a href="#bii-unfo的转换" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>B.II. UNFO的转换</h4>
+<p>我们选择用UNFO模型作为存储/状态 的流转单元，UNFO模型是一种类似UTXO模型的设计思路。</p>
+<p>当一个UNFO的销毁，意味着另一个UNFO的创建，如果我们追溯UNFO的销毁创造历史，就可以回溯某个NFT的全部跨链历史，这一定程度上帮助实现了NFT的可识别性；</p>
+<p>每个UNFO只能被销毁一次，这使得计算前不一定要先验证，从而提高了处理速度；</p>
+<p>正如比特币的UTXO一样，Input和Output都可以有多个，这样的特点使得NFT在跨链的过程中，可以同时完成一些扩展功能，例如NFT的拆分和合并。</p>
+<p>一直一来，NFT都比FT有用更多的操作种类，例如在游戏中，作为道具的NFT要求可拆解、可合成、可升级等，为此扩展出了很多NFT标准，例如ERC721, ERC1155, ERC721X等。标准越多，越难被广泛使用。</p>
+<p>如果其中的一些通用需求可以在跨链同时实现，可以有效地减少标准的数量和冗余度，一定程度上更有利于实现一个统一的标准。</p>
+<p>当一个UNFO产生时，一定要满足：</p>
+<ul>
+<li>提供 <em>backing blockchain</em> 的 对应NFT 的锁定记录；</li>
+<li>另一个UNFO被销毁
+<ul>
+<li>条件：销毁和产生的UNFO的GID必须相同</li>
+</ul></li>
+</ul>
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g7fe8skd28j30hj06z0sz.jpg" alt="0010-UNFO-transform" style="zoom:50%;" /></p>
+<h4><a class="anchor" aria-hidden="true" id="biii-基于unfo的nft映射和id一致性"></a><a href="#biii-基于unfo的nft映射和id一致性" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>B.III. 基于UNFO的NFT映射和ID一致性</h4>
+<p>Fungible Token在跨链时只要保证CBA和原生资产价值对称、资产安全即可，但是NFT对可识别性有更高的要求，因此需要再跨链时更好的维护NFT CBA和原生资产的一一映射，并保持ID的一致性，包括GID和External Locol ID。</p>
+<table>
+<thead>
+<tr><th>UNFO</th><th>GID</th><th>External Chain ID</th><th>External Contact Address</th><th>External Token ID</th><th>Lock_Script</th><th>Active Status</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>GID0001</td><td>Ethereum</td><td>A_ERC721</td><td>12</td><td>script_issuing_burn_or_relay</td><td>False</td></tr>
+<tr><td>2</td><td>GID0001</td><td>Tron</td><td>B_TRC721</td><td>?</td><td>script_backing_redeem</td><td>True</td></tr>
+<tr><td>3</td><td>GID0002</td><td>EOS</td><td>C_dGoods</td><td>2.5.4</td><td>script_issuing_burn_or_relay</td><td>False</td></tr>
+</tbody>
+</table>
+<p><center>基于UNFO的映射表示例</center>
+假如我们用nft(Exterenal_Chain_ID, External_Contract_Address, External_Token_ID)标识一个外部公链上的NFT。在没有NFT的跨链映射表的情况下：</p>
+<blockquote>
+<p>nft(A, X, 1) 表示在A链上、合约X中标识为1的NFT。</p>
+</blockquote>
+<p>在没有NFT的跨链映射表的情况下，</p>
+<blockquote>
+<p>Alice在跨链桥M(A-&gt;B)中，将nft(A, X, 1) 变为 nft(B, Y, 2) ；又通过跨链桥N(B-&gt;C)，将nft(B, Y, 2) 变为 nft(C, Z, 3)。之后，当Alice想继续使用跨链桥M将C链上的nft 跨链去 A链的话，因为没有跨链映射表查询该NFT在A中的ID信息，跨链桥M会将 nft(C, Z, 3) 识别为新的NFT CBA，这样很可能在跨回A链时，将不再是nft(A, X, 1)，而是nft(A, X, 5). NFT就丢失了自己的可识别性和ID一致性，会给协议和赎回过程带来额外的复杂性和混乱。</p>
+</blockquote>
+<p>为了尽可能减少丢失NFT可识别性对用户造成的潜在资产损失，如果NFT在Bridge Core连接的网络之内跨链，则用户可以获取到Bridge Core上某个NFT当前的基于UNFO的NFT映射表，协议将可以约束用户跨链回A链的NFT需要遵循ID一致性和可识别性。这样，至少在Darwinia Bridge Core系统内，NFT可保证可识别性不被破坏。</p>
+<p>为了保持良好的ID一致性，在NFT通过Bridge Core跨链流转的生命周期内，希望保持External Chain ID和 (External Contact Address, External Token ID) 的映射关系保持不变，此时可以通过基于UNFO的解析服务，至UNFO映射表里面查询相应的External Token ID，以保持一致性。在RFC-0013章节III.D中，我们还将详细介绍NFT解析模块。</p>
+<h3><a class="anchor" aria-hidden="true" id="c-初步实现方案"></a><a href="#c-初步实现方案" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>C. 初步实现方案</h3>
+<p>场景同章节II中的描述。依然需要实现三种 protocol：<em>Issue, Transfer, Redeem</em>. 同样为了简化模型，这里将不会讨论手续费相关细节。</p>
+<h4><a class="anchor" aria-hidden="true" id="protocol-issue"></a><a href="#protocol-issue" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Protocol: Issue</h4>
+<p>(i) <strong><em>锁定</em></strong>。<em>requester</em> 将 chain $B$上的NFT资产 $nft_B^{n,x}$ 锁定在 $bSC_B$ 中，同时声明目的地公链 chain <em>I</em> 以及自己在chain $I$ 上的地址；这一步将产生交易$T_B^{lock}$</p>
+<p>(ii) <strong><em>Bridge Core上发行</em></strong>。 <em>requester</em>  将锁定交易 $T_B^{lock}$ 提交至 Bridge Core, 对应的chain relay验证通过后，即 触发 $vSC_B$ , 在 $vSC_B$ 中：</p>
+<ul>
+<li>产生新的$GID$ 和 $nft_{BC}^{B,n}$ , 记录 $GID$ 和 $nft_{BC}^{B,n}$ 二者之间的关系，</li>
+<li>并触发$vSC_I$</li>
+</ul>
+<p>在 $vSC_I$ 中：</p>
+<ul>
+<li>销毁  $nft_{BC}^{B,n}$，发行 $nft_{BC}^{I,?}$， $issue_{ex}(\ GID,\ address_on_I) \rightarrow EX_{issue}$</li>
+</ul>
+<p>(iii) <strong><em>发行</em></strong>。<em>requester</em> 将 $EX_{issue}$ 提交至 chain $I$ , 经过chain $I$ 上的chain relay 验证通过后，即会在$iSC_I$ 中增发新的NFT: $nft_I^{x', n'}$， 并记录 $GID$ 和 $nft_I^{x', n'}$的关系， 且将所有权交给 <em>requester</em> 在chain <em>I</em> 上的地址</p>
+<p>注: 对于外部区块链上的$iSC$来说，在发行时，也需要在外部区块链上，将全局ID和本地ID的映射记录下来，因为后面redeem的时候，需要使用这个映射关系来完成redeem.</p>
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g7sznhszi8j30pz0elabd.jpg" alt="chain-relay-framework-1" style="zoom:50%;" /></p>
+<h4><a class="anchor" aria-hidden="true" id="protocol-transfer"></a><a href="#protocol-transfer" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Protocol: Transfer</h4>
+<p>(i) <strong><em>转移</em></strong>。<em>sender</em> 在 $I$ 上把 $nft_I^{x',n'}$ 在  $iSC_I$ 中，把所有权转移给 <em>receiver</em>，参考ERC721.</p>
+<p>(ii) <strong><em>见证</em></strong>。当 $nft_I^{x',n'}$ 在  $iSC_I$ 中的所有权发生了转移时，$iSC_I$ 和 $bSC_I$ 都应当觉察。此时，当 <em>sender</em> 再想把 $nft_I^{x',n'}$ 赎回时需要先将其锁定在 $bSC_I$ 中，此时 $bSC_I$ 将不会允许该操作成功。</p>
+<h4><a class="anchor" aria-hidden="true" id="protocol-redeem"></a><a href="#protocol-redeem" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Protocol: Redeem</h4>
+<p>(i) <strong><em>锁定</em></strong>。 <em>redeemer</em> 将 chain $I$ 上的NFT资产 $nft_I^{x', n'}$ 锁定在 $bSC_I$ 后 (如果有对应的GID，锁定时需声明 $GID$)，同时声明目的地公链chain $B$ 以及自己在 chain $B$ 上的地址；$bSC_I$ 会原子地 在 $iSC_I$ 中确认 $GUID$ 的正确性。这一步将产生交易$T_I^{redeem}$。$lock_I(nft_id_on_I,\ GID,\ address_on_B) \rightarrow T_I^{redeem}$</p>
+<p>(ii) <strong><em>Bridge Core上解锁</em></strong>。 <em>redeemer</em> 将 $T_I^{redeem}$ 提交至 $vSC_I$ 并在chain relay中验证通过后，会在 $vSC_I$ 中：</p>
+<ul>
+<li>记录 $GID$ 和 $nft_I^{x', n'}$ 的对应关系，</li>
+<li>判断目的地公链并触发相应的 $vSC_B$ ,</li>
+</ul>
+<p>在 $vSC_B$ 中,</p>
+<ul>
+<li>通过 $GID$检索，销毁 $nft_{BC}^{I,n'}$ ，产生 $nft_{BC}^{B, n}$ ，$ redeem_ex(\ GID,\ nft_id_on_B,\ address_on_I) \rightarrow EX_{issue}$</li>
+</ul>
+<p>以上过程均在一次Extrinsic内触发，将会产生一笔Extrinsic id，记录为 $EX_{redeem}$</p>
+<p>(iii) <strong><em>解锁</em></strong>。 <em>redeemer</em> 将 $EX_{redeem}$ 提交给 chain $B$ ， 经过$iSC_B$ 验证通过后，在 $iSC_B$ 中会记录 $GUID$ 和 $nft_B^{x,n}$ 的对应关系， 同时会原子地触发 $bSC_B$ 中的方法，将 $nft_B^{x,n}$ 还给指定的地址。</p>
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g7szni9t0lj30r70elgn2.jpg" alt="chain-relay-framework-2" style="zoom:50%;" /></p>
+<h3><a class="anchor" aria-hidden="true" id="d-algorithms"></a><a href="#d-algorithms" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>D. Algorithms</h3>
+<h5><a class="anchor" aria-hidden="true" id="protocol-issue-1"></a><a href="#protocol-issue-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Protocol: Issue</h5>
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g7sznio88rj30uc0j0aca.jpg" alt="image-20191010113808729" style="zoom:50%;" /></p>
+<p>解释：</p>
+<h6><a class="anchor" aria-hidden="true" id="requester-相关的操作："></a><a href="#requester-相关的操作：" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><em>requester</em> 相关的操作：</h6>
+<ul>
+<li><p><strong>lockB</strong>($nft_B^{x,n}$, cond):   发生在chain $B$ 内。将$nft_B^{x,n}$ 锁定在 $bSC_B$ 中，并声明 <em>requester</em> 在 chain $I$ 上的地址，这个操作对应交易 $T_B^{lock}$</p></li>
+<li><p><strong>verifyBOp</strong>(lockB, $T_B^{lock}$, $\Delta_{lock}$) $\rightarrow T$ :    发生在Bridge Core内。<em>requester</em>将 $T_B^{lock}$ 提交至 Bridge Core中的 $vSC_B$ 进行验证，如果 $T_B^{lock}$ 真实地在 chain $B$ 上发生过并且满足最小需要延时 $\Delta_{lock}$，即返回结果T(True)，否则返回F(False).</p>
+<p>如果结果为T，则在 $vSC_B$ 中自动触发 newGid($nft_B^{x,n}$)，会产生新的GID，以及 $nft_B^{x,n}$ 在 Bridge Core内的镜像 $nft_{BC}^{B,n}$ ，并建立GID和 $nft_{BC}^{B,n}$ 的对应关系</p></li>
+<li><p><strong>verifyBCOp</strong>(trigger, $EX_{issue}$, $\Delta_{trigger}$) $\rightarrow T$ :  发生在 chain $I$ 内。<em>requester</em> 将 $EX_{issue}$ 提交至chain $I$ 的 $iSC_I$ 内，如果$iSC_I$ 验证 $EX_{issue}$ 的真实性即返回T，否则返回F。验证通过后，即通过调用issue方法，发行 $nft_I^{x',n'}$ 到 <em>requester</em> 在 chain $I$ 的地址上。</p></li>
+</ul>
+<h6><a class="anchor" aria-hidden="true" id="validator-相关操作："></a><a href="#validator-相关操作：" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><em>validator</em> 相关操作：</h6>
+<ul>
+<li><strong>issueTransform</strong>($vSC_I,\ pk_I^{requester},\ GID$ ): <em>validator</em> 会自动触发 $vSC_I$ 中的方法， 将 $nft_{BC}^{B,n}$ 销毁并产生 $nft_{BC}^{I,?}$ 表示在chain $I$ 上即将新增发的nft的镜像（这里之所以用$?$ 因为此时chain $I$ 上的nft还未被增发，因此无法获取其token id），并建立 GID和 $nft_{BC}^{I,?}$ 对应关系。这次操作将产生 $EX_{issue}$.</li>
+</ul>
+<h5><a class="anchor" aria-hidden="true" id="protocol-transfer-1"></a><a href="#protocol-transfer-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Protocol: Transfer</h5>
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g7fe8pswk9j3120050aac.jpg" alt="image-20190927191635665"></p>
+<p>解释：</p>
+<p>在 chain $I$ 上 <em>sender</em> 调用 $iSC_I$ 中的 transfer方法，将 $nft_I^{x',n'}$ 发送给 <em>receiver</em></p>
+<h5><a class="anchor" aria-hidden="true" id="protocol-redeem-1"></a><a href="#protocol-redeem-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Protocol: Redeem</h5>
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g7sznhfdu6j314w0q0n0c.jpg" alt="image-20191010114326817" style="zoom:50%;" /></p>
+<p>解释：</p>
+<h6><a class="anchor" aria-hidden="true" id="redeemer-相关操作："></a><a href="#redeemer-相关操作：" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><em>redeemer</em> 相关操作：</h6>
+<ul>
+<li><strong>burn</strong>( $nft_I^{x',n'}$, $GID$, $pk_B^{redeemer}$ ) : 发生在 chain $I$ 上。 <em>redeemer</em> 触发$bSC_I$ 的方法，将 $nft_I^{x',n'}$ 销毁，但保留销毁记录，$bSC_I$ 可以原子地检验 $GID$ 和 $nft_I^{x',n'}$ 对应关系。该操作将会产生交易 $T_I^{redeem}$</li>
+<li><strong>verifyIOp</strong>(burn,  $T_I^{redeem}$,  $\Delta_{redeem}$) : 发生在 Bridge Core内。用户将 $T_I^{redeem}$ 提交至 $vSC_I$ 中，如果 $T_I^{redeem}$ 真实地在 chain $I$ 上发生过并且满足最小需要延时 $\Delta_{redeem}$，即会根据 $GID$ 找到 对应的 $nft_{BC}^{I,?}$ 并根据自动补全成 $nft_{BC}^{I,n'}$</li>
+<li><strong>verifyBCOp</strong>(trigger, $EX_{redeem}$, $\Delta_{trigger}$) $\rightarrow T$ :  发生在 chain $B$ 内。<em>redeemer</em> 将 $EX_{redeem}$ 提交至chain $B$ 的 $iSC_B$ 内，如果$iSC_B$ 验证 $EX_{redeem}$ 的真实性即返回T，否则返回F。验证通过后，即通过调用issue方法，即释放 $nft_B^{x,n}$ 到 <em>redeemer</em> 在 chain $B$ 的地址上。</li>
+</ul>
+<h6><a class="anchor" aria-hidden="true" id="validator-相关操作：-1"></a><a href="#validator-相关操作：-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><em>validator</em> 相关操作：</h6>
+<ul>
+<li><strong>burnTransform</strong>($vSC_B,\ GID,\ nft_{BC}^{x,n},\ pk_B^{redeemer}$ ): <em>validator</em> 自动触发 $vSC_B$ 中的方法， 将 $nft_{BC}^{I,n'}$ 销毁同时产生 $nft_{BC}^{B,n}$, 表示在chain $B$ 上即将释放的nft的镜像。这次操作将产生 $EX_{redeem}$.</li>
+</ul>
+<h2></h2>
+<h2><a class="anchor" aria-hidden="true" id="iv-cross-chain-nft-standards"></a><a href="#iv-cross-chain-nft-standards" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>IV. Cross-chain NFT Standards</h2>
+<p>跨链环境下，NFT会出现在不同的区块链网络中，并且其可用状态可能不断变化，因此类似原来单链网络内的标准和方案(例如，Ethereum ERC20)，已经无法满足跨链NFT标准的需要。</p>
+<p>跨链NFT标准面临的识别性和解析问题，需要新的解决方案和标准来解决。因此我们引入一个基于通证跨链证明的解析系统来解决通证跨链时的定位和解析需求，通过通证解析系统和域内唯一标识，我们可以存在与不同域的通证之间的关联关系映射起来，并标识他们之间的相同与不同。</p>
+<h3><a class="anchor" aria-hidden="true" id="a-设计范围"></a><a href="#a-设计范围" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>A. 设计范围</h3>
+<ul>
+<li><p>全局唯一标识和外部本地标识规范</p>
+<p>为了将不同标准的通证标识符进行规范化，以提供识别和解析方法，与现有的标准进行很好的协调和对接，并满足社区基础设施建设的标准需求。识别标识分为全局唯一标识和外部本地标识。</p></li>
+<li><p>NFT解析系统</p></li>
+<li><p>NFT所有权管理</p></li>
+<li><p>Inter-parachain NFT Transfers</p>
+<p>通过引入一个关联的SPREE模块来帮助在不同的平行链之间进行跨链转账。</p></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="b-标准方案"></a><a href="#b-标准方案" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>B. 标准方案</h3>
+<p>基于跨链NFT协议的设计和方案基础，我们设计并提议了一个跨链NFT的标准提案，详细设计放在了 <a href="./rfc-0013-darwinia-cross-chain-nft-standards">RFC-0013 Cross-chain NFT Standards</a>。</p>
+<h2><a class="anchor" aria-hidden="true" id="参考"></a><a href="#参考" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>参考</h2>
+<p>[1] <a href="https://bitcoin.org/bitcoin.pdf">https://bitcoin.org/bitcoin.pdf</a></p>
+<p>[2] <a href="https://github.com/ethereum/wiki/wiki/White-Paper">https://github.com/ethereum/wiki/wiki/White-Paper</a></p>
+<p>[3] <a href="https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md">https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md</a></p>
+<p>[4] <a href="https://eips.ethereum.org/EIPS/eip-20">https://eips.ethereum.org/EIPS/eip-20</a></p>
+<p>[5] <a href="https://eips.ethereum.org/EIPS/eip-721">https://eips.ethereum.org/EIPS/eip-721</a></p>
+<p>[6] <a href="https://en.bitcoin.it/wiki/Hashed_Timelock_Contracts">https://en.bitcoin.it/wiki/Hashed_Timelock_Contracts</a></p>
+<p>[7] <a href="https://eprint.iacr.org/2018/643.pdf">https://eprint.iacr.org/2018/643.pdf</a></p>
+<p>[8] <a href="https://opensea.io/">https://opensea.io/</a></p>
+<p>[9] <a href="https://vitalik.ca/general/2018/04/20/radical_markets.html">https://vitalik.ca/general/2018/04/20/radical_markets.html</a></p>
+<p>[10] <a href="https://github.com/ethereum/wiki/wiki/Light-client-protocol">https://github.com/ethereum/wiki/wiki/Light-client-protocol</a></p>
+<p>[11] <a href="https://elixir-europe.org/platforms/interoperability">https://elixir-europe.org/platforms/interoperability</a></p>
+<p>[12] <a href="https://github.com/AlphaWallet/TokenScript">https://github.com/AlphaWallet/TokenScript</a></p>
+<p>[13] <a href="https://github.com/darwinia-network/rfcs/blob/v0.1.0/zh_CN/0005-interstella-asset-encoding.md">https://github.com/darwinia-network/rfcs/blob/v0.1.0/zh_CN/0005-interstella-asset-encoding.md</a></p>
+<p>[14] <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1087/20120404">https://onlinelibrary.wiley.com/doi/pdf/10.1087/20120404</a></p>
+<p>[15] <a href="https://wiki.polkadot.network/en/latest/polkadot/learn/spree/">https://wiki.polkadot.network/en/latest/polkadot/learn/spree/</a></p>
+<p>[16] <a href="https://en.wikipedia.org/wiki/Unique_identifier">https://en.wikipedia.org/wiki/Unique_identifier</a></p>
+<p>[17] <a href="https://en.wikipedia.org/wiki/Identifiers.org">https://en.wikipedia.org/wiki/Identifiers.org</a></p>
+<p>[18] <a href="https://schema.org/">https://schema.org/</a></p>
+<p>[19] <a href="https://medium.com/drep-family/cross-chains-a-bridge-connecting-reputation-value-in-silo-b65729cb9cd9">https://medium.com/drep-family/cross-chains-a-bridge-connecting-reputation-value-in-silo-b65729cb9cd9</a></p>
+<p>[20] <a href="https://github.com/paritytech/parity-bridge">https://github.com/paritytech/parity-bridge</a></p>
+<p>[21] <a href="https://vitalik.ca/general/2018/04/20/radical_markets.html">https://vitalik.ca/general/2018/04/20/radical_markets.html</a></p>
+<p>[22] <a href="https://talk.darwinia.network/topics/99">https://talk.darwinia.network/topics/99</a></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/docs/zh-CN/rfc-0009-dawinia-liquid-kton-reward"><span class="arrow-prev">← </span><span>上一篇</span></a><a class="docs-next button" href="/docs/docs/zh-CN/rfc-0011-using-harberger-tax-to-find-price-for-xclaim-vault-collaterals"><span>下一篇</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#i-概述">I. 概述</a></li><li><a href="#ii-背景">II. 背景</a><ul class="toc-headings"><li><a href="#a-研究历史">A. 研究历史</a></li><li><a href="#b-xclaim框架存在的问题">B. XClaim框架存在的问题</a></li><li><a href="#c-解决方案和思路">C. 解决方案和思路</a></li></ul></li><li><a href="#iii-nft-in-darwinia-bridge-core">III. NFT in Darwinia Bridge Core</a><ul class="toc-headings"><li><a href="#a-组件定义">A. 组件定义</a></li><li><a href="#b-unfo-实现和作用">B. UNFO 实现和作用</a></li><li><a href="#c-初步实现方案">C. 初步实现方案</a></li><li><a href="#d-algorithms">D. Algorithms</a></li></ul></li><li><a href="#iv-cross-chain-nft-standards">IV. Cross-chain NFT Standards</a><ul class="toc-headings"><li><a href="#a-设计范围">A. 设计范围</a></li><li><a href="#b-标准方案">B. 标准方案</a></li></ul></li><li><a href="#参考">参考</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><div><h5>Docs</h5><a href="/docs/docs/zh-CN/doc1.html">Getting Started (or other categories)</a><a href="/docs/docs/zh-CN/doc2.html">Guides (or other categories)</a><a href="/docs/docs/zh-CN/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/docs/zh-CN/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><a href="/docs/" class="nav-home"><img src="/docs/img/logo.png" alt="Darwinia Documentation" width="160"/></a><div class="share-links"><div><a href="https://medium.com/@DarwiniaNetwork" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJFBMVEVHcEx7cK97cK98bbZ7ca57ca97ca98cK97ca97cK57ca97cK5wzXcXAAAAC3RSTlMA6c8Mn1yPbyW6RucScUEAAAExSURBVDjL7ZShb8JQEMZfgG60iqVbQlJDgqxhODKDmJvBz5CQYDB4TBNkzTxmHlUGpI/753jfvZUWesUQHKeu3y/Xu/e9axVdCfWAN0P9iQj/pfyB4VYh1pZp5PVV/to5hJqFO+SDQs8DBMdCH4VhASYRlIDzsUnds2m7KF1wGuUdVKHR+2keAT6dMgE2s3kuoQftC/Msy9AZGS3GPBMBduwJdN0XIHzwkPwJkI8Qku9KkA//TeNYhEO2IZqJMDXis1aBCPfw/s0hESY9o85dGdobjysguzqrgGx+UAE31iMZ0i+7W4Yp7rLD91KGI+McdnAhwD3viMY81Lrcvh8jmB2PvGxLC3u7gTl9omGDqM2fRj+HKa9XQOmHLcxKGb7yh2WariiZ2ggf/6E7w5crcQRAZIKOcJdRHwAAAABJRU5ErkJggg=="/></a><a href="https://t.me/DarwiniaNetwork" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAIVBMVEVHcEx7cK95cK97cK57cK57cK98cK97cK97cK57cK97cK6mrj9uAAAACnRSTlMAhw7iKK5Iye5eWDkJwgAAAR1JREFUOMvt1b9rwkAUB/Bvok3rJtR2uCkZiq2b0EGcshU6FQcHp4Bbx9JFN0E6ZAod3UIIhvdXej+C7em7m9zaN+TgPtzdy0vuDuEtOWIcY0jO+IBwY4mpGyuQJ/7x4jh/cmI1QOjCOoMTxymAiMc5VAQcyuWAlxRXDNaFtOQL6JzjRi83kQmNznClVgvFVj7fT7AZ6FSWlRoubNwX2hJ6Vs3CwjLVFk33sWpzC42FC7kDZHTtwptJl2QGRjZW97LvgWhmFeiY7Sbr5VRrOxbo5z2bNdGbwRvuY5fG8MphOxA7DvstCg6LFtc+zDnMcBf/LpCFaaDr3uNR6KkDFhP1q8S4ZlFn+YlH93ZovsXfOxO8h7H3GPdeAL6r4wA5SoNsrYNlIwAAAABJRU5ErkJggg=="/></a><a href="https://twitter.com/DarwiniaNetwork" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJFBMVEVHcEx7cK56bbB7cK57cK57cK97cK97b697cK57cK97cK97cK6/O/qOAAAAC3RSTlMA8AngmXxTGcgxrQuz9RgAAAHNSURBVDjLjVW7S8NAGD+LbY1TkZaCWSKIoG6C9dFFpBW0SwU3l6AgYpeqILgp4tTFB04uRUGETiFGkt4/5+Xu+y53uTT4m5L73fd+HCESy0cPtrfZfiImChc25fC+DK58SCXW+yk5haO05mjkKdXQULlFmsKuYnCQJsPE7Cs1sIGcZZukj6LXlE4ULQyyyFCEM00zscPJXjb5y7U2s0k/1lukE9Bl5KV+NN9CTXVGHutZdYg1oLU48oCZ5BmIbCWA4t4SGC3xw+GzINdE6OLPJbPCuNWEf57PNg9vSBbAsxXeIo6a7Qp5x3TE9R5rZYrA2Tt2ck7pj1amgHTgEsPbPUgKJ9lVUZJQnN5qZEiEl98faktBRn0i1LtXKglF9IhaPMQM5BLIOY1cRUkbHFPRQ7KZFE9ihA5Bd42V4Sljj0ESaHXfiITZglpHilbsjQASj23KAcqYwBR8JSkqYctUoNjMNTetlRVb3vNhJsuyj11oMGXW5VjFbQHuPgJXkvMYgInx2QsmoCNbuI4hNxxz43TlIFVPYu5mlBokrMF26+DTGMH84c0d+9yFoeQkgSc3a4bo1v/WW+5izF+p+ctYS2qtn/MAOBnvg2U8HX8bGacuzEIM4QAAAABJRU5ErkJggg=="/></a><a href="https://github.com/darwinia-network" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAKlBMVEVHcEx7cK57cK57cK58bq57cK57cK5/a7F7cK97cK57cK98cbB7cK97cK5qBv59AAAADXRSTlMA9OK4FZ5zCUXNXSmEsKrC2AAAAglJREFUOMt1lLtLxEAQxhfNmXvYiIXIIQiCjQbEwsqDu1JEsFIbQTxULAQFFTwsTtFCULAQ5JSD66wEBRsLwUpsLJJ7cA/3f3F2ZpPsbuIUybK/7O7MN9+GsSAyW7NDQxMrLywmLh2O4a1FkL3Jg5jcN6DCgOrsnWvxqLIBbsSGcmDOhPXw2AUeiTufWdUo7OQlPOExcS/hehxsEkvD0B2L0BrCVxg1Mrvh9PTFBzyzCEUdt4xd+Rs8MNYnqhEsKT5ehkHx+42xxet5KDEh5sowlxKDT13NQU67sRtDrkDOtjwydiUcmsEEZ3TYj5MvsiHjOkzJ1tC7rEOsADJaUrQKAxVtULI9ExYo3Z+YfKQKv7TBhgnTdFiVkjbCwoYztHI+4mPRAQ+fPOp/scZl/H/IaWX8ti7BSEI2R+iEfjH186hjyyaUPUMRRkzYRyLsiVfLhM80i8K7RrqWQ8IfxDkBdYfD+nlMQ3/kijS5fFVlR/6FsOmWeIpRkvRfcfeFI5qHsE3nyWclec9/YfwBq5Kw3J3DlK2if+F6lFkL65L/geD/IIxuwZe1RHDn7IJkVDtoNG5XA4ETEnZ977fZqTNaVg3t6wJa1U1vQW1S0TPtltkEs6FJm4ryXL89UMjw17YGu6G/NX9iHYpxzk04pWaY02Fda37aUaFnuPHYCaG3Y1qqVPFHlaB5f4TVPVm1Z2ZDAAAAAElFTkSuQmCC"/></a></div><div><a href="https://bihu.com/people/1100617" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJ1BMVEVHcEx7cK56cq97cK97cK97cK97ca57cK57cK58cK97cK57cK97cK75Og5xAAAADHRSTlMA7g+TrSJnethIxTKkC5eQAAABvElEQVQ4y5WVv0tCURTHD2aWOUVUBG+IGsImESIIl8gmHYTaaqihWhqkGhuiJYI3SEM0NAehg0VtLaLpy+4f1T3X++O8e98V+i763sf3zo97zlcAqtXZu2XwaCpgrOlh2ZBxFRNZroWMdY4SWKrERhq2XXjMlLpOUk/MaMFi+4zqNV4gi2uXsExgwU7dLoIqakg2WWWuerURLLEkLQmWTmSsI3rxbAJtnl6Z1G4R6ohzGCangwwQBvEUdHpDvFK/VKeRUUEI/NFln8uMCMQH82cnOBAO7PFve7LnVRvO8zERqRUADm1YUAV3ASZsWIOUrKkBWQtGOg92I0s3kL9sWsJfgBUhDQcqDdk2JXGnD/Clhu9/cOxr4wkdvPPT+fSVwqPMkCa0IRWaJliQt+9NhUzb8JtPiHi0jnlbEI9sjbetwj9bNsQnIPf4AOJQonJ5m8K+ru1a3qEDpnZnghEYxtfdbBWI8GpwcbPyesYjMol4vDuXW2YdxAGsJy8SjhzvcGvMlrlLL9iFxy5QGx6jQTU9FoW695gbatFji4nmR/wmwTazoe1P4HoccTbXHYsek8dyK75/B/gIXujlHztymte5NqsQAAAAAElFTkSuQmCC"/></a><a href="https://weibo.com/DarwiniaNetwork" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJFBMVEV7cK5HcEx7cK57cK17cK97cK97cK97cK57cK57cK97ca97cK6hJEZ6AAAADHRSTlP/AOYQxHoqZ6Y/UZKe82coAAACIUlEQVQ4y41VvW/TUBC/Oi5NYfrxkpC0i0MoArE0FahUXXAkvtSFAAHERPioBCxEUCTEElhYCUggxFIzdcRC4u/j7n3Ez5FtcYNl3+/u3t3v7p0J2B5QgZx5DRDWIiqUIGHwFpXIMmiNSiWhrXKwR6/KwRW6Ug6GFJWDQYHu3OjgY5n9CbC8LAFrAuJyMbiqQRRXEYwGN5jXcnKCO4uu15/szIsOx2j42F8+SCvC+w8i6qHjYTclC61YAnYpBKJ8dVA6XQVMaYbfXme1mK86NinNMjprsJaQd5do2KAYh85xbMBOcI+fnylep+4ctI5AXx5N6growo7hS4viNoe1w3U8h3HOq49pyBlrGeZBXe3M1hka3fOD0Tsdvy3KScs4HhPNtu5+8KlvSdx4k0XddWRt8MdPrz9s3IzmA3WN0ac+rYozu/AVO1NLiJr3jo+8yHxK/br9Mb88cmAX0oBUZ3xoh2jdgR+E78CU07DdO+XAVOxWhLZEK+vwxisV+xpU/+SSJqfue8YCdtU0vDSRA3SQdpYQg9xBmphwMvJb2Yg32YINEpNl6s97CBVRranP2uRPLlhlk5ew4TK+zwwzPTe/9u5L3ImU+cU4uj5b5n9R8BY4ImOUu3/noW4TnY7MDUInvwr+QB2JZk9muzVduHJyi/Z/6MFcxFiuuul8Vrhe9h5+23/xfkD/LZVLqnK9VS7GypVauYwr13j1D6Di1/EPT15bwQ40s+UAAAAASUVORK5CYII="/></a><a href="#" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJ1BMVEVHcEx7cK57cK97cK56cbB7cK57cK97cK97cK57cK57cK97cK57cK5LMTsCAAAADHRSTlMA32q3EDaNTe/LoSSkSkY9AAAByUlEQVQ4y32VO0/DMBCAr6UvqQsIUIXIUCEQSwcojB1SsSGGwIDKY0CwQNWhA0OLWFCRkCADFLF1KEIMoA4ZWaOqJS3+UZxjO3GeN1zsfPH5fHc5A0Byk4TI/CqgZBUSKlYRYYlEyBgXkkgpQjUaPkVbpXYr0dAEJRoScEZLWy9RsKvhqdJXofATmByHwDcQchSAY3Cl4YdFCSZ9UF7oiTWFG/gqZQOqMx5oGQD53jI1qeN3KUWG1OoMmaLeI7+ob2X454MJGT6DMJvV+55NEZ55nD2of8hQPmX+cnK+vvLuwqbLUo2uSp+HegjcL/DBbtBsuqOKYSvg0E/f3VxhcNZ58yq5VmNw5CTk3pcdhEMxT+DuyTusl9YDznosK8LdGrqTozmqmCzEFC5wWLdjh8tLNBc5Bif8AGWqTuiRDDsXrEy2GSx4gpzh0DTs6WIotLPmXynM8iCVPTAhoAY3aypceOAphxa0Uc3pqgwHHE7bRLLOMyQq3uKZH0mw6vk/6ZEkuxU/dAIJsEMC0NREMfWCkEwN150AJI/XFDVZH4FgR/z+IhNtEA5tGZZiIK/42CYV295iG2NsS41txrFtPP4CiLg6Onh1/AOW8A5j2jJ12wAAAABJRU5ErkJggg=="/></a><a href="mailto:hello@darwinia.network" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJ1BMVEVHcEx7cK96cK97cK57cK56b697cK57cK57cK98cLB8ca97cK97cK7X/FnnAAAADHRSTlMAcmbD4BTzooYoQlTd6cQGAAABcElEQVQ4y83VP0+DUBAA8GubhkKXOpg4dPADdCyDkc04kDBgSvwAJg41DLgzkLg6OBhnJ1ydOrmY9wLV3ofyoIX3R3ir3kKbH+X13bs7AOBqiR1xcQwUgxg7o5gRptgTJf0Qe2MG1/14C/N+/ASvHxkE/cgBDfF3yI7UOPEk3IIWjwI5JqpZGLToeiyUbeyxVYuZhb6MESaTFk8hLV6F2cEWhhIO8EZgTicpI3xg1tgQd6CiE5ftNqolFIRndJtt+KCjHfCn/Tbqq4qwwjsQT9DQjuu1gyLsQKomSvGGKqcLKZ3nb1XldOAUOTVGsdx/0zBnIVW/D5vv32jHbn0DOHWaVYw4/Uv7nT4t1jqOvXWTvkmVBQVH0pmllxqmO3FkI1pBxslhr4cqcRVcKPUXMRkdtfzsOBGYvTC1NPNSFNhZ4Ko4xYcWCx5qFT+X2uFLbwdLQn5vaKT/1PbGIWUcb8bBaBypxmFsHOPmF4Dh1fEDXvxFF7KNXsoAAAAASUVORK5CYII="/></a></div></div><div class="social"><a href="https://twitter.com/DarwiniaNetwork" class="twitter-follow-button">Follow @DarwiniaNetwork</a></div><a class="github-button" href="https://github.com/darwinia-network/darwinia" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/docs/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2020 Darwinia Network</section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>0009 Dawinia Liquid Kton Reward · Darwinia Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="- rfc: 9"/><meta name="docsearch:language" content="zh-CN"/><meta property="og:title" content="0009 Dawinia Liquid Kton Reward · Darwinia Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.darwinia.network/docs/"/><meta property="og:description" content="- rfc: 9"/><meta property="og:image" content="https://docs.darwinia.network/docs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.darwinia.network/docs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docs/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://docs.darwinia.network/docs/blog/atom.xml" title="Darwinia Documentation Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://docs.darwinia.network/docs/blog/feed.xml" title="Darwinia Documentation Blog RSS Feed"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-159909608-2', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/docs/css/main.css"/><script src="/docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docs/zh-CN"><img class="logo" src="/docs/img/logo.png" alt="Darwinia Documentation"/></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/blog/" target="_self">动态</a></li><li class="siteNavGroupActive"><a href="/docs/docs/zh-CN/wiki-intro" target="_self">知识库</a></li><li class=""><a href="/docs/docs/zh-CN/crab-home" target="_self">Crab 网络</a></li><li class=""><a href="/docs/docs/zh-CN/dev-home" target="_self">开发者</a></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/docs/img/language.svg" alt="Languages icon"/>中文</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/docs/docs/en/rfc-0009-dawinia-liquid-kton-reward">English</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(event) {
+          event.preventDefault();
+
+          if (languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>RFC</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">概述<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wiki-intro">达尔文网络介绍</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wiki-faq">常见问题</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wiki-community">社区</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wiki-roadmap">路线图</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wiki-tut-index">教程</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wiki-tool-index">工具集</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/misc-sample">示例文章</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wiki-contribute">参与内容贡献</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">深入理解达尔文网络<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wp-home">概述</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">RFC</h4><ul><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wiki-rfc-index">RFCs</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/rfc-0001-darwinia-developement-structure">0001 Darwinia Developement Structure</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/rfc-0007-dawinia-token-staking-model">0007 Dawinia Token Staking Model</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/docs/zh-CN/rfc-0009-dawinia-liquid-kton-reward">0009 Dawinia Liquid Kton Reward</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/rfc-0010-darwinia-cross-chain-nft-bridge-protocol">0010 Darwinia Cross Chain Nft Bridge Protocol</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/rfc-0011-using-harberger-tax-to-find-price-for-xclaim-vault-collaterals">0011 Using Harberger Tax To Find Price For Xclaim Vault Collaterals</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/rfc-0012-darwinia-bridge-core-interoperation-in-chainrelay-enabled-blockchains">0012 Darwinia Bridge Core Interoperation In Chainrelay Enabled Blockchains</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/rfc-0013-darwinia-cross-chain-nft-standards">0013 Darwinia Cross Chain Nft Standards</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/rfc-0014-darwinia-token-migration-by-cross-chain-redeem-protocol">0014 Darwinia Token Migration By Cross Chain Redeem Protocol</a></li></ul></div><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wiki-glossary">术语表</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">教程列表<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/docs/zh-CN/wiki-tut-p1">教程1</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/darwinia-network/rfc/edit/master/RFC/src/0009-dawinia-liquid-kton-reward.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">0009 Dawinia Liquid Kton Reward</h1></header><article><div><span><ul>
+<li><p>rfc: 9</p></li>
+<li><p>title: 0009-dawinia-liquid-kton-reward</p></li>
+<li><p>status: Abandoned</p></li>
+<li><p>desc: 给流动KTON分发RING收益</p></li>
+<li><p>功能描述: 给流动KTON分发RING收益</p></li>
+<li><p>开始时间: 2019-05-13</p></li>
+<li><p>RFC PR: None</p></li>
+<li><p>Github Issue: None</p></li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="概要"></a><a href="#概要" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>概要</h1>
+<p>在达尔文网络Solo模式设计中，需要给全部KTON进行RING收益的分发，这意味着收益分发前后KTON都是可以转账和流动的，即需要可以支持给流动KTON进行RING收益的分发。</p>
+<p>由于分发收益时，需要明确确定收益所有权的界限，因此在分发收益时，一般都需要锁定权益通证，以方便清算。但是在达尔文网络Solo模式中，需要支持KTON可以流动，因此RING收益如果想要做到实时，需要将颗粒度放小，在任何KTON发生转账前后进行清算。</p>
+<p>以太坊中的ERC20的转账，只需要记录balance的变化即可，但在KTON中，需要记录其当前收益的情况，以方便清算。可以理解为:</p>
+<h2><a class="anchor" aria-hidden="true" id="kton转账模型"></a><a href="#kton转账模型" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>KTON转账模型</h2>
+<p>通常原生代币的转账可以理解为</p>
+<pre><code class="hljs css language-angular2"><span class="hljs-attr">Normal_Transfer</span> = Sender_Output + Receiver_Input
+</code></pre>
+<p>KTON的转账可以理解为</p>
+<pre><code class="hljs css language-angular2">KTON_Transfer = Reward_Settlement(<span class="hljs-name">Sender_KTON_Output</span>) + Sender_KTON_Output + Receiver_KTON_Input + Reward_Settlement(<span class="hljs-name">Receiver_KTON_Input</span>)
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="参考以太坊p3d的reward_settlement做法"></a><a href="#参考以太坊p3d的reward_settlement做法" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>参考以太坊P3D的Reward_Settlement做法</h3>
+<p>在P3D Token中，没有Transfer方法，只有Withdraw和Deposit方法，但实际上Transfer方法可以通过组合的方式得出，也就是说</p>
+<p>Transfer(sender, to) = sender.Withdraw + to.Deposit</p>
+<p>因为P3D中也存在收益分配的做法，因此Withdraw和Deposit中也需要进行Reward_Settlement操作.</p>
+<p>即</p>
+<pre><code class="hljs css language-angular2"><span class="hljs-variable"><span class="hljs-class">sender</span>.Withdraw</span> = <span class="hljs-variable"><span class="hljs-class">sender</span>.Reward_Settlement</span>(<span class="hljs-variable">Output</span>) + <span class="hljs-variable"><span class="hljs-class">sender</span>.normal_withdraw</span>(<span class="hljs-variable">Output</span>)
+</code></pre>
+<pre><code class="hljs css language-angular2"><span class="hljs-keyword">to</span>.Deposit = <span class="hljs-keyword">to</span>.normal_deposit(<span class="hljs-keyword">Input</span>) + <span class="hljs-keyword">to</span>.Reward_Settlement(<span class="hljs-keyword">Input</span>)
+</code></pre>
+<p>在KTON没有发生转账的情况下，也有可能会发生Reward_Settlement:</p>
+<pre><code class="hljs">- 有收益进账，需要进行分配
+    对于这种情况，如果每一次收益分配时，都对每个KTON持有者的收益余额进行计算，会消耗大量的计算资源，因此不切实际。改进的办法是，KTON持有者的收益都放入一个池子，在需要清算时再针对单个KTON持有者进行计算。
+    因此，收益进账后，只有收益池的总额发生了变化。
+- KTON持有者Claim收益
+    但某一个KTON持有者希望Claim收益时，会根据收益池RING总量，该持有者的KTON数量，KTON总量，按比例计算出可以Claim的收益，并将该次收益提现记录进该账户已提现的总量。
+    
+    该账户可提现数量 = 该账户可提现数量(已清算 + 未清算) - 该账户已提现数量
+</code></pre>
+<h1><a class="anchor" aria-hidden="true" id="动机和目的"></a><a href="#动机和目的" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>动机和目的</h1>
+<ul>
+<li>提供一个可以给流动性原生通证清算收益的技术方案</li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="参考和实现"></a><a href="#参考和实现" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>参考和实现</h1>
+<h2><a class="anchor" aria-hidden="true" id="代码库"></a><a href="#代码库" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>代码库</h2>
+<p><a href="https://github.com/darwinia-network/darwinia/tree/master/srml/kton">https://github.com/darwinia-network/darwinia/tree/master/srml/kton</a></p>
+<h2><a class="anchor" aria-hidden="true" id="主要特性wip"></a><a href="#主要特性wip" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>主要特性[WIP]</h2>
+<ul>
+<li>支持转账</li>
+<li>支持Staking收益分配</li>
+<li>支持领取收益</li>
+<li>收益分配可以实时进行</li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="缺点"></a><a href="#缺点" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>缺点</h1>
+<ul>
+<li>转账时需要多出一定的链上收益清算计算量</li>
+<li>如果KTON持有者的账户是合约账户，那么目前的RING收益只能该合约账户去领取，但是合约账户是否支持是个问题。</li>
+<li>本解决方案范围不包括在其他公链(例如以太坊或者波场)上的KTON收益分配，对于其他网络上的KTON，应该会统一在达尔文中继链上创建一个账户，用于领取收益，具体的收益则在对应公链上发生，例如目前进化星球基于状态通道的收益分配方式并不会发生变化，好处是相应的KTON也可以得到收益。</li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="理由"></a><a href="#理由" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>理由</h1>
+<p>具体Staking的设计参考RFC-0007。具体的技术方案则参考了P3D的实现。P3D没有支持转账方法，有其业务层面的考虑，也有可能因为转账操作的燃料费消耗考虑。
+但对于KTON这样的原生通证，可以再SRML层面实现。</p>
+<h1><a class="anchor" aria-hidden="true" id="现有技术"></a><a href="#现有技术" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>现有技术</h1>
+<h1><a class="anchor" aria-hidden="true" id="以太坊上一些常见的收益分配方案可以作为参考"></a><a href="#以太坊上一些常见的收益分配方案可以作为参考" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>以太坊上一些常见的收益分配方案可以作为参考</h1>
+<h2><a class="anchor" aria-hidden="true" id="erc-20回购销毁分红法"></a><a href="#erc-20回购销毁分红法" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ERC-20回购销毁分红法</h2>
+<p>对通证进行销毁，其实是一种变相等价的分红方法，其他通证持有人手上的通证数量没有变化，但是比例上升，且供应量减少但对应系统的价值没有变化，本质上其实也是一种分红，具体案例参考BNB回购销毁分红。</p>
+<p>该方法的缺点在于，需要分红通证和权益通证之间有较好的流通性市场，才能通过回购的方式将分红通证兑换成权益通证，进而将权益通证销毁进行分红，否则不适合使用此方法。</p>
+<p>另外，虽然数学上回购销毁几乎等同于分红，但是从市场感知上不明显，从普通用户视角来看，不如看到账面上余额数字的增加来得容易感知。所以，实际效果上回购销毁不如直接分发。</p>
+<h2><a class="anchor" aria-hidden="true" id="erc-20冻结转账p3d分红方法"></a><a href="#erc-20冻结转账p3d分红方法" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ERC-20冻结转账(P3D)分红方法</h2>
+<p>将主要以P3D为例解释这种通过合约进行分红的方法。</p>
+<p>P3D严格意义上不同于ERC20通证，因为不支持通证转账功能，只存在购入和卖出两种方式变更通证持有者的余额。P3D因为这种简化反而对分红方法带来了简化，也就是只需要在通证持有者余额变化时更新持有者的分红数量，实现精确的合约分红。</p>
+<p>具体实现是，维护以下账本，以权益通证P3D和分红币ETH为例：</p>
+<p>Total_ETH_Dividends_Balance,  所有历史分红的总和，只会增加不会减少。每次分红的时候会增加。
+My_ETH_Dividends_Balance_Claimed[address], 某P3D持有者放在系统保险箱里的ETH分红余额，刚开始为0，但是每次持有者P3D余额变化（购入，卖出）的时候ETH分红余额会更新并增加，持有者可以从中领取分红到自己的钱包，并相应减少。</p>
+<p>Last_Claim_Total_ETH_Dividends_Balance[address], 某P3D持有者上一次Claim时，Total_ETH_Dividends_Balance的值，每次持有者余额变化（购入，卖出）的时候会更新。
+每次持有者余额变化（购入，卖出）的时候，操作之前的P3D余额为balance_before, P3D总额为balance_total_before，操作之后的P3D余额为balance_after, P3D总额为balance_total_after，持有者的地址为address。则首先会进行第2、3账本的更新。</p>
+<pre><code class="hljs"><span class="hljs-symbol">My_ETH_Dividends_Balance_Claimed</span>[<span class="hljs-keyword">address] </span>+= {Total_ETH_Dividends_Balance - Last_Claim_Total_ETH_Dividends_Balance[<span class="hljs-keyword">address]} </span>* [<span class="hljs-keyword">balance_before/balance_total_before]
+</span><span class="hljs-symbol">Last_Claim_Total_ETH_Dividends_Balance</span>[<span class="hljs-keyword">address] </span>= Total_ETH_Dividends_Balance
+</code></pre>
+<p>进行其他P3D余额的变化</p>
+<p>优点，去中心化方式，合约分账分红。缺点，可能需要锁定转账功能。</p>
+<p>ERC20中持有者余额变化频繁，可以通过转账，发行，销毁等方式进行，如果每次转账都需要触发分红合约，会增加不必要燃料费，并增加合约复杂度，并且大多数ERC20通证并不支持在转账交易中做额外的事情。(部分ERC223可能支持，KTON的具体实现也比较复杂，友好支持程度偏悲观)。除非要求ERC20代币锁定之后，可以使用这个方法。</p>
+<p><a href="https://etherscan.io/address/0xb3775fb83f7d12a36e0475abdd1fca35c091efbe#code">https://etherscan.io/address/0xb3775fb83f7d12a36e0475abdd1fca35c091efbe#code</a></p>
+<h1><a class="anchor" aria-hidden="true" id="问题"></a><a href="#问题" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>问题</h1>
+<p>[WIP]</p>
+<h1><a class="anchor" aria-hidden="true" id="未来的可能性"></a><a href="#未来的可能性" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>未来的可能性</h1>
+<ul>
+<li>做成一个通用的SRML</li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="参考"></a><a href="#参考" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>参考</h1>
+<ul>
+<li>[1] <a href="https://github.com/darwinia-network/rfcs/issues/6">RFC Issue</a></li>
+<li>[2] <a href="https://etherscan.io/address/0xb3775fb83f7d12a36e0475abdd1fca35c091efbe#code">P3D代码实现</a></li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/docs/zh-CN/rfc-0007-dawinia-token-staking-model"><span class="arrow-prev">← </span><span>上一篇</span></a><a class="docs-next button" href="/docs/docs/zh-CN/rfc-0010-darwinia-cross-chain-nft-bridge-protocol"><span>下一篇</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#kton转账模型">KTON转账模型</a><ul class="toc-headings"><li><a href="#参考以太坊p3d的reward_settlement做法">参考以太坊P3D的Reward_Settlement做法</a></li></ul></li><li><a href="#代码库">代码库</a></li><li><a href="#主要特性wip">主要特性[WIP]</a></li><li><a href="#erc-20回购销毁分红法">ERC-20回购销毁分红法</a></li><li><a href="#erc-20冻结转账p3d分红方法">ERC-20冻结转账(P3D)分红方法</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><div><h5>Docs</h5><a href="/docs/docs/zh-CN/doc1.html">Getting Started (or other categories)</a><a href="/docs/docs/zh-CN/doc2.html">Guides (or other categories)</a><a href="/docs/docs/zh-CN/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/docs/zh-CN/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><a href="/docs/" class="nav-home"><img src="/docs/img/logo.png" alt="Darwinia Documentation" width="160"/></a><div class="share-links"><div><a href="https://medium.com/@DarwiniaNetwork" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJFBMVEVHcEx7cK97cK98bbZ7ca57ca97ca98cK97ca97cK57ca97cK5wzXcXAAAAC3RSTlMA6c8Mn1yPbyW6RucScUEAAAExSURBVDjL7ZShb8JQEMZfgG60iqVbQlJDgqxhODKDmJvBz5CQYDB4TBNkzTxmHlUGpI/753jfvZUWesUQHKeu3y/Xu/e9axVdCfWAN0P9iQj/pfyB4VYh1pZp5PVV/to5hJqFO+SDQs8DBMdCH4VhASYRlIDzsUnds2m7KF1wGuUdVKHR+2keAT6dMgE2s3kuoQftC/Msy9AZGS3GPBMBduwJdN0XIHzwkPwJkI8Qku9KkA//TeNYhEO2IZqJMDXis1aBCPfw/s0hESY9o85dGdobjysguzqrgGx+UAE31iMZ0i+7W4Yp7rLD91KGI+McdnAhwD3viMY81Lrcvh8jmB2PvGxLC3u7gTl9omGDqM2fRj+HKa9XQOmHLcxKGb7yh2WariiZ2ggf/6E7w5crcQRAZIKOcJdRHwAAAABJRU5ErkJggg=="/></a><a href="https://t.me/DarwiniaNetwork" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAIVBMVEVHcEx7cK95cK97cK57cK57cK98cK97cK97cK57cK97cK6mrj9uAAAACnRSTlMAhw7iKK5Iye5eWDkJwgAAAR1JREFUOMvt1b9rwkAUB/Bvok3rJtR2uCkZiq2b0EGcshU6FQcHp4Bbx9JFN0E6ZAod3UIIhvdXej+C7em7m9zaN+TgPtzdy0vuDuEtOWIcY0jO+IBwY4mpGyuQJ/7x4jh/cmI1QOjCOoMTxymAiMc5VAQcyuWAlxRXDNaFtOQL6JzjRi83kQmNznClVgvFVj7fT7AZ6FSWlRoubNwX2hJ6Vs3CwjLVFk33sWpzC42FC7kDZHTtwptJl2QGRjZW97LvgWhmFeiY7Sbr5VRrOxbo5z2bNdGbwRvuY5fG8MphOxA7DvstCg6LFtc+zDnMcBf/LpCFaaDr3uNR6KkDFhP1q8S4ZlFn+YlH93ZovsXfOxO8h7H3GPdeAL6r4wA5SoNsrYNlIwAAAABJRU5ErkJggg=="/></a><a href="https://twitter.com/DarwiniaNetwork" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJFBMVEVHcEx7cK56bbB7cK57cK57cK97cK97b697cK57cK97cK97cK6/O/qOAAAAC3RSTlMA8AngmXxTGcgxrQuz9RgAAAHNSURBVDjLjVW7S8NAGD+LbY1TkZaCWSKIoG6C9dFFpBW0SwU3l6AgYpeqILgp4tTFB04uRUGETiFGkt4/5+Xu+y53uTT4m5L73fd+HCESy0cPtrfZfiImChc25fC+DK58SCXW+yk5haO05mjkKdXQULlFmsKuYnCQJsPE7Cs1sIGcZZukj6LXlE4ULQyyyFCEM00zscPJXjb5y7U2s0k/1lukE9Bl5KV+NN9CTXVGHutZdYg1oLU48oCZ5BmIbCWA4t4SGC3xw+GzINdE6OLPJbPCuNWEf57PNg9vSBbAsxXeIo6a7Qp5x3TE9R5rZYrA2Tt2ck7pj1amgHTgEsPbPUgKJ9lVUZJQnN5qZEiEl98faktBRn0i1LtXKglF9IhaPMQM5BLIOY1cRUkbHFPRQ7KZFE9ihA5Bd42V4Sljj0ESaHXfiITZglpHilbsjQASj23KAcqYwBR8JSkqYctUoNjMNTetlRVb3vNhJsuyj11oMGXW5VjFbQHuPgJXkvMYgInx2QsmoCNbuI4hNxxz43TlIFVPYu5mlBokrMF26+DTGMH84c0d+9yFoeQkgSc3a4bo1v/WW+5izF+p+ctYS2qtn/MAOBnvg2U8HX8bGacuzEIM4QAAAABJRU5ErkJggg=="/></a><a href="https://github.com/darwinia-network" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAKlBMVEVHcEx7cK57cK57cK58bq57cK57cK5/a7F7cK97cK57cK98cbB7cK97cK5qBv59AAAADXRSTlMA9OK4FZ5zCUXNXSmEsKrC2AAAAglJREFUOMt1lLtLxEAQxhfNmXvYiIXIIQiCjQbEwsqDu1JEsFIbQTxULAQFFTwsTtFCULAQ5JSD66wEBRsLwUpsLJJ7cA/3f3F2ZpPsbuIUybK/7O7MN9+GsSAyW7NDQxMrLywmLh2O4a1FkL3Jg5jcN6DCgOrsnWvxqLIBbsSGcmDOhPXw2AUeiTufWdUo7OQlPOExcS/hehxsEkvD0B2L0BrCVxg1Mrvh9PTFBzyzCEUdt4xd+Rs8MNYnqhEsKT5ehkHx+42xxet5KDEh5sowlxKDT13NQU67sRtDrkDOtjwydiUcmsEEZ3TYj5MvsiHjOkzJ1tC7rEOsADJaUrQKAxVtULI9ExYo3Z+YfKQKv7TBhgnTdFiVkjbCwoYztHI+4mPRAQ+fPOp/scZl/H/IaWX8ti7BSEI2R+iEfjH186hjyyaUPUMRRkzYRyLsiVfLhM80i8K7RrqWQ8IfxDkBdYfD+nlMQ3/kijS5fFVlR/6FsOmWeIpRkvRfcfeFI5qHsE3nyWclec9/YfwBq5Kw3J3DlK2if+F6lFkL65L/geD/IIxuwZe1RHDn7IJkVDtoNG5XA4ETEnZ977fZqTNaVg3t6wJa1U1vQW1S0TPtltkEs6FJm4ryXL89UMjw17YGu6G/NX9iHYpxzk04pWaY02Fda37aUaFnuPHYCaG3Y1qqVPFHlaB5f4TVPVm1Z2ZDAAAAAElFTkSuQmCC"/></a></div><div><a href="https://bihu.com/people/1100617" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJ1BMVEVHcEx7cK56cq97cK97cK97cK97ca57cK57cK58cK97cK57cK97cK75Og5xAAAADHRSTlMA7g+TrSJnethIxTKkC5eQAAABvElEQVQ4y5WVv0tCURTHD2aWOUVUBG+IGsImESIIl8gmHYTaaqihWhqkGhuiJYI3SEM0NAehg0VtLaLpy+4f1T3X++O8e98V+i763sf3zo97zlcAqtXZu2XwaCpgrOlh2ZBxFRNZroWMdY4SWKrERhq2XXjMlLpOUk/MaMFi+4zqNV4gi2uXsExgwU7dLoIqakg2WWWuerURLLEkLQmWTmSsI3rxbAJtnl6Z1G4R6ohzGCangwwQBvEUdHpDvFK/VKeRUUEI/NFln8uMCMQH82cnOBAO7PFve7LnVRvO8zERqRUADm1YUAV3ASZsWIOUrKkBWQtGOg92I0s3kL9sWsJfgBUhDQcqDdk2JXGnD/Clhu9/cOxr4wkdvPPT+fSVwqPMkCa0IRWaJliQt+9NhUzb8JtPiHi0jnlbEI9sjbetwj9bNsQnIPf4AOJQonJ5m8K+ru1a3qEDpnZnghEYxtfdbBWI8GpwcbPyesYjMol4vDuXW2YdxAGsJy8SjhzvcGvMlrlLL9iFxy5QGx6jQTU9FoW695gbatFji4nmR/wmwTazoe1P4HoccTbXHYsek8dyK75/B/gIXujlHztymte5NqsQAAAAAElFTkSuQmCC"/></a><a href="https://weibo.com/DarwiniaNetwork" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJFBMVEV7cK5HcEx7cK57cK17cK97cK97cK97cK57cK57cK97ca97cK6hJEZ6AAAADHRSTlP/AOYQxHoqZ6Y/UZKe82coAAACIUlEQVQ4y41VvW/TUBC/Oi5NYfrxkpC0i0MoArE0FahUXXAkvtSFAAHERPioBCxEUCTEElhYCUggxFIzdcRC4u/j7n3Ez5FtcYNl3+/u3t3v7p0J2B5QgZx5DRDWIiqUIGHwFpXIMmiNSiWhrXKwR6/KwRW6Ug6GFJWDQYHu3OjgY5n9CbC8LAFrAuJyMbiqQRRXEYwGN5jXcnKCO4uu15/szIsOx2j42F8+SCvC+w8i6qHjYTclC61YAnYpBKJ8dVA6XQVMaYbfXme1mK86NinNMjprsJaQd5do2KAYh85xbMBOcI+fnylep+4ctI5AXx5N6growo7hS4viNoe1w3U8h3HOq49pyBlrGeZBXe3M1hka3fOD0Tsdvy3KScs4HhPNtu5+8KlvSdx4k0XddWRt8MdPrz9s3IzmA3WN0ac+rYozu/AVO1NLiJr3jo+8yHxK/br9Mb88cmAX0oBUZ3xoh2jdgR+E78CU07DdO+XAVOxWhLZEK+vwxisV+xpU/+SSJqfue8YCdtU0vDSRA3SQdpYQg9xBmphwMvJb2Yg32YINEpNl6s97CBVRranP2uRPLlhlk5ew4TK+zwwzPTe/9u5L3ImU+cU4uj5b5n9R8BY4ImOUu3/noW4TnY7MDUInvwr+QB2JZk9muzVduHJyi/Z/6MFcxFiuuul8Vrhe9h5+23/xfkD/LZVLqnK9VS7GypVauYwr13j1D6Di1/EPT15bwQ40s+UAAAAASUVORK5CYII="/></a><a href="#" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJ1BMVEVHcEx7cK57cK97cK56cbB7cK57cK97cK97cK57cK57cK97cK57cK5LMTsCAAAADHRSTlMA32q3EDaNTe/LoSSkSkY9AAAByUlEQVQ4y32VO0/DMBCAr6UvqQsIUIXIUCEQSwcojB1SsSGGwIDKY0CwQNWhA0OLWFCRkCADFLF1KEIMoA4ZWaOqJS3+UZxjO3GeN1zsfPH5fHc5A0Byk4TI/CqgZBUSKlYRYYlEyBgXkkgpQjUaPkVbpXYr0dAEJRoScEZLWy9RsKvhqdJXofATmByHwDcQchSAY3Cl4YdFCSZ9UF7oiTWFG/gqZQOqMx5oGQD53jI1qeN3KUWG1OoMmaLeI7+ob2X454MJGT6DMJvV+55NEZ55nD2of8hQPmX+cnK+vvLuwqbLUo2uSp+HegjcL/DBbtBsuqOKYSvg0E/f3VxhcNZ58yq5VmNw5CTk3pcdhEMxT+DuyTusl9YDznosK8LdGrqTozmqmCzEFC5wWLdjh8tLNBc5Bif8AGWqTuiRDDsXrEy2GSx4gpzh0DTs6WIotLPmXynM8iCVPTAhoAY3aypceOAphxa0Uc3pqgwHHE7bRLLOMyQq3uKZH0mw6vk/6ZEkuxU/dAIJsEMC0NREMfWCkEwN150AJI/XFDVZH4FgR/z+IhNtEA5tGZZiIK/42CYV295iG2NsS41txrFtPP4CiLg6Onh1/AOW8A5j2jJ12wAAAABJRU5ErkJggg=="/></a><a href="mailto:hello@darwinia.network" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJ1BMVEVHcEx7cK96cK97cK57cK56b697cK57cK57cK98cLB8ca97cK97cK7X/FnnAAAADHRSTlMAcmbD4BTzooYoQlTd6cQGAAABcElEQVQ4y83VP0+DUBAA8GubhkKXOpg4dPADdCyDkc04kDBgSvwAJg41DLgzkLg6OBhnJ1ydOrmY9wLV3ofyoIX3R3ir3kKbH+X13bs7AOBqiR1xcQwUgxg7o5gRptgTJf0Qe2MG1/14C/N+/ASvHxkE/cgBDfF3yI7UOPEk3IIWjwI5JqpZGLToeiyUbeyxVYuZhb6MESaTFk8hLV6F2cEWhhIO8EZgTicpI3xg1tgQd6CiE5ftNqolFIRndJtt+KCjHfCn/Tbqq4qwwjsQT9DQjuu1gyLsQKomSvGGKqcLKZ3nb1XldOAUOTVGsdx/0zBnIVW/D5vv32jHbn0DOHWaVYw4/Uv7nT4t1jqOvXWTvkmVBQVH0pmllxqmO3FkI1pBxslhr4cqcRVcKPUXMRkdtfzsOBGYvTC1NPNSFNhZ4Ko4xYcWCx5qFT+X2uFLbwdLQn5vaKT/1PbGIWUcb8bBaBypxmFsHOPmF4Dh1fEDXvxFF7KNXsoAAAAASUVORK5CYII="/></a></div></div><div class="social"><a href="https://twitter.com/DarwiniaNetwork" class="twitter-follow-button">Follow @DarwiniaNetwork</a></div><a class="github-button" href="https://github.com/darwinia-network/darwinia" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/docs/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2020 Darwinia Network</section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>
