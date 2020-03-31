@@ -2,12 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.darwinia.network/docs/blog</id>
     <title>Darwinia Documentation Blog</title>
-    <updated>2020-03-25T06:00:00.000Z</updated>
+    <updated>2020-03-31T06:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.darwinia.network/docs/blog"/>
     <subtitle>The best place to stay up-to-date with the latest Darwinia Documentation news and events.</subtitle>
     <logo>https://docs.darwinia.network/docs/img/logo.png</logo>
     <rights>Copyright © 2020 Darwinia Network</rights>
+    <entry>
+        <title type="html"><![CDATA[Darwinia Network Progress Updates 2020 Q1]]></title>
+        <id>https://docs.darwinia.network/docs/blog/2020/03/31/darwinia-progress-updates-2020-q1.html</id>
+        <link href="https://docs.darwinia.network/docs/blog/2020/03/31/darwinia-progress-updates-2020-q1.html"/>
+        <updated>2020-03-31T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p><img src="/docs/blog/assets/darwinia-banner.png" alt=""></p>
+<p>The recent coronavirus outbreak has a huge impact worldwide and it also caused difficulties and uncertainties to the crypto world.</p>
+]]></summary>
+        <author>
+            <name>@DarwiniaNetwork</name>
+            <email/>
+            <uri>http://twitter.com/DarwiniaNetwork</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Darwinia 与 MathWallet 正式达成战略合作伙伴关系]]></title>
         <id>https://docs.darwinia.network/docs/blog/2020/03/25/darwinia-mathwallet-partners.html</id>
@@ -23,13 +37,13 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Darwinia 将对 RING & DOT 持有者进行空投]]></title>
-        <id>https://docs.darwinia.network/docs/blog/2020/03/23/crab-airdrop-snapshot.html</id>
-        <link href="https://docs.darwinia.network/docs/blog/2020/03/23/crab-airdrop-snapshot.html"/>
+        <title type="html"><![CDATA[Darwinia will Airdrop the DOT holders]]></title>
+        <id>https://docs.darwinia.network/docs/blog/2020/03/23/crab-airdrop-snapshot-en.html</id>
+        <link href="https://docs.darwinia.network/docs/blog/2020/03/23/crab-airdrop-snapshot-en.html"/>
         <updated>2020-03-23T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p><img src="/docs/blog/assets/2020-03-23-crab-airdrop-snapshot-1.png" alt=""></p>
-<p>Crab 网络初始供应量中一部分 cRING 将分发给 RING &amp; DOT 的持有者，RING &amp; DOT 的持有者可以免费获得 cRING 空投。</p>
-<p>Darwinia 官方已于 2020年3月20日，对 RING &amp; DOT 的持有者进行了快照，RING &amp; DOT的持有者可在 Crab 网络上线后自行查询/领取。</p>
+<p>A portion of the initial supply of the Crab‘s cRING will be distributed to the holders of RING &amp; DOT, they will get cRING (Airdrop) for free.</p>
+<p>Darwinia took a snapshot of RING &amp; DOT holders on March 20, 2020. RING &amp; DOT holders can check / receive cRING after Crab launched.</p>
 ]]></summary>
         <author>
             <name>@DarwiniaNetwork</name>
@@ -38,13 +52,13 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Darwinia will Airdrop the DOT holders]]></title>
-        <id>https://docs.darwinia.network/docs/blog/2020/03/23/crab-airdrop-snapshot-en.html</id>
-        <link href="https://docs.darwinia.network/docs/blog/2020/03/23/crab-airdrop-snapshot-en.html"/>
+        <title type="html"><![CDATA[Darwinia 将对 RING & DOT 持有者进行空投]]></title>
+        <id>https://docs.darwinia.network/docs/blog/2020/03/23/crab-airdrop-snapshot.html</id>
+        <link href="https://docs.darwinia.network/docs/blog/2020/03/23/crab-airdrop-snapshot.html"/>
         <updated>2020-03-23T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p><img src="/docs/blog/assets/2020-03-23-crab-airdrop-snapshot-1.png" alt=""></p>
-<p>A portion of the initial supply of the Crab‘s cRING will be distributed to the holders of RING &amp; DOT, they will get cRING (Airdrop) for free.</p>
-<p>Darwinia took a snapshot of RING &amp; DOT holders on March 20, 2020. RING &amp; DOT holders can check / receive cRING after Crab launched.</p>
+<p>Crab 网络初始供应量中一部分 cRING 将分发给 RING &amp; DOT 的持有者，RING &amp; DOT 的持有者可以免费获得 cRING 空投。</p>
+<p>Darwinia 官方已于 2020年3月20日，对 RING &amp; DOT 的持有者进行了快照，RING &amp; DOT的持有者可在 Crab 网络上线后自行查询/领取。</p>
 ]]></summary>
         <author>
             <name>@DarwiniaNetwork</name>
