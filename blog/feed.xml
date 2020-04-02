@@ -4,7 +4,7 @@
         <title>Darwinia Documentation Blog</title>
         <link>https://docs.darwinia.network/docs/blog</link>
         <description>The best place to stay up-to-date with the latest Darwinia Documentation news and events.</description>
-        <lastBuildDate>Tue, 31 Mar 2020 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 02 Apr 2020 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -14,12 +14,21 @@
         </image>
         <copyright>Copyright © 2020 Darwinia Network</copyright>
         <item>
-            <title><![CDATA[Darwinia 项目进展 2020 Q1]]></title>
-            <link>https://docs.darwinia.network/docs/blog/2020/03/31/darwinia-progress-updates-2020-q1.html</link>
-            <guid>https://docs.darwinia.network/docs/blog/2020/03/31/darwinia-progress-updates-2020-q1.html</guid>
-            <pubDate>Tue, 31 Mar 2020 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p><img src="/docs/blog/assets/darwinia-banner.png" alt=""></p>
-<p>最近新冠病毒爆发，在全球范围内产生了巨大影响，也给加密世界带来了困难和不确定性。</p>
+            <title><![CDATA[BigONE AMA 回顾 - Darwinia]]></title>
+            <link>https://docs.darwinia.network/docs/blog/2020/04/02/bigone-ama-review.html</link>
+            <guid>https://docs.darwinia.network/docs/blog/2020/04/02/bigone-ama-review.html</guid>
+            <pubDate>Thu, 02 Apr 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/docs/blog/assets/2020-04-02-bigone-ama.jpeg" alt=""></p>
+<p>波卡是自17年创立以来在圈子里热度就不曾下降的项目，近期波卡主网准备上线的消息也在社群中广为流传。今天BigONE就为大家邀请来了Darwinia Co-Founder Alex Chien。</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[BigONE AMA | Dan Reecer From Web3 Foundation]]></title>
+            <link>https://docs.darwinia.network/docs/blog/2020/04/02/bigone-ama-review-en.html</link>
+            <guid>https://docs.darwinia.network/docs/blog/2020/04/02/bigone-ama-review-en.html</guid>
+            <pubDate>Thu, 02 Apr 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/docs/blog/assets/2020-04-02-bigone-ama-en.png" alt=""></p>
+<p>Polkadot is the project that hasn’t lost any attention and popularity from the public since Dr. Gavin founded it in 2017. There’s been claims among the community that Polkadot is launching its mainnet. Today, we are inviting everyone to join the session with Dan Reecer, VP at Web3 Foundation, Global Managing Director for Community and Growth.</p>
 ]]></description>
         </item>
         <item>
@@ -29,6 +38,15 @@
             <pubDate>Tue, 31 Mar 2020 06:00:00 GMT</pubDate>
             <description><![CDATA[<p><img src="/docs/blog/assets/darwinia-banner.png" alt=""></p>
 <p>The recent coronavirus outbreak has a huge impact worldwide and it also caused difficulties and uncertainties to the crypto world.</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Darwinia 项目进展 2020 Q1]]></title>
+            <link>https://docs.darwinia.network/docs/blog/2020/03/31/darwinia-progress-updates-2020-q1.html</link>
+            <guid>https://docs.darwinia.network/docs/blog/2020/03/31/darwinia-progress-updates-2020-q1.html</guid>
+            <pubDate>Tue, 31 Mar 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/docs/blog/assets/darwinia-banner.png" alt=""></p>
+<p>最近新冠病毒爆发，在全球范围内产生了巨大影响，也给加密世界带来了困难和不确定性。</p>
 ]]></description>
         </item>
         <item>
