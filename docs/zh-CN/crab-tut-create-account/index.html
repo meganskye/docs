@@ -97,29 +97,26 @@
 <p><strong>通过json恢复账号</strong></p>
 <p>如创建过账号，且备份过json文件，可直接选择「使用JSON回复」。</p>
 <p><img src="/docs/assets/crab-tut-create-account-4-cn.png" alt="create account"></p>
-<blockquote>
-<p>为了节约存储空间，少于1cRING的账号会被视为尘埃地址，无法进行任何操作。因此，您需要为的地址充值一定数量的cRING，进行操作时请预留一定数量的cRING作为手续费。</p>
-</blockquote>
-<p>**通过「助记词」恢复账号</p>
+<p><strong>通过「助记词」恢复账号</strong></p>
 <p>如忘记JSON文件密码，可通过「助记词」进行恢复。点击「添加账号」，将助记词替换成原先账户的助记词即可。（名称和密码均可重新设置）</p>
 <p><img src="/docs/assets/crab-tut-create-account-5-cn.png" alt="create account"></p>
 </span></div></div><div id="tab-group-7-content-9" class="tab-pane" data-group="group_7" tabindex="-1"><div><span><h3><a class="anchor" aria-hidden="true" id="polkadotjs-浏览器插件"></a><a href="#polkadotjs-浏览器插件" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Polkadot.js 浏览器插件</h3>
 <blockquote>
 <p>Crab网络与Substrate共享相同的<code>Network ID</code>，如果在生成帐户时需要选择网络，请选择<code>Substrate</code>，与<code>Crab Network</code>通用。</p>
 </blockquote>
-<p>polkadot.js 插件在安全性和实用性之间提供了合理的平衡。它提供了一个单独的本地机制来生成您的地址并与Polkadot互动。</p>
-<p>此方法包括安装polkadot.js插件，并将其用作“虚拟保管库”，与您的浏览器分开，以存储私钥，还允许对交易进行签名以及其他类似功能。</p>
 <p><strong>安装浏览器插件</strong></p>
 <p>浏览器插件可用于 <a href="https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd?hl=en">Google Chrome</a> and <a href="https://addons.mozilla.org/en-US/firefox/addon/polkadot-js-extension">FireFox</a>.</p>
-<p>安装插件后，您应该在您的浏览器菜单栏看到橙色和白色的 polkadot.js 图标</p>
-<p>单击扩展中的 Orange P 符号以打开 “帐户管理” 对话框。</p>
-<p>单击 “创建新帐户” 按钮，然后按照说明进行操作。</p>
+<p><img src="/docs/assets/polkadot-js-1-cn.png" alt="polkadot-js"></p>
+<p><strong>新建账户</strong></p>
+<p>单击扩展程序打开 “帐户管理” 对话框，单击「创建新帐户」按钮，然后按照说明进行操作。</p>
+<p><img src="/docs/assets/polkadot-js-2-cn.png" alt="polkadot-js">
+<img src="/docs/assets/polkadot-js-3-cn.png" alt="polkadot-js"></p>
 <blockquote>
 <p>确保将助记词安全保管。您将需要它来访问您的帐户。</p>
 </blockquote>
 <p><strong>设置 Crab网络 的地址</strong></p>
-<p>现在，我们将确保这些地址显示为 Crab 网络 地址。您的地址将根据网络选择而有所不同。</p>
-<p>单击插件窗口顶部的 “选项”。在 “显示地址格式为” 下拉框中选择 “Crab” 或 “Substrate”。</p>
+<p>现在，我们将确保这些地址显示为 Crab 网络 地址。您的地址将根据网络选择而有所不同。单击插件窗口顶部的 “选项”。在 “显示地址格式为” 下拉框中选择 “Crab” 或 “Substrate”。</p>
+<p><img src="/docs/assets/polkadot-js-4-cn.png" alt="polkadot-js"></p>
 </span></div></div><div id="tab-group-7-content-10" class="tab-pane" data-group="group_7" tabindex="-1"><div><span><h3><a class="anchor" aria-hidden="true" id="subkey"></a><a href="#subkey" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Subkey</h3>
 <p>对于熟悉命令行和编译Rust代码的技术高级用户，建议使用Subkey。Subkey允许您在可以编译代码的任何设备上生成密钥。Subkey可能对使用自动运行的设备（而不是运行iOS或Android的设备或其他特定用途的设备）的自动生成帐户有用。不建议一般用户使用。</p>
 <p>安装Subkey <a href="https://substrate.dev/docs/en/ecosystem/subkey#more-subkey-to-explore">install Subkey</a>, 运行：</p>
