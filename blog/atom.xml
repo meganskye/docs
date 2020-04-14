@@ -2,12 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.darwinia.network/blog</id>
     <title>Darwinia Documentation Blog</title>
-    <updated>2020-04-02T06:00:00.000Z</updated>
+    <updated>2020-04-14T06:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.darwinia.network/blog"/>
     <subtitle>The best place to stay up-to-date with the latest Darwinia Documentation news and events.</subtitle>
     <logo>https://docs.darwinia.network/img/logo.png</logo>
     <rights>Copyright © 2020 Darwinia Network</rights>
+    <entry>
+        <title type="html"><![CDATA[Darwinia & MathWallet 联名NFT，限量200个]]></title>
+        <id>https://docs.darwinia.network/blog/2020/04/14/math-nft.html</id>
+        <link href="https://docs.darwinia.network/blog/2020/04/14/math-nft.html"/>
+        <updated>2020-04-14T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p><img src="/blog/assets/2020-04-14-math-nft.png" alt=""></p>
+<p>为了感谢达尔文网络和麦子钱包的社区用户，双方决定限量发放 200 枚 非同质化代币 NFT 至社区。</p>
+]]></summary>
+        <author>
+            <name>@DarwiniaNetwork</name>
+            <email/>
+            <uri>http://twitter.com/DarwiniaNetwork</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[BigONE AMA | Darwinia Co-Founder Alex Chien]]></title>
         <id>https://docs.darwinia.network/blog/2020/04/02/bigone-ama-review.html</id>
