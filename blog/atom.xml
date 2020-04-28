@@ -2,12 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.darwinia.network/blog</id>
     <title>Darwinia Documentation Blog</title>
-    <updated>2020-04-14T06:00:00.000Z</updated>
+    <updated>2020-04-28T06:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.darwinia.network/blog"/>
     <subtitle>The best place to stay up-to-date with the latest Darwinia Documentation news and events.</subtitle>
     <logo>https://docs.darwinia.network/img/logo.png</logo>
     <rights>Copyright © 2020 Darwinia Network</rights>
+    <entry>
+        <title type="html"><![CDATA[sub0 | 达尔文将首次公开「Darwinia Relay」技术细节]]></title>
+        <id>https://docs.darwinia.network/blog/2020/04/28/sub0-online.html</id>
+        <link href="https://docs.darwinia.network/blog/2020/04/28/sub0-online.html"/>
+        <updated>2020-04-28T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p><img src="/blog/assets/2020-04-28-sub0-online.png" alt=""></p>
+<p>波卡社区开发者大会 Sub0 (Sub0 Online: Substrate Developer Community Conference) 将于北京时间4月28日晚18:00开始。</p>
+]]></summary>
+        <author>
+            <name>@DarwiniaNetwork</name>
+            <email/>
+            <uri>http://twitter.com/DarwiniaNetwork</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Darwinia & MathWallet 联名NFT，限量200个]]></title>
         <id>https://docs.darwinia.network/blog/2020/04/14/math-nft.html</id>
