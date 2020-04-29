@@ -23,12 +23,12 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Darwinia & MathWallet 联名NFT，限量200个]]></title>
-        <id>https://docs.darwinia.network/blog/2020/04/14/math-nft.html</id>
-        <link href="https://docs.darwinia.network/blog/2020/04/14/math-nft.html"/>
-        <updated>2020-04-14T06:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p><img src="/blog/assets/2020-04-14-math-nft.png" alt=""></p>
-<p>为了感谢达尔文网络和麦子钱包的社区用户，双方决定限量发放 200 枚 非同质化代币 NFT 至社区。</p>
+        <title type="html"><![CDATA[【链节点 & 链读】波卡生态圆桌论坛 |达尔文回顾]]></title>
+        <id>https://docs.darwinia.network/blog/2020/04/27/chainnode-ama.html</id>
+        <link href="https://docs.darwinia.network/blog/2020/04/27/chainnode-ama.html"/>
+        <updated>2020-04-27T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p><img src="/blog/assets/2020-04-28-sub0-online.png" alt=""></p>
+<p>波卡社区开发者大会 Sub0 (Sub0 Online: Substrate Developer Community Conference) 将于北京时间4月28日晚18:00开始。</p>
 ]]></summary>
         <author>
             <name>@DarwiniaNetwork</name>
@@ -43,6 +43,20 @@
         <updated>2020-04-14T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p><img src="/blog/assets/2020-04-14-math-nft.png" alt=""></p>
 <p>Win Limited NFTs - Math x Darwinia: MathWallet Collectibles Series 5 🎁</p>
+]]></summary>
+        <author>
+            <name>@DarwiniaNetwork</name>
+            <email/>
+            <uri>http://twitter.com/DarwiniaNetwork</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Darwinia & MathWallet 联名NFT，限量200个]]></title>
+        <id>https://docs.darwinia.network/blog/2020/04/14/math-nft.html</id>
+        <link href="https://docs.darwinia.network/blog/2020/04/14/math-nft.html"/>
+        <updated>2020-04-14T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p><img src="/blog/assets/2020-04-14-math-nft.png" alt=""></p>
+<p>为了感谢达尔文网络和麦子钱包的社区用户，双方决定限量发放 200 枚 非同质化代币 NFT 至社区。</p>
 ]]></summary>
         <author>
             <name>@DarwiniaNetwork</name>
@@ -79,12 +93,12 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Darwinia Network Progress Updates 2020 Q1]]></title>
-        <id>https://docs.darwinia.network/blog/2020/03/31/darwinia-progress-updates-2020-q1-en.html</id>
-        <link href="https://docs.darwinia.network/blog/2020/03/31/darwinia-progress-updates-2020-q1-en.html"/>
+        <title type="html"><![CDATA[Darwinia 项目进展 2020 Q1]]></title>
+        <id>https://docs.darwinia.network/blog/2020/03/31/darwinia-progress-updates-2020-q1.html</id>
+        <link href="https://docs.darwinia.network/blog/2020/03/31/darwinia-progress-updates-2020-q1.html"/>
         <updated>2020-03-31T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p><img src="/blog/assets/darwinia-banner.png" alt=""></p>
-<p>The recent coronavirus outbreak has a huge impact worldwide and it also caused difficulties and uncertainties to the crypto world.</p>
+<p>最近新冠病毒爆发，在全球范围内产生了巨大影响，也给加密世界带来了困难和不确定性。</p>
 ]]></summary>
         <author>
             <name>@DarwiniaNetwork</name>
@@ -93,12 +107,12 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Darwinia 项目进展 2020 Q1]]></title>
-        <id>https://docs.darwinia.network/blog/2020/03/31/darwinia-progress-updates-2020-q1.html</id>
-        <link href="https://docs.darwinia.network/blog/2020/03/31/darwinia-progress-updates-2020-q1.html"/>
+        <title type="html"><![CDATA[Darwinia Network Progress Updates 2020 Q1]]></title>
+        <id>https://docs.darwinia.network/blog/2020/03/31/darwinia-progress-updates-2020-q1-en.html</id>
+        <link href="https://docs.darwinia.network/blog/2020/03/31/darwinia-progress-updates-2020-q1-en.html"/>
         <updated>2020-03-31T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p><img src="/blog/assets/darwinia-banner.png" alt=""></p>
-<p>最近新冠病毒爆发，在全球范围内产生了巨大影响，也给加密世界带来了困难和不确定性。</p>
+<p>The recent coronavirus outbreak has a huge impact worldwide and it also caused difficulties and uncertainties to the crypto world.</p>
 ]]></summary>
         <author>
             <name>@DarwiniaNetwork</name>
@@ -151,13 +165,13 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[DARWINIA Final Testnet “Crab” is Coming!]]></title>
-        <id>https://docs.darwinia.network/blog/2020/03/12/crab-coming-en.html</id>
-        <link href="https://docs.darwinia.network/blog/2020/03/12/crab-coming-en.html"/>
+        <title type="html"><![CDATA[Darwinia最后一版测试网络「Crab」即将发布]]></title>
+        <id>https://docs.darwinia.network/blog/2020/03/12/crab-coming.html</id>
+        <link href="https://docs.darwinia.network/blog/2020/03/12/crab-coming.html"/>
         <updated>2020-03-12T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p><img src="/blog/assets/doc19-1.png" alt=""></p>
-<p><strong>Darwinia Crab Testnet (PoC-4) is coming!</strong></p>
-<p>Darwinia Crab Testnet (Crab for short) is the last testnet before Darwinia Mainnet launched, a Canary Network of Darwinia, which provides simulation and test environment for Darwinia’s upgrade and application deployment. The test environment includes not only the software operation environment and network environment required for testing, but also the test economic environment.</p>
+<p>Darwinia Crab Testnet（PoC-4）即将发布！</p>
+<p>Darwinia Crab Testnet（简称 Crab网络）是Darwinia主网上线前的最后一版测试网络，是一个金丝雀网络，为Darwinia的升级和应用部署提供模拟和测试环境，测试环境不仅包含测试所需要的软件运行环境和网络环境，还包括测试经济博弈的经济环境。</p>
 ]]></summary>
         <author>
             <name>@DarwiniaNetwork</name>
@@ -166,13 +180,13 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Darwinia最后一版测试网络「Crab」即将发布]]></title>
-        <id>https://docs.darwinia.network/blog/2020/03/12/crab-coming.html</id>
-        <link href="https://docs.darwinia.network/blog/2020/03/12/crab-coming.html"/>
+        <title type="html"><![CDATA[DARWINIA Final Testnet “Crab” is Coming!]]></title>
+        <id>https://docs.darwinia.network/blog/2020/03/12/crab-coming-en.html</id>
+        <link href="https://docs.darwinia.network/blog/2020/03/12/crab-coming-en.html"/>
         <updated>2020-03-12T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p><img src="/blog/assets/doc19-1.png" alt=""></p>
-<p>Darwinia Crab Testnet（PoC-4）即将发布！</p>
-<p>Darwinia Crab Testnet（简称 Crab网络）是Darwinia主网上线前的最后一版测试网络，是一个金丝雀网络，为Darwinia的升级和应用部署提供模拟和测试环境，测试环境不仅包含测试所需要的软件运行环境和网络环境，还包括测试经济博弈的经济环境。</p>
+<p><strong>Darwinia Crab Testnet (PoC-4) is coming!</strong></p>
+<p>Darwinia Crab Testnet (Crab for short) is the last testnet before Darwinia Mainnet launched, a Canary Network of Darwinia, which provides simulation and test environment for Darwinia’s upgrade and application deployment. The test environment includes not only the software operation environment and network environment required for testing, but also the test economic environment.</p>
 ]]></summary>
         <author>
             <name>@DarwiniaNetwork</name>

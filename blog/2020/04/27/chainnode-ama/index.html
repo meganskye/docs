@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>【链节点 &amp; 链读】波卡生态圆桌论坛 |达尔文回顾 · Darwinia Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="波卡社区开发者大会 Sub0 (Sub0 Online: Substrate Developer Community Conference) 将于北京时间4月28日晚18:00开始。"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="【链节点 &amp; 链读】波卡生态圆桌论坛 |达尔文回顾 · Darwinia Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.darwinia.network/blog/2020/04/27/chainnode-ama"/><meta property="og:description" content="波卡社区开发者大会 Sub0 (Sub0 Online: Substrate Developer Community Conference) 将于北京时间4月28日晚18:00开始。"/><meta property="og:image" content="https://docs.darwinia.network/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.darwinia.network/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night-bright.min.css"/><link rel="alternate" type="application/atom+xml" href="https://docs.darwinia.network/blog/atom.xml" title="Darwinia Documentation Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://docs.darwinia.network/blog/feed.xml" title="Darwinia Documentation Blog RSS Feed"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-159909608-2', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/en"><img class="logo" src="/img/logo.png" alt="Darwinia Documentation"/></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/blog/" target="_self">Blog</a></li><li class=""><a href="/docs/en/wiki-intro" target="_self">Wiki</a></li><li class=""><a href="/docs/en/crab-home" target="_self">Crab Network</a></li><li class=""><a href="/docs/en/dev-home" target="_self">Developers</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/img/language.svg" alt="Languages icon"/>English</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/zh-CN">中文</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(event) {
+          event.preventDefault();
+
+          if (languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Recent posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Recent posts</h3><ul class=""><li class="navListItem"><a class="navItem" href="/blog/2020/04/28/sub0-online">sub0 | 达尔文将首次公开「Darwinia Relay」技术细节</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/blog/2020/04/27/chainnode-ama">【链节点 &amp; 链读】波卡生态圆桌论坛 |达尔文回顾</a></li><li class="navListItem"><a class="navItem" href="/blog/2020/04/14/math-nft-en">Win Limited NFTs - Math x Darwinia</a></li><li class="navListItem"><a class="navItem" href="/blog/2020/04/14/math-nft">Darwinia &amp; MathWallet 联名NFT，限量200个</a></li><li class="navListItem"><a class="navItem" href="/blog/2020/04/02/bigone-ama-review-en">BigONE AMA | Web3 Foundation VP Dan Reecer</a></li><li class="navListItem"><a class="navItem" href="/blog/2020/04/02/bigone-ama-review">BigONE AMA | Darwinia Co-Founder Alex Chien</a></li><li class="navListItem"><a class="navItem" href="/blog/2020/03/31/darwinia-progress-updates-2020-q1">Darwinia 项目进展 2020 Q1</a></li><li class="navListItem"><a class="navItem" href="/blog/2020/03/31/darwinia-progress-updates-2020-q1-en">Darwinia Network Progress Updates 2020 Q1</a></li><li class="navListItem"><a class="navItem" href="/blog/2020/03/25/darwinia-mathwallet-partners">Darwinia 与 MathWallet 正式达成战略合作伙伴关系</a></li><li class="navListItem"><a class="navItem" href="/blog/2020/03/23/crab-airdrop-snapshot-en">Darwinia will Airdrop the DOT holders</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="lonePost"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2020/04/27/chainnode-ama">【链节点 &amp; 链读】波卡生态圆桌论坛 |达尔文回顾</a></h1><p class="post-meta">April 27, 2020</p><div class="authorBlock"><p class="post-authorName"><a href="http://twitter.com/DarwiniaNetwork" target="_blank" rel="noreferrer noopener">@DarwiniaNetwork</a></p></div></header><div><span><p><img src="/blog/assets/2020-04-28-sub0-online.png" alt=""></p>
+<p>波卡社区开发者大会 Sub0 (Sub0 Online: Substrate Developer Community Conference) 将于北京时间4月28日晚18:00开始。</p>
+<!--truncate-->
+<p>1、项目方简介（5 分钟）（可以准备 PPT，5 分钟内对项目方向、项目进度、技术难点、代币经济等内容，进行简单的介绍。）ABCDMP(各 3min)
+答：主持人好，各位嘉宾好，大家好，我是达尔文网络（Darwinia Network）联合创始人Alex。
+大概从2012年开始，我和另外一位Co-Founder Denny就已经开始接触和加入加密社区，Darwinia现在的核心成员一部分都来自Bitshares（比特股）团队，Bitshares也是我们当时参与比较深的一个开源项目，Denny还曾经是Bitshares 1.0的核心开发，当然我们一直保持开放心态，对整个加密生态和其他项目也有不同程度的关注和参与，例如Ethereum, MakerDAO, NEO等等。大概2018年的时候，我们成立了Itering新加坡公司(<a href="https://www.itering.io/">https://www.itering.io/</a>)，现在是Darwinia开源软件的开发商，也是Darwinia的主要开发团队。
+达尔文网络是基于Substrate开发的去中心化异构链跨链桥接网络，专注于建设未来资产互联网络，包括非标资产拍卖市场、稳定币跨链、资产交易兑换等领域。当前较多跨链方案为中心化或半去中心化，难以避免道德风险。基于轻客户端的BTCRelay项目却失败了，这是因为经典轻客户端是线性relay区块，也就是每一个块都要relay，使得维护成本高昂，经济上不可为继。而达尔文Chain Relay是一种新颖的跨链验证Relay，实现了超级轻客户端，使用了Merkle Mountain Range（MMR）区块链头承诺，乐观博弈机制Optimistic Verification Game，Relayer激励模型等技术，可以实现仅需要提交对数数量的区块头及其衍生数据，也就是亚线性的性能。大大提高了效率和经济可用性。甚至可以实现按需relay块头并进行验证的能力。有了高效ChainRelay加持，我们就可以安全构建双向桥，在两个异构链上双向对等搭建智能合约和相互的ChainRelay，由智能合约控制资产锁定、赎回等操作，而验证则通过桥头堡达尔文 ChainRelay实现。与其在每两个链之间搭建直连桥，重复制造轮子，可以通过搭建到达尔文中继链的桥来最容易的实现的“从任何地方来”到“任何地方去”的目标。
+而一旦达尔文成为波卡的平行链，则可直接打通波卡生态和外界的联系。
+从19年开始，我们已经发布了三个版本的测试网络，最近我们上线了最后一版测试网Crab，定位类似于Kusama网络之于Polkadot。这个测试网络将会长久的运营，即使是主网上线之后也会保留，供开发者测试使用。另外Darwinia主网主要的功能已经开发完成，但还需要进行更多的安全审计和测试，此外，我们也在等待Substrate稳定下来，最终主网上线的时间应该会比Polkadot主网稍微晚一点。
+2、谈谈对以太坊生态的看法？波卡生态目前发展情况？有可能超过吗？（第一部分：波卡生态与以太坊生态比较 19:25-19:45）BCDMPA(各 2min) 答：同源性：Gavin本身出自以太坊社区，黄皮书的作者，在以太坊社区有很搞的声望，所以从一定程度上来说是同源的。目标：目标上来看，我觉得说法有不同，但是本质上也并没有太大的区别，以太坊想要实现一台世界计算机，波卡则更偏向web3的目标，都是想建造一个去中心化无需信任的世界。官方力度：以太坊已经度过早期的强力推动期，相对官方背景的基金会以及其他机构相对来说推动力度减弱，基本就是大家自己寻找喜欢或者感兴趣的点，喜欢就去做的状态，也因为实际上已经摸索到了一些应用场景，从早些时候的ICO，到后来的dApp游戏，再到现在的Defi，主题很多，也容易吸引到开发者。波卡则还处于早期的阶段，所以官方驱动的力量比较大，从生态项目资助的各种grant、到开发者培训项目、到社区运营方面的各种活动比较高频。路径差异：智能合约vs链。智能合约开发比较快，容易上手，实现的应用相对比较简单一些，也受EVM的限制，更高级的功能是不太容易实现的。有点像早期的电脑，需要在几K的内存里搞事情，需要压榨系统的每一分能力；substrate开发链则灵活度更大。受局限比较小。这套工具框架的逐渐成熟、以及各种功能的模块逐渐丰富多样起来，门槛也会变低。开发者差异：智能合约开发者Solidity vs Rust开发者。比较灵动的js开发者和比较守规矩的开发者，动态脚本语言和静态编译语言的差别。
+讨论超过不超过不重要，我觉得不是件有意义的事情，超过又如何不超过又如何，关注两个生态如何互惠互利，也包括其他的项目如何能够协作起来，一起推动整个行业的进步，这可能是更有意义的。
+3、基础协议 or 终端 dApp，为波卡生态带来什么？为什么加入 Substrate Builders Program？（第二部分：项目在波卡生态中扮演的角色 19:45-20:05）CDMPAB(各 2min) 答：达尔文作为一个异构链桥接方案提供者，对波卡生态而言是一个强有力的补充。我们知道在波卡生态内，波卡本身作为中继链存在，其他项目已平行链方式接入波卡，并通过波卡实现生态内的互操作性。但这里有一个隐形的约束条件是大家共享波卡的验证人池，在这个基础上互操作性由波卡中继链提供支持。好比大家是一个国家的人，虽然说到是各自的方言，但是差别不大，所以沟通没啥问题。但是，对于外部的异构链，好像就是讲外语的，除了语言以外，文化背景都不一样的，跟他们沟通就不是波卡想要搞定的了。波卡实际上发过一个RFP，也就是提出一个问题请项目团队来解决，它的原来思想是在波卡和每一个外部异构链之间搭一座桥，好比是一个翻译的角色，来解决这个问题。所以这个问题的本质是异构链之间的互操作性问题，达尔文就是来解决这个问题的。
+我们目前的异构链跨链解决方案是基于轻客户端，我们认为比目前大部分项目采用的半去中心化的托管模式要更去中心化，无需信赖信托机构或者信托机构联盟。并且创新实现了超级轻节点，解决了原来轻节点维护成本太高导致经济不可为继的问题。并且达尔文作为一个桥中心，只需要从外部链搭建一座到达尔文的桥。就可以使每一个链接的链实现互联，而不需要两两之间都要建桥。达尔文针对这个应用改造自己的链，来高效实现这个能力。
+所以，对波卡生态而言，每一个项目都可以通过达尔文获得这种能力，真正做到专注自己的业务，大家都需要的异构链跨链需求就我们来搞定了，不用每个人都重复早一次轮子。在此基础上，我们希望可以看到众多单链协议可以实现多链版本的升级。
+加入Substrate Buiders Program的好处是显而易见的，达尔文是使用substrate这套工具开发基本框架的，所以加入这个program可以获得更多一手的技术支持，尤其可以和其他项目团队沟通，互相学习。这是非常重要的。
+4、项目为什么选择 Substrate 技术？目前进展如何？项目在技术开发上遇到什么困难？（第三部分：基于 Substrate 技术的项目跨链进展 20:05-20:25）DMPABC(各 2min) 答：我们决定加入波卡生态，最早是因为有关注以太坊，所以对Dr. Gavin Wood和Parity做的工作也一直比较感兴趣。波卡的技术逻辑难懂，恐怕是因为太快切入细节，被庞大的体系给淹没了。其实如果理解了波卡诞生的使命，了解全貌后通过一条主线去贯穿理解各个部分那就显得一切都合情合理了。过去和Dr. Gavin Wood有过很多次交流，所以我想我大概能讲明白这个问题吧。
+波卡诞生的初衷是想让各个链各司所职，专注自己的业务特点去设定各种参数，实现自己的个性，但是又能保持一定共性，使得安全性、互操作性能有保证，价值在链接可以自由流动。沿着这个思路下去，就有了让大家能够快速开发链的业务逻辑，不必重复发明轮子，把过往的经验抽象提炼出来变成一个比较容易使用的开发工具，开发者可以迅速搞定底层的各种功能，比如p2p协议，共识算法等等，而又可以通过各种功能模块或者叫组件库可以快速拼搭，按需使用。这样就可以有更多精力注重在自己要解决的业务功能上。这就是substrate这套工具组诞生的原因。而Polkadot本身则作为一个relay chain把这些应用链联系起来，让他们可以共享安全池，消息可以互通。
+大画面看清楚了，剩下的就是细节问题的理解了。
+我们也参与开发和使用过其他的一些区块链开源框架，例如Bitshares所使用的Graphene框架。相比之下，发现substrate这个框架的设计在很多方面是非常具有前瞻性的，包括模块化设计，运行时环境等等。Substrate框架跟我们团队的匹配度很高，适合快速迭代的要求。我们的团队Itering一直致力于区块链应用的大规模落地，因此研究和开发的技术方案主要针对应用落地这个方向，包括跨链技术Darwinia Relay，分布式秘钥管理服务DKMS，链上随机数，NFT可识别性等等，同时，区块链网络又是一个复杂的网络系统，需要有很坚强的底层支撑和安全保障，应对这个问题离不开广泛的开源社区帮助和强有力的合作伙伴。通过一年多的使用与学习，我们认为Substrate是非常有棒的一个区块链框架内核，有意思的是，我们的团队也被其主要实现语言Rust圈粉。
+当然，过程中还是有一些挑战的，我想主要原因是Substrate这套工具本身就在快速演进中，所以要跟上节奏需要花费不少精力。我们积极参与社区讨论和建设，也加入了Substrate Builders Program和Web3.0 Bootcamp，与Parity的开发者保持紧密沟通。我们开发的Ruby实现的substrate底层codec项目scale也获得了web3 grant。我们通过这些方法来紧跟开发的节奏。
+我们期待Substrate 2.0可以尽快稳定下来，可以早日投入生产环境，同时，作为开发者我也认同 It’ll be done when it’s done.
+5、项目方如何合作共赢？预测：谁会获得第一批卡槽？（第四部分：生态展望 - 谁会获得第一批卡槽 20:25-20:45）MPABCD(各 2min)答：我想生态中各个项目方互相协作实现合作共赢是符合项目的长远利益的，1+1是肯定大于2的，无论从技术协作角度、业务互通还是社区运营上都是这样的。至于谁会获得第一批卡槽，我不想胡乱臆测，达尔文应该是其中之一吧。不过有一些硬性标准我想是肯定要满足的：项目应该是已经上线并且稳定运行了一段时间的经过了安全审计的能为生态整体而言提供了公共价值的获得比较多社区支持的
+专业评审团问题
+（第五部分：专业评审团对项目方提问 20:45-21:00）邀请到 PolkaWorld、PolkaBase、Cointelegraph 中文、火星财经担任专业评审团议员
+问题一：（PolkaBase提问 yuanliang）我们都知道波卡的最终生态，也就是目前波卡里程碑计划中所说的2.0阶段是成为一个Nested Relaychain，也就是一个可分成的终极链。但其实说近不近说，远不远。中继链的分层，是为了无线可拓展可能性必须实现的功能。根据波卡官网的里程碑。波卡的2.0形态，会在预计2021年进行工程上的开发，但其实会在2020年底可能会开始概念上的验证以及研究跟证明，因此在大家的心目中波卡的分层中继和他的无限拓展性是怎么样的？（Bifrost、Acala、Darwinia）（3min）各1分钟PAD(各 2min)
+会形成多中心多层级的拓补结构，会有多种垂直具有很强领域特性的子中继链产生，围绕着它各种垂直应用链互联，把业务领域的方方面面做到极致，并且通过上级relaychain与其他层级的应用链沟通。成为子级relaychain的成本会很低，发布一条应用链成本也会很低，有可能会出现阶段性的应用链甚至是即抛型的应用链。而一些联盟链或者私有链也会接入。
+问题二：（CT中文 Cookie 提问)第二个是问下达尔文，你们最近做了很多NFT的内容，圈子里最近也有很多关于NFT的有趣尝试，你认为NFT会是一个新的赛道么？达尔文之后会在NFT上继续做什么样的尝试么？（2min）D(各 2min)
+NFT是个巨大的市场，传统金融市场中非标金融资产的规模是数倍于标准化的交易产品，而在数字领域，非标资产还将极大的扩展外延，门票、的拓展游戏类的非标资产、巴菲特的晚餐，所以市场巨大，达尔文非常重视NFT这条赛道，这也是我们的很多方案优先都要考虑NFT的可用性。我们后面的目标是将进化星球这款跨链游戏作为一个showcase把它的能力充分展示出来，作为一个标杆来展示游戏间是如何可以互相协作的。也包括我们将发布一个跨链版本的NFT交易市场，好比是OpenSea的跨链升级版，也作为应用协议跨链升级的演示。
+问题三：（链节点 beimo 提问)在今年的跨链赛道上，波卡无疑是受到很多期待的一个项目，可以问问项目方们，你们对波卡上线后的期待是怎样的？另外我们知道很多项目也在等待波卡上线后发力，可以分别说说你们在上线后最重要的一个任务或者目标么？（每个项目方，一两句精简概括，作为结尾）（6min）各1分钟PABCDM(各 2min)
+波卡上线对市场或者生态来讲可以提振信心，短期里象征意义更大些。它的过程类似kusama，是个渐进的过程，到大体功能比较完整，比如parachain开放，估计还需要几个月。所以，也不要期望一下子看到一座宏伟的建筑，能看到清晰的轮廓就很了不起了。对我们项目团队而言，一个更重要意义在于substrate工具组的稳定，这利于我们比较稳定地使用它，我相信各个项目团队都很头疼的是，目前经常要升级工具，而不少升级是破坏性的，这使得团队需要花费很多精力来处理这些升级造成的冲突。它的稳定可以使我们更专注业务逻辑模块的研发。</p>
+</span></div></div><div class="blogSocialSection"><div class="blogSocialSectionItem"><a href="https://twitter.com/share" class="twitter-share-button" data-text="【链节点 &amp; 链读】波卡生态圆桌论坛 |达尔文回顾" data-url="https://docs.darwinia.network/blog/2020/04/27/chainnode-ama" data-related="true" data-show-count="false">Tweet</a></div></div></div><div class="blog-recent"><a class="button" href="/blog/">Recent posts</a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><div><h5>Links</h5><a href="/blog">Blog</a><a href="https://darwinia.network">Official Website</a><a href="https://apps.darwinia.network">Darwinia Wallet Apps</a></div><div></div><div><a href="/" class="nav-home"><img src="/img/logo.png" alt="Darwinia Documentation" width="160"/></a><div class="share-links"><div><a href="https://medium.com/@DarwiniaNetwork" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJFBMVEVHcEx7cK97cK98bbZ7ca57ca97ca98cK97ca97cK57ca97cK5wzXcXAAAAC3RSTlMA6c8Mn1yPbyW6RucScUEAAAExSURBVDjL7ZShb8JQEMZfgG60iqVbQlJDgqxhODKDmJvBz5CQYDB4TBNkzTxmHlUGpI/753jfvZUWesUQHKeu3y/Xu/e9axVdCfWAN0P9iQj/pfyB4VYh1pZp5PVV/to5hJqFO+SDQs8DBMdCH4VhASYRlIDzsUnds2m7KF1wGuUdVKHR+2keAT6dMgE2s3kuoQftC/Msy9AZGS3GPBMBduwJdN0XIHzwkPwJkI8Qku9KkA//TeNYhEO2IZqJMDXis1aBCPfw/s0hESY9o85dGdobjysguzqrgGx+UAE31iMZ0i+7W4Yp7rLD91KGI+McdnAhwD3viMY81Lrcvh8jmB2PvGxLC3u7gTl9omGDqM2fRj+HKa9XQOmHLcxKGb7yh2WariiZ2ggf/6E7w5crcQRAZIKOcJdRHwAAAABJRU5ErkJggg=="/></a><a href="https://t.me/DarwiniaNetwork" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAIVBMVEVHcEx7cK95cK97cK57cK57cK98cK97cK97cK57cK97cK6mrj9uAAAACnRSTlMAhw7iKK5Iye5eWDkJwgAAAR1JREFUOMvt1b9rwkAUB/Bvok3rJtR2uCkZiq2b0EGcshU6FQcHp4Bbx9JFN0E6ZAod3UIIhvdXej+C7em7m9zaN+TgPtzdy0vuDuEtOWIcY0jO+IBwY4mpGyuQJ/7x4jh/cmI1QOjCOoMTxymAiMc5VAQcyuWAlxRXDNaFtOQL6JzjRi83kQmNznClVgvFVj7fT7AZ6FSWlRoubNwX2hJ6Vs3CwjLVFk33sWpzC42FC7kDZHTtwptJl2QGRjZW97LvgWhmFeiY7Sbr5VRrOxbo5z2bNdGbwRvuY5fG8MphOxA7DvstCg6LFtc+zDnMcBf/LpCFaaDr3uNR6KkDFhP1q8S4ZlFn+YlH93ZovsXfOxO8h7H3GPdeAL6r4wA5SoNsrYNlIwAAAABJRU5ErkJggg=="/></a><a href="https://twitter.com/DarwiniaNetwork" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJFBMVEVHcEx7cK56bbB7cK57cK57cK97cK97b697cK57cK97cK97cK6/O/qOAAAAC3RSTlMA8AngmXxTGcgxrQuz9RgAAAHNSURBVDjLjVW7S8NAGD+LbY1TkZaCWSKIoG6C9dFFpBW0SwU3l6AgYpeqILgp4tTFB04uRUGETiFGkt4/5+Xu+y53uTT4m5L73fd+HCESy0cPtrfZfiImChc25fC+DK58SCXW+yk5haO05mjkKdXQULlFmsKuYnCQJsPE7Cs1sIGcZZukj6LXlE4ULQyyyFCEM00zscPJXjb5y7U2s0k/1lukE9Bl5KV+NN9CTXVGHutZdYg1oLU48oCZ5BmIbCWA4t4SGC3xw+GzINdE6OLPJbPCuNWEf57PNg9vSBbAsxXeIo6a7Qp5x3TE9R5rZYrA2Tt2ck7pj1amgHTgEsPbPUgKJ9lVUZJQnN5qZEiEl98faktBRn0i1LtXKglF9IhaPMQM5BLIOY1cRUkbHFPRQ7KZFE9ihA5Bd42V4Sljj0ESaHXfiITZglpHilbsjQASj23KAcqYwBR8JSkqYctUoNjMNTetlRVb3vNhJsuyj11oMGXW5VjFbQHuPgJXkvMYgInx2QsmoCNbuI4hNxxz43TlIFVPYu5mlBokrMF26+DTGMH84c0d+9yFoeQkgSc3a4bo1v/WW+5izF+p+ctYS2qtn/MAOBnvg2U8HX8bGacuzEIM4QAAAABJRU5ErkJggg=="/></a><a href="https://github.com/darwinia-network" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAKlBMVEVHcEx7cK57cK57cK58bq57cK57cK5/a7F7cK97cK57cK98cbB7cK97cK5qBv59AAAADXRSTlMA9OK4FZ5zCUXNXSmEsKrC2AAAAglJREFUOMt1lLtLxEAQxhfNmXvYiIXIIQiCjQbEwsqDu1JEsFIbQTxULAQFFTwsTtFCULAQ5JSD66wEBRsLwUpsLJJ7cA/3f3F2ZpPsbuIUybK/7O7MN9+GsSAyW7NDQxMrLywmLh2O4a1FkL3Jg5jcN6DCgOrsnWvxqLIBbsSGcmDOhPXw2AUeiTufWdUo7OQlPOExcS/hehxsEkvD0B2L0BrCVxg1Mrvh9PTFBzyzCEUdt4xd+Rs8MNYnqhEsKT5ehkHx+42xxet5KDEh5sowlxKDT13NQU67sRtDrkDOtjwydiUcmsEEZ3TYj5MvsiHjOkzJ1tC7rEOsADJaUrQKAxVtULI9ExYo3Z+YfKQKv7TBhgnTdFiVkjbCwoYztHI+4mPRAQ+fPOp/scZl/H/IaWX8ti7BSEI2R+iEfjH186hjyyaUPUMRRkzYRyLsiVfLhM80i8K7RrqWQ8IfxDkBdYfD+nlMQ3/kijS5fFVlR/6FsOmWeIpRkvRfcfeFI5qHsE3nyWclec9/YfwBq5Kw3J3DlK2if+F6lFkL65L/geD/IIxuwZe1RHDn7IJkVDtoNG5XA4ETEnZ977fZqTNaVg3t6wJa1U1vQW1S0TPtltkEs6FJm4ryXL89UMjw17YGu6G/NX9iHYpxzk04pWaY02Fda37aUaFnuPHYCaG3Y1qqVPFHlaB5f4TVPVm1Z2ZDAAAAAElFTkSuQmCC"/></a></div><div><a href="https://bihu.com/people/1100617" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJ1BMVEVHcEx7cK56cq97cK97cK97cK97ca57cK57cK58cK97cK57cK97cK75Og5xAAAADHRSTlMA7g+TrSJnethIxTKkC5eQAAABvElEQVQ4y5WVv0tCURTHD2aWOUVUBG+IGsImESIIl8gmHYTaaqihWhqkGhuiJYI3SEM0NAehg0VtLaLpy+4f1T3X++O8e98V+i763sf3zo97zlcAqtXZu2XwaCpgrOlh2ZBxFRNZroWMdY4SWKrERhq2XXjMlLpOUk/MaMFi+4zqNV4gi2uXsExgwU7dLoIqakg2WWWuerURLLEkLQmWTmSsI3rxbAJtnl6Z1G4R6ohzGCangwwQBvEUdHpDvFK/VKeRUUEI/NFln8uMCMQH82cnOBAO7PFve7LnVRvO8zERqRUADm1YUAV3ASZsWIOUrKkBWQtGOg92I0s3kL9sWsJfgBUhDQcqDdk2JXGnD/Clhu9/cOxr4wkdvPPT+fSVwqPMkCa0IRWaJliQt+9NhUzb8JtPiHi0jnlbEI9sjbetwj9bNsQnIPf4AOJQonJ5m8K+ru1a3qEDpnZnghEYxtfdbBWI8GpwcbPyesYjMol4vDuXW2YdxAGsJy8SjhzvcGvMlrlLL9iFxy5QGx6jQTU9FoW695gbatFji4nmR/wmwTazoe1P4HoccTbXHYsek8dyK75/B/gIXujlHztymte5NqsQAAAAAElFTkSuQmCC"/></a><a href="https://weibo.com/DarwiniaNetwork" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJFBMVEV7cK5HcEx7cK57cK17cK97cK97cK97cK57cK57cK97ca97cK6hJEZ6AAAADHRSTlP/AOYQxHoqZ6Y/UZKe82coAAACIUlEQVQ4y41VvW/TUBC/Oi5NYfrxkpC0i0MoArE0FahUXXAkvtSFAAHERPioBCxEUCTEElhYCUggxFIzdcRC4u/j7n3Ez5FtcYNl3+/u3t3v7p0J2B5QgZx5DRDWIiqUIGHwFpXIMmiNSiWhrXKwR6/KwRW6Ug6GFJWDQYHu3OjgY5n9CbC8LAFrAuJyMbiqQRRXEYwGN5jXcnKCO4uu15/szIsOx2j42F8+SCvC+w8i6qHjYTclC61YAnYpBKJ8dVA6XQVMaYbfXme1mK86NinNMjprsJaQd5do2KAYh85xbMBOcI+fnylep+4ctI5AXx5N6growo7hS4viNoe1w3U8h3HOq49pyBlrGeZBXe3M1hka3fOD0Tsdvy3KScs4HhPNtu5+8KlvSdx4k0XddWRt8MdPrz9s3IzmA3WN0ac+rYozu/AVO1NLiJr3jo+8yHxK/br9Mb88cmAX0oBUZ3xoh2jdgR+E78CU07DdO+XAVOxWhLZEK+vwxisV+xpU/+SSJqfue8YCdtU0vDSRA3SQdpYQg9xBmphwMvJb2Yg32YINEpNl6s97CBVRranP2uRPLlhlk5ew4TK+zwwzPTe/9u5L3ImU+cU4uj5b5n9R8BY4ImOUu3/noW4TnY7MDUInvwr+QB2JZk9muzVduHJyi/Z/6MFcxFiuuul8Vrhe9h5+23/xfkD/LZVLqnK9VS7GypVauYwr13j1D6Di1/EPT15bwQ40s+UAAAAASUVORK5CYII="/></a><a href="#" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJ1BMVEVHcEx7cK57cK97cK56cbB7cK57cK97cK97cK57cK57cK97cK57cK5LMTsCAAAADHRSTlMA32q3EDaNTe/LoSSkSkY9AAAByUlEQVQ4y32VO0/DMBCAr6UvqQsIUIXIUCEQSwcojB1SsSGGwIDKY0CwQNWhA0OLWFCRkCADFLF1KEIMoA4ZWaOqJS3+UZxjO3GeN1zsfPH5fHc5A0Byk4TI/CqgZBUSKlYRYYlEyBgXkkgpQjUaPkVbpXYr0dAEJRoScEZLWy9RsKvhqdJXofATmByHwDcQchSAY3Cl4YdFCSZ9UF7oiTWFG/gqZQOqMx5oGQD53jI1qeN3KUWG1OoMmaLeI7+ob2X454MJGT6DMJvV+55NEZ55nD2of8hQPmX+cnK+vvLuwqbLUo2uSp+HegjcL/DBbtBsuqOKYSvg0E/f3VxhcNZ58yq5VmNw5CTk3pcdhEMxT+DuyTusl9YDznosK8LdGrqTozmqmCzEFC5wWLdjh8tLNBc5Bif8AGWqTuiRDDsXrEy2GSx4gpzh0DTs6WIotLPmXynM8iCVPTAhoAY3aypceOAphxa0Uc3pqgwHHE7bRLLOMyQq3uKZH0mw6vk/6ZEkuxU/dAIJsEMC0NREMfWCkEwN150AJI/XFDVZH4FgR/z+IhNtEA5tGZZiIK/42CYV295iG2NsS41txrFtPP4CiLg6Onh1/AOW8A5j2jJ12wAAAABJRU5ErkJggg=="/></a><a href="mailto:hello@darwinia.network" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAAJ1BMVEVHcEx7cK96cK97cK57cK56b697cK57cK57cK98cLB8ca97cK97cK7X/FnnAAAADHRSTlMAcmbD4BTzooYoQlTd6cQGAAABcElEQVQ4y83VP0+DUBAA8GubhkKXOpg4dPADdCyDkc04kDBgSvwAJg41DLgzkLg6OBhnJ1ydOrmY9wLV3ofyoIX3R3ir3kKbH+X13bs7AOBqiR1xcQwUgxg7o5gRptgTJf0Qe2MG1/14C/N+/ASvHxkE/cgBDfF3yI7UOPEk3IIWjwI5JqpZGLToeiyUbeyxVYuZhb6MESaTFk8hLV6F2cEWhhIO8EZgTicpI3xg1tgQd6CiE5ftNqolFIRndJtt+KCjHfCn/Tbqq4qwwjsQT9DQjuu1gyLsQKomSvGGKqcLKZ3nb1XldOAUOTVGsdx/0zBnIVW/D5vv32jHbn0DOHWaVYw4/Uv7nT4t1jqOvXWTvkmVBQVH0pmllxqmO3FkI1pBxslhr4cqcRVcKPUXMRkdtfzsOBGYvTC1NPNSFNhZ4Ko4xYcWCx5qFT+X2uFLbwdLQn5vaKT/1PbGIWUcb8bBaBypxmFsHOPmF4Dh1fEDXvxFF7KNXsoAAAAASUVORK5CYII="/></a></div></div><div class="social"><a href="https://twitter.com/DarwiniaNetwork" class="twitter-follow-button">Follow @DarwiniaNetwork</a></div><a class="github-button" href="https://github.com/darwinia-network/darwinia" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 Darwinia Network</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '3acc2ef550d1b049b83fce041599348b',
+                indexName: 'darwinia',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {"facetFilters":["language:en"]}
+              });
+            </script></body></html>
