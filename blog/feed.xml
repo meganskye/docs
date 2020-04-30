@@ -4,7 +4,7 @@
         <title>Darwinia Documentation Blog</title>
         <link>https://docs.darwinia.network/blog</link>
         <description>The best place to stay up-to-date with the latest Darwinia Documentation news and events.</description>
-        <lastBuildDate>Tue, 28 Apr 2020 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 30 Apr 2020 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -13,6 +13,15 @@
             <link>https://docs.darwinia.network/blog</link>
         </image>
         <copyright>Copyright © 2020 Darwinia Network</copyright>
+        <item>
+            <title><![CDATA[Darwinia 入选首期 Web3.0 训练营]]></title>
+            <link>https://docs.darwinia.network/blog/2020/04/30/web3-bootcamp.html</link>
+            <guid>https://docs.darwinia.network/blog/2020/04/30/web3-bootcamp.html</guid>
+            <pubDate>Thu, 30 Apr 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/blog/assets/2020-04-30-web3-bootcamp.png" alt=""></p>
+<p>由万向区块链实验室、新链空间、Parity、Web3.0基金会合作发起的“Web3.0 Bootcamp（Web3.0训练营）”首期招募现已完成，Darwinia Network 团队入选，第一期训练营即将开启。</p>
+]]></description>
+        </item>
         <item>
             <title><![CDATA[sub0 | 达尔文将首次公开「Darwinia Relay」技术细节]]></title>
             <link>https://docs.darwinia.network/blog/2020/04/28/sub0-online.html</link>
@@ -33,15 +42,6 @@
 ]]></description>
         </item>
         <item>
-            <title><![CDATA[Win Limited NFTs - Math x Darwinia]]></title>
-            <link>https://docs.darwinia.network/blog/2020/04/14/math-nft-en.html</link>
-            <guid>https://docs.darwinia.network/blog/2020/04/14/math-nft-en.html</guid>
-            <pubDate>Tue, 14 Apr 2020 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p><img src="/blog/assets/2020-04-14-math-nft.png" alt=""></p>
-<p>Win Limited NFTs - Math x Darwinia: MathWallet Collectibles Series 5 🎁</p>
-]]></description>
-        </item>
-        <item>
             <title><![CDATA[Darwinia & MathWallet 联名NFT，限量200个]]></title>
             <link>https://docs.darwinia.network/blog/2020/04/14/math-nft.html</link>
             <guid>https://docs.darwinia.network/blog/2020/04/14/math-nft.html</guid>
@@ -51,12 +51,12 @@
 ]]></description>
         </item>
         <item>
-            <title><![CDATA[BigONE AMA | Web3 Foundation VP Dan Reecer]]></title>
-            <link>https://docs.darwinia.network/blog/2020/04/02/bigone-ama-review-en.html</link>
-            <guid>https://docs.darwinia.network/blog/2020/04/02/bigone-ama-review-en.html</guid>
-            <pubDate>Thu, 02 Apr 2020 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p><img src="/blog/assets/2020-04-02-bigone-ama-en.jpeg" alt=""></p>
-<p>Polkadot is the project that hasn’t lost any attention and popularity from the public since Dr. Gavin founded it in 2017. There’s been claims among the community that Polkadot is launching its mainnet. Today, we are inviting everyone to join the session with Dan Reecer, VP at Web3 Foundation, Global Managing Director for Community and Growth.</p>
+            <title><![CDATA[Win Limited NFTs - Math x Darwinia]]></title>
+            <link>https://docs.darwinia.network/blog/2020/04/14/math-nft-en.html</link>
+            <guid>https://docs.darwinia.network/blog/2020/04/14/math-nft-en.html</guid>
+            <pubDate>Tue, 14 Apr 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/blog/assets/2020-04-14-math-nft.png" alt=""></p>
+<p>Win Limited NFTs - Math x Darwinia: MathWallet Collectibles Series 5 🎁</p>
 ]]></description>
         </item>
         <item>
@@ -66,6 +66,15 @@
             <pubDate>Thu, 02 Apr 2020 06:00:00 GMT</pubDate>
             <description><![CDATA[<p><img src="/blog/assets/2020-04-02-bigone-ama.jpeg" alt=""></p>
 <p>波卡是自17年创立以来在圈子里热度就不曾下降的项目，近期波卡主网准备上线的消息也在社群中广为流传。今天BigONE就为大家邀请来了Darwinia Co-Founder Alex Chien。</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[BigONE AMA | Web3 Foundation VP Dan Reecer]]></title>
+            <link>https://docs.darwinia.network/blog/2020/04/02/bigone-ama-review-en.html</link>
+            <guid>https://docs.darwinia.network/blog/2020/04/02/bigone-ama-review-en.html</guid>
+            <pubDate>Thu, 02 Apr 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/blog/assets/2020-04-02-bigone-ama-en.jpeg" alt=""></p>
+<p>Polkadot is the project that hasn’t lost any attention and popularity from the public since Dr. Gavin founded it in 2017. There’s been claims among the community that Polkadot is launching its mainnet. Today, we are inviting everyone to join the session with Dan Reecer, VP at Web3 Foundation, Global Managing Director for Community and Growth.</p>
 ]]></description>
         </item>
         <item>
