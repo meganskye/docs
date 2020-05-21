@@ -4,7 +4,7 @@
         <title>Darwinia Documentation Blog</title>
         <link>https://docs.darwinia.network/blog</link>
         <description>The best place to stay up-to-date with the latest Darwinia Documentation news and events.</description>
-        <lastBuildDate>Thu, 30 Apr 2020 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 21 May 2020 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -13,6 +13,15 @@
             <link>https://docs.darwinia.network/blog</link>
         </image>
         <copyright>Copyright © 2020 Darwinia Network</copyright>
+        <item>
+            <title><![CDATA[Hotbit AMA Review | Darwinia CMO Bree]]></title>
+            <link>https://docs.darwinia.network/blog/2020/05/21/hotbit-ama.html</link>
+            <guid>https://docs.darwinia.network/blog/2020/05/21/hotbit-ama.html</guid>
+            <pubDate>Thu, 21 May 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/blog/assets/2020-05-21-hotbit-ama.jpeg" alt=""></p>
+<p>Hot Talk：Polkadot 系列对话第二期，Darwinia CMO Bree 前来报道！「如何打造资产互联网」</p>
+]]></description>
+        </item>
         <item>
             <title><![CDATA[Darwinia 入选首期 Web3.0 训练营]]></title>
             <link>https://docs.darwinia.network/blog/2020/04/30/web3-bootcamp.html</link>
@@ -42,21 +51,21 @@
 ]]></description>
         </item>
         <item>
-            <title><![CDATA[Darwinia & MathWallet 联名NFT，限量200个]]></title>
-            <link>https://docs.darwinia.network/blog/2020/04/14/math-nft.html</link>
-            <guid>https://docs.darwinia.network/blog/2020/04/14/math-nft.html</guid>
-            <pubDate>Tue, 14 Apr 2020 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p><img src="/blog/assets/2020-04-14-math-nft.png" alt=""></p>
-<p>为了感谢达尔文网络和麦子钱包的社区用户，双方决定限量发放 200 枚 非同质化代币 NFT 至社区。</p>
-]]></description>
-        </item>
-        <item>
             <title><![CDATA[Win Limited NFTs - Math x Darwinia]]></title>
             <link>https://docs.darwinia.network/blog/2020/04/14/math-nft-en.html</link>
             <guid>https://docs.darwinia.network/blog/2020/04/14/math-nft-en.html</guid>
             <pubDate>Tue, 14 Apr 2020 06:00:00 GMT</pubDate>
             <description><![CDATA[<p><img src="/blog/assets/2020-04-14-math-nft.png" alt=""></p>
 <p>Win Limited NFTs - Math x Darwinia: MathWallet Collectibles Series 5 🎁</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Darwinia & MathWallet 联名NFT，限量200个]]></title>
+            <link>https://docs.darwinia.network/blog/2020/04/14/math-nft.html</link>
+            <guid>https://docs.darwinia.network/blog/2020/04/14/math-nft.html</guid>
+            <pubDate>Tue, 14 Apr 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/blog/assets/2020-04-14-math-nft.png" alt=""></p>
+<p>为了感谢达尔文网络和麦子钱包的社区用户，双方决定限量发放 200 枚 非同质化代币 NFT 至社区。</p>
 ]]></description>
         </item>
         <item>
@@ -78,21 +87,21 @@
 ]]></description>
         </item>
         <item>
-            <title><![CDATA[Darwinia 项目进展 2020 Q1]]></title>
-            <link>https://docs.darwinia.network/blog/2020/03/31/darwinia-progress-updates-2020-q1.html</link>
-            <guid>https://docs.darwinia.network/blog/2020/03/31/darwinia-progress-updates-2020-q1.html</guid>
-            <pubDate>Tue, 31 Mar 2020 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p><img src="/blog/assets/darwinia-banner.png" alt=""></p>
-<p>最近新冠病毒爆发，在全球范围内产生了巨大影响，也给加密世界带来了困难和不确定性。</p>
-]]></description>
-        </item>
-        <item>
             <title><![CDATA[Darwinia Network Progress Updates 2020 Q1]]></title>
             <link>https://docs.darwinia.network/blog/2020/03/31/darwinia-progress-updates-2020-q1-en.html</link>
             <guid>https://docs.darwinia.network/blog/2020/03/31/darwinia-progress-updates-2020-q1-en.html</guid>
             <pubDate>Tue, 31 Mar 2020 06:00:00 GMT</pubDate>
             <description><![CDATA[<p><img src="/blog/assets/darwinia-banner.png" alt=""></p>
 <p>The recent coronavirus outbreak has a huge impact worldwide and it also caused difficulties and uncertainties to the crypto world.</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Darwinia 项目进展 2020 Q1]]></title>
+            <link>https://docs.darwinia.network/blog/2020/03/31/darwinia-progress-updates-2020-q1.html</link>
+            <guid>https://docs.darwinia.network/blog/2020/03/31/darwinia-progress-updates-2020-q1.html</guid>
+            <pubDate>Tue, 31 Mar 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/blog/assets/darwinia-banner.png" alt=""></p>
+<p>最近新冠病毒爆发，在全球范围内产生了巨大影响，也给加密世界带来了困难和不确定性。</p>
 ]]></description>
         </item>
         <item>
@@ -105,16 +114,6 @@
 ]]></description>
         </item>
         <item>
-            <title><![CDATA[Darwinia will Airdrop the DOT holders]]></title>
-            <link>https://docs.darwinia.network/blog/2020/03/23/crab-airdrop-snapshot-en.html</link>
-            <guid>https://docs.darwinia.network/blog/2020/03/23/crab-airdrop-snapshot-en.html</guid>
-            <pubDate>Mon, 23 Mar 2020 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p><img src="/blog/assets/2020-03-23-crab-airdrop-snapshot-1.png" alt=""></p>
-<p>A portion of the initial supply of the Crab‘s cRING will be distributed to the holders of RING &amp; DOT, they will get cRING (Airdrop) for free.</p>
-<p>Darwinia took a snapshot of RING &amp; DOT holders on March 20, 2020. RING &amp; DOT holders can check / receive cRING after Crab launched.</p>
-]]></description>
-        </item>
-        <item>
             <title><![CDATA[Darwinia 将对 RING & DOT 持有者进行空投]]></title>
             <link>https://docs.darwinia.network/blog/2020/03/23/crab-airdrop-snapshot.html</link>
             <guid>https://docs.darwinia.network/blog/2020/03/23/crab-airdrop-snapshot.html</guid>
@@ -122,6 +121,16 @@
             <description><![CDATA[<p><img src="/blog/assets/2020-03-23-crab-airdrop-snapshot-1.png" alt=""></p>
 <p>Crab 网络初始供应量中一部分 cRING 将分发给 RING &amp; DOT 的持有者，RING &amp; DOT 的持有者可以免费获得 cRING 空投。</p>
 <p>Darwinia 官方已于 2020年3月20日，对 RING &amp; DOT 的持有者进行了快照，RING &amp; DOT的持有者可在 Crab 网络上线后自行查询/领取。</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Darwinia will Airdrop the DOT holders]]></title>
+            <link>https://docs.darwinia.network/blog/2020/03/23/crab-airdrop-snapshot-en.html</link>
+            <guid>https://docs.darwinia.network/blog/2020/03/23/crab-airdrop-snapshot-en.html</guid>
+            <pubDate>Mon, 23 Mar 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/blog/assets/2020-03-23-crab-airdrop-snapshot-1.png" alt=""></p>
+<p>A portion of the initial supply of the Crab‘s cRING will be distributed to the holders of RING &amp; DOT, they will get cRING (Airdrop) for free.</p>
+<p>Darwinia took a snapshot of RING &amp; DOT holders on March 20, 2020. RING &amp; DOT holders can check / receive cRING after Crab launched.</p>
 ]]></description>
         </item>
         <item>
