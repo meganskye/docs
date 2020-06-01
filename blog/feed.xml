@@ -4,7 +4,7 @@
         <title>Darwinia Documentation Blog</title>
         <link>https://docs.darwinia.network/blog</link>
         <description>The best place to stay up-to-date with the latest Darwinia Documentation news and events.</description>
-        <lastBuildDate>Thu, 21 May 2020 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 01 Jun 2020 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -13,6 +13,24 @@
             <link>https://docs.darwinia.network/blog</link>
         </image>
         <copyright>Copyright © 2020 Darwinia Network</copyright>
+        <item>
+            <title><![CDATA[Darwinia Project Moon, 100 Million cRING Grand Prize]]></title>
+            <link>https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon.html</link>
+            <guid>https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon.html</guid>
+            <pubDate>Mon, 01 Jun 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/blog/assets/2020-06-01-darwinia-project-moon.png" alt=""></p>
+<p><strong>Darwinia 官方将为此次节点大奖赛提供 一亿 cRING 的奖励。</strong>所有奖励均可以在 Darwinia 主网上线之后按 100:1 的比例兑换成主网 RING。</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Darwinia Project Moon, 100 Million cRING Grand Prize]]></title>
+            <link>https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon-en.html</link>
+            <guid>https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon-en.html</guid>
+            <pubDate>Mon, 01 Jun 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/blog/assets/2020-06-01-darwinia-project-moon.png" alt=""></p>
+<p><strong>For this Grand Prix, Darwinia will provide 100 Million cRING rewards.</strong> All rewards can be exchanged for the mainnet RING after the Darwinia Mainnet launched at the ratio of 100:1.</p>
+]]></description>
+        </item>
         <item>
             <title><![CDATA[Hotbit AMA Review | Darwinia CMO Bree]]></title>
             <link>https://docs.darwinia.network/blog/2020/05/21/hotbit-ama.html</link>
@@ -51,21 +69,21 @@
 ]]></description>
         </item>
         <item>
-            <title><![CDATA[Win Limited NFTs - Math x Darwinia]]></title>
-            <link>https://docs.darwinia.network/blog/2020/04/14/math-nft-en.html</link>
-            <guid>https://docs.darwinia.network/blog/2020/04/14/math-nft-en.html</guid>
-            <pubDate>Tue, 14 Apr 2020 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p><img src="/blog/assets/2020-04-14-math-nft.png" alt=""></p>
-<p>Win Limited NFTs - Math x Darwinia: MathWallet Collectibles Series 5 🎁</p>
-]]></description>
-        </item>
-        <item>
             <title><![CDATA[Darwinia & MathWallet 联名NFT，限量200个]]></title>
             <link>https://docs.darwinia.network/blog/2020/04/14/math-nft.html</link>
             <guid>https://docs.darwinia.network/blog/2020/04/14/math-nft.html</guid>
             <pubDate>Tue, 14 Apr 2020 06:00:00 GMT</pubDate>
             <description><![CDATA[<p><img src="/blog/assets/2020-04-14-math-nft.png" alt=""></p>
 <p>为了感谢达尔文网络和麦子钱包的社区用户，双方决定限量发放 200 枚 非同质化代币 NFT 至社区。</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Win Limited NFTs - Math x Darwinia]]></title>
+            <link>https://docs.darwinia.network/blog/2020/04/14/math-nft-en.html</link>
+            <guid>https://docs.darwinia.network/blog/2020/04/14/math-nft-en.html</guid>
+            <pubDate>Tue, 14 Apr 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/blog/assets/2020-04-14-math-nft.png" alt=""></p>
+<p>Win Limited NFTs - Math x Darwinia: MathWallet Collectibles Series 5 🎁</p>
 ]]></description>
         </item>
         <item>
@@ -87,21 +105,21 @@
 ]]></description>
         </item>
         <item>
-            <title><![CDATA[Darwinia Network Progress Updates 2020 Q1]]></title>
-            <link>https://docs.darwinia.network/blog/2020/03/31/darwinia-progress-updates-2020-q1-en.html</link>
-            <guid>https://docs.darwinia.network/blog/2020/03/31/darwinia-progress-updates-2020-q1-en.html</guid>
-            <pubDate>Tue, 31 Mar 2020 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p><img src="/blog/assets/darwinia-banner.png" alt=""></p>
-<p>The recent coronavirus outbreak has a huge impact worldwide and it also caused difficulties and uncertainties to the crypto world.</p>
-]]></description>
-        </item>
-        <item>
             <title><![CDATA[Darwinia 项目进展 2020 Q1]]></title>
             <link>https://docs.darwinia.network/blog/2020/03/31/darwinia-progress-updates-2020-q1.html</link>
             <guid>https://docs.darwinia.network/blog/2020/03/31/darwinia-progress-updates-2020-q1.html</guid>
             <pubDate>Tue, 31 Mar 2020 06:00:00 GMT</pubDate>
             <description><![CDATA[<p><img src="/blog/assets/darwinia-banner.png" alt=""></p>
 <p>最近新冠病毒爆发，在全球范围内产生了巨大影响，也给加密世界带来了困难和不确定性。</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Darwinia Network Progress Updates 2020 Q1]]></title>
+            <link>https://docs.darwinia.network/blog/2020/03/31/darwinia-progress-updates-2020-q1-en.html</link>
+            <guid>https://docs.darwinia.network/blog/2020/03/31/darwinia-progress-updates-2020-q1-en.html</guid>
+            <pubDate>Tue, 31 Mar 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/blog/assets/darwinia-banner.png" alt=""></p>
+<p>The recent coronavirus outbreak has a huge impact worldwide and it also caused difficulties and uncertainties to the crypto world.</p>
 ]]></description>
         </item>
         <item>
