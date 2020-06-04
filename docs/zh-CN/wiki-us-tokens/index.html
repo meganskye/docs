@@ -131,12 +131,12 @@
 <p><img src="/docs/assets/wiki-us-tokens-mainnet-cn.png" alt="wiki-us-tokens"></p>
 <h2><a class="anchor" aria-hidden="true" id="通胀模型"></a><a href="#通胀模型" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>通胀模型</h2>
 <p>在达尔文主网上线后，该年的出块奖励每年调整一次，第N年的块奖励为剩余可发行供应量的 <code>1 - (99 /100)^sqrt(N)</code></p>
-<pre><code class="hljs">    剩余可发行总量 = 硬顶总量 - 当前供应量
-    下一年的供应量 = 上一年的供应量 + 该年实际出块奖励总和
+<pre><code class="hljs">剩余可发行总量 = 硬顶总量 - 当前供应量
+下一年的供应量 = 上一年的供应量 + 该年实际出块奖励总和
 </code></pre>
 <p>RING的<code>硬顶</code>总量为100亿。</p>
 <p>根据每年的出块奖励，和出块间隔时间(单位：秒)，可以算出这一年的每个块的出块奖励。</p>
-<pre><code class="hljs">    每个块的块奖励 = 该年出块奖励 × 出块间隔时间 ÷ 每年总秒数(即365乘24乘3600)
+<pre><code class="hljs">每个块的块奖励 = 该年出块奖励 × 出块间隔时间 ÷ 每年总秒数(即365乘24乘3600)
 </code></pre>
 <p>下面是预估的每年通胀率统计表：</p>
 <p><img src="/docs/assets/supply-table-cn.png" alt="Supply Table"></p>
@@ -145,28 +145,28 @@
 <p>锁定10,000 RING，12个月可获得1个KTON。可选择1-36整数月(30天)，其他月份见下表。（月份选取1-12月及15、18、21、36为例）</p>
 <table>
 <thead>
-<tr><th>月数</th><th>获得KTON</th><th>月数</th><th>获得KTON</th><th>月数</th><th>获得KTON</th></tr>
+<tr><th style="text-align:center">月数</th><th style="text-align:center">获得KTON</th><th style="text-align:center">月数</th><th style="text-align:center">获得KTON</th><th style="text-align:center">月数</th><th style="text-align:center">获得KTON</th></tr>
 </thead>
 <tbody>
-<tr><td>1</td><td>0.0761</td><td>7</td><td>0.5634</td><td>15</td><td>1.2842</td></tr>
-<tr><td>2</td><td>0.1522</td><td>8</td><td>0.6446</td><td>18</td><td>1.5736</td></tr>
-<tr><td>3</td><td>0.2335</td><td>9</td><td>0.7309</td><td>21</td><td>1.8832</td></tr>
-<tr><td>4</td><td>0.3096</td><td>10</td><td>0.8223</td><td>36</td><td>3.6446</td></tr>
-<tr><td>5</td><td>0.3959</td><td>11</td><td>0.9086</td><td></td><td></td></tr>
-<tr><td>6</td><td>0.4771</td><td>12</td><td>1</td><td></td><td></td></tr>
+<tr><td style="text-align:center">1</td><td style="text-align:center">0.0761</td><td style="text-align:center">7</td><td style="text-align:center">0.5634</td><td style="text-align:center">15</td><td style="text-align:center">1.2842</td></tr>
+<tr><td style="text-align:center">2</td><td style="text-align:center">0.1522</td><td style="text-align:center">8</td><td style="text-align:center">0.6446</td><td style="text-align:center">18</td><td style="text-align:center">1.5736</td></tr>
+<tr><td style="text-align:center">3</td><td style="text-align:center">0.2335</td><td style="text-align:center">9</td><td style="text-align:center">0.7309</td><td style="text-align:center">21</td><td style="text-align:center">1.8832</td></tr>
+<tr><td style="text-align:center">4</td><td style="text-align:center">0.3096</td><td style="text-align:center">10</td><td style="text-align:center">0.8223</td><td style="text-align:center">36</td><td style="text-align:center">3.6446</td></tr>
+<tr><td style="text-align:center">5</td><td style="text-align:center">0.3959</td><td style="text-align:center">11</td><td style="text-align:center">0.9086</td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:center">6</td><td style="text-align:center">0.4771</td><td style="text-align:center">12</td><td style="text-align:center">1</td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
 </tbody>
 </table>
 <h3><a class="anchor" aria-hidden="true" id="附件二：锁仓中的ring（erc-20）"></a><a href="#附件二：锁仓中的ring（erc-20）" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>附件二：锁仓中的RING（ERC-20）</h3>
 <p>2021.2020.06.22-2021.05.22 释放计划介绍。（2020-05-22数据）</p>
 <table>
 <thead>
-<tr><th>日期</th><th>该时间之前累计可解锁</th><th>日期</th><th>该时间之前累计可解锁</th></tr>
+<tr><th style="text-align:center">日期</th><th style="text-align:center">该时间之前累计可解锁</th><th style="text-align:center">日期</th><th style="text-align:center">该时间之前累计可解锁</th></tr>
 </thead>
 <tbody>
-<tr><td>2020-06-22</td><td>15,963,300</td><td>2020-10-22</td><td>41,240,661</td></tr>
-<tr><td>2020-07-22</td><td>27,963,300</td><td>2020-12-22</td><td>41,260,661</td></tr>
-<tr><td>2020-08-22</td><td>29,040,661</td><td>2021-02-22</td><td>41,266,661</td></tr>
-<tr><td>2020-09-22</td><td>30,040,661</td><td>2021-05-22</td><td>41,270,761</td></tr>
+<tr><td style="text-align:center">2020-06-22</td><td style="text-align:center">15,963,300</td><td style="text-align:center">2020-10-22</td><td style="text-align:center">41,240,661</td></tr>
+<tr><td style="text-align:center">2020-07-22</td><td style="text-align:center">27,963,300</td><td style="text-align:center">2020-12-22</td><td style="text-align:center">41,260,661</td></tr>
+<tr><td style="text-align:center">2020-08-22</td><td style="text-align:center">29,040,661</td><td style="text-align:center">2021-02-22</td><td style="text-align:center">41,266,661</td></tr>
+<tr><td style="text-align:center">2020-09-22</td><td style="text-align:center">30,040,661</td><td style="text-align:center">2021-05-22</td><td style="text-align:center">41,270,761</td></tr>
 </tbody>
 </table>
 <p><strong>合约</strong>  <br>
@@ -175,11 +175,11 @@
 <p>2021.2020.06.22-2021.05.22 释放计划介绍。（2020-05-22数据）</p>
 <table>
 <thead>
-<tr><th>日期</th><th>该时间之前累计可解锁</th></tr>
+<tr><th style="text-align:center">日期</th><th style="text-align:center">该时间之前累计可解锁</th></tr>
 </thead>
 <tbody>
-<tr><td>2020-06-22</td><td>128,179</td></tr>
-<tr><td>2020-10-22</td><td>132,479</td></tr>
+<tr><td style="text-align:center">2020-06-22</td><td style="text-align:center">128,179</td></tr>
+<tr><td style="text-align:center">2020-10-22</td><td style="text-align:center">132,479</td></tr>
 </tbody>
 </table>
 <h3><a class="anchor" aria-hidden="true" id="附件四：白皮书链接"></a><a href="#附件四：白皮书链接" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>附件四：白皮书链接</h3>
