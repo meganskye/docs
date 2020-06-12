@@ -4,7 +4,7 @@
         <title>Darwinia Documentation Blog</title>
         <link>https://docs.darwinia.network/blog</link>
         <description>The best place to stay up-to-date with the latest Darwinia Documentation news and events.</description>
-        <lastBuildDate>Mon, 08 Jun 2020 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 12 Jun 2020 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -13,6 +13,15 @@
             <link>https://docs.darwinia.network/blog</link>
         </image>
         <copyright>Copyright © 2020 Darwinia Network</copyright>
+        <item>
+            <title><![CDATA[Darwinia Project Moon 获奖名单公布啦！！！]]></title>
+            <link>https://docs.darwinia.network/blog/2020/06/12/crab-reward.html</link>
+            <guid>https://docs.darwinia.network/blog/2020/06/12/crab-reward.html</guid>
+            <pubDate>Fri, 12 Jun 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/Users/tony/Downloads/github/docs/content/blog/assets/2020-06-01-darwinia-project-moon.png" alt=""></p>
+<p>历时 15 天的 Darwinia Crab 节点大奖赛已于 6月11日 10:00 AM 结束。</p>
+]]></description>
+        </item>
         <item>
             <title><![CDATA[Ankr Network 现已支持 Darwinia Crab]]></title>
             <link>https://docs.darwinia.network/blog/2020/06/08/ankr.html</link>
@@ -24,20 +33,20 @@
         </item>
         <item>
             <title><![CDATA[Darwinia Project Moon, 100 Million cRING Grand Prize]]></title>
-            <link>https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon.html</link>
-            <guid>https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon.html</guid>
-            <pubDate>Mon, 01 Jun 2020 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p><img src="/blog/assets/2020-06-01-darwinia-project-moon.png" alt=""></p>
-<p><strong>Darwinia 官方将为此次节点大奖赛提供 一亿 cRING 的奖励。</strong>所有奖励均可以在 Darwinia 主网上线之后按 100:1 的比例兑换成主网 RING。</p>
-]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Darwinia Project Moon, 100 Million cRING Grand Prize]]></title>
             <link>https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon-en.html</link>
             <guid>https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon-en.html</guid>
             <pubDate>Mon, 01 Jun 2020 06:00:00 GMT</pubDate>
             <description><![CDATA[<p><img src="/blog/assets/2020-06-01-darwinia-project-moon.png" alt=""></p>
 <p><strong>For this Grand Prix, Darwinia will provide 100 Million cRING rewards.</strong> All rewards can be exchanged for the mainnet RING after the Darwinia Mainnet launched at the ratio of 100:1.</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Darwinia Project Moon, 100 Million cRING Grand Prize]]></title>
+            <link>https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon.html</link>
+            <guid>https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon.html</guid>
+            <pubDate>Mon, 01 Jun 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/blog/assets/2020-06-01-darwinia-project-moon.png" alt=""></p>
+<p><strong>Darwinia 官方将为此次节点大奖赛提供 一亿 cRING 的奖励。</strong>所有奖励均可以在 Darwinia 主网上线之后按 100:1 的比例兑换成主网 RING。</p>
 ]]></description>
         </item>
         <item>
@@ -96,21 +105,21 @@
 ]]></description>
         </item>
         <item>
-            <title><![CDATA[BigONE AMA | Web3 Foundation VP Dan Reecer]]></title>
-            <link>https://docs.darwinia.network/blog/2020/04/02/bigone-ama-review-en.html</link>
-            <guid>https://docs.darwinia.network/blog/2020/04/02/bigone-ama-review-en.html</guid>
-            <pubDate>Thu, 02 Apr 2020 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p><img src="/blog/assets/2020-04-02-bigone-ama-en.jpeg" alt=""></p>
-<p>Polkadot is the project that hasn’t lost any attention and popularity from the public since Dr. Gavin founded it in 2017. There’s been claims among the community that Polkadot is launching its mainnet. Today, we are inviting everyone to join the session with Dan Reecer, VP at Web3 Foundation, Global Managing Director for Community and Growth.</p>
-]]></description>
-        </item>
-        <item>
             <title><![CDATA[BigONE AMA | Darwinia Co-Founder Alex Chien]]></title>
             <link>https://docs.darwinia.network/blog/2020/04/02/bigone-ama-review.html</link>
             <guid>https://docs.darwinia.network/blog/2020/04/02/bigone-ama-review.html</guid>
             <pubDate>Thu, 02 Apr 2020 06:00:00 GMT</pubDate>
             <description><![CDATA[<p><img src="/blog/assets/2020-04-02-bigone-ama.jpeg" alt=""></p>
 <p>波卡是自17年创立以来在圈子里热度就不曾下降的项目，近期波卡主网准备上线的消息也在社群中广为流传。今天BigONE就为大家邀请来了Darwinia Co-Founder Alex Chien。</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[BigONE AMA | Web3 Foundation VP Dan Reecer]]></title>
+            <link>https://docs.darwinia.network/blog/2020/04/02/bigone-ama-review-en.html</link>
+            <guid>https://docs.darwinia.network/blog/2020/04/02/bigone-ama-review-en.html</guid>
+            <pubDate>Thu, 02 Apr 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/blog/assets/2020-04-02-bigone-ama-en.jpeg" alt=""></p>
+<p>Polkadot is the project that hasn’t lost any attention and popularity from the public since Dr. Gavin founded it in 2017. There’s been claims among the community that Polkadot is launching its mainnet. Today, we are inviting everyone to join the session with Dan Reecer, VP at Web3 Foundation, Global Managing Director for Community and Growth.</p>
 ]]></description>
         </item>
         <item>
@@ -199,6 +208,15 @@
 ]]></description>
         </item>
         <item>
+            <title><![CDATA[PolkaBase AMA Review “How to build the Internet of assets?”]]></title>
+            <link>https://docs.darwinia.network/blog/2020/02/21/polkabase-ama-en.html</link>
+            <guid>https://docs.darwinia.network/blog/2020/02/21/polkabase-ama-en.html</guid>
+            <pubDate>Fri, 21 Feb 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/blog/assets/doc16-1.jpeg" alt=""></p>
+<p>Ladies and gentlemen, great to have you all here! This time, we have brought together the two-month Polkadot Ecosystem Project AMA series, which has been launched to the 3rd AMA.</p>
+]]></description>
+        </item>
+        <item>
             <title><![CDATA[PolkaBase AMA | DARWINIA：如何打造资产互联网？]]></title>
             <link>https://docs.darwinia.network/blog/2020/02/21/polkabase-ama.html</link>
             <guid>https://docs.darwinia.network/blog/2020/02/21/polkabase-ama.html</guid>
@@ -207,15 +225,6 @@
 <p>非常荣幸能够参加「链读」AMA，以下是此次AMA的全部内容。</p>
 <p>主持人：Yuki，链读品牌负责人
 嘉宾：王晓寅，DARWINIA Co-Founder</p>
-]]></description>
-        </item>
-        <item>
-            <title><![CDATA[PolkaBase AMA Review “How to build the Internet of assets?”]]></title>
-            <link>https://docs.darwinia.network/blog/2020/02/21/polkabase-ama-en.html</link>
-            <guid>https://docs.darwinia.network/blog/2020/02/21/polkabase-ama-en.html</guid>
-            <pubDate>Fri, 21 Feb 2020 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p><img src="/blog/assets/doc16-1.jpeg" alt=""></p>
-<p>Ladies and gentlemen, great to have you all here! This time, we have brought together the two-month Polkadot Ecosystem Project AMA series, which has been launched to the 3rd AMA.</p>
 ]]></description>
         </item>
         <item>
