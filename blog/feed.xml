@@ -4,7 +4,7 @@
         <title>Darwinia Documentation Blog</title>
         <link>https://docs.darwinia.network/blog</link>
         <description>The best place to stay up-to-date with the latest Darwinia Documentation news and events.</description>
-        <lastBuildDate>Fri, 12 Jun 2020 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 17 Jun 2020 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -13,6 +13,15 @@
             <link>https://docs.darwinia.network/blog</link>
         </image>
         <copyright>Copyright © 2020 Darwinia Network</copyright>
+        <item>
+            <title><![CDATA[cRING 正式上线 Hoo.com]]></title>
+            <link>https://docs.darwinia.network/blog/2020/06/17/cring-hoo.html</link>
+            <guid>https://docs.darwinia.network/blog/2020/06/17/cring-hoo.html</guid>
+            <pubDate>Wed, 17 Jun 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/blog/assets/2020-06-17-cring-hoo.png" alt=""></p>
+<p>Darwinia Crab Network 的通证 cRING 将于 2020 年 6月17日17:00（UTC+8）上线 Hoo.com。届时将开放 cRING/USDT 交易对，充值和提现已开启。</p>
+]]></description>
+        </item>
         <item>
             <title><![CDATA[Darwinia Project Moon 获奖名单公布啦！！！]]></title>
             <link>https://docs.darwinia.network/blog/2020/06/12/crab-reward.html</link>
@@ -33,20 +42,20 @@
         </item>
         <item>
             <title><![CDATA[Darwinia Project Moon, 100 Million cRING Grand Prize]]></title>
-            <link>https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon-en.html</link>
-            <guid>https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon-en.html</guid>
-            <pubDate>Mon, 01 Jun 2020 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p><img src="/blog/assets/2020-06-01-darwinia-project-moon.png" alt=""></p>
-<p><strong>For this Grand Prix, Darwinia will provide 100 Million cRING rewards.</strong> All rewards can be exchanged for the mainnet RING after the Darwinia Mainnet launched at the ratio of 100:1.</p>
-]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Darwinia Project Moon, 100 Million cRING Grand Prize]]></title>
             <link>https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon.html</link>
             <guid>https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon.html</guid>
             <pubDate>Mon, 01 Jun 2020 06:00:00 GMT</pubDate>
             <description><![CDATA[<p><img src="/blog/assets/2020-06-01-darwinia-project-moon.png" alt=""></p>
 <p><strong>Darwinia 官方将为此次节点大奖赛提供 一亿 cRING 的奖励。</strong>所有奖励均可以在 Darwinia 主网上线之后按 100:1 的比例兑换成主网 RING。</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Darwinia Project Moon, 100 Million cRING Grand Prize]]></title>
+            <link>https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon-en.html</link>
+            <guid>https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon-en.html</guid>
+            <pubDate>Mon, 01 Jun 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/blog/assets/2020-06-01-darwinia-project-moon.png" alt=""></p>
+<p><strong>For this Grand Prix, Darwinia will provide 100 Million cRING rewards.</strong> All rewards can be exchanged for the mainnet RING after the Darwinia Mainnet launched at the ratio of 100:1.</p>
 ]]></description>
         </item>
         <item>
