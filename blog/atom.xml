@@ -2,12 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.darwinia.network/blog</id>
     <title>Darwinia Documentation Blog</title>
-    <updated>2020-06-24T06:00:00.000Z</updated>
+    <updated>2020-07-01T06:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.darwinia.network/blog"/>
     <subtitle>The best place to stay up-to-date with the latest Darwinia Documentation news and events.</subtitle>
     <logo>https://docs.darwinia.network/img/logo.png</logo>
     <rights>Copyright © 2020 Darwinia Network</rights>
+    <entry>
+        <title type="html"><![CDATA[test]]></title>
+        <id>https://docs.darwinia.network/blog/2020/07/01/test.html</id>
+        <link href="https://docs.darwinia.network/blog/2020/07/01/test.html"/>
+        <updated>2020-07-01T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p><img src="/blog/assets/darwinia-banner.png" alt=""></p>
+<p>Here’s what’s been happening at Darwinia and what’s coming up next.</p>
+]]></summary>
+        <author>
+            <name>@DarwiniaNetwork</name>
+            <email/>
+            <uri>http://twitter.com/DarwiniaNetwork</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Darwinia Updates - June]]></title>
         <id>https://docs.darwinia.network/blog/2020/06/24/darwinia-updates-6.html</id>
@@ -66,11 +80,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Darwinia Project Moon, 100 Million cRING Grand Prize]]></title>
-        <id>https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon-en.html</id>
-        <link href="https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon-en.html"/>
+        <id>https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon.html</id>
+        <link href="https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon.html"/>
         <updated>2020-06-01T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p><img src="/blog/assets/2020-06-01-darwinia-project-moon.png" alt=""></p>
-<p><strong>For this Grand Prix, Darwinia will provide 100 Million cRING rewards.</strong> All rewards can be exchanged for the mainnet RING after the Darwinia Mainnet launched at the ratio of 100:1.</p>
+<p><strong>Darwinia 官方将为此次节点大奖赛提供 一亿 cRING 的奖励。</strong>所有奖励均可以在 Darwinia 主网上线之后按 100:1 的比例兑换成主网 RING。</p>
 ]]></summary>
         <author>
             <name>@DarwiniaNetwork</name>
@@ -80,11 +94,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Darwinia Project Moon, 100 Million cRING Grand Prize]]></title>
-        <id>https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon.html</id>
-        <link href="https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon.html"/>
+        <id>https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon-en.html</id>
+        <link href="https://docs.darwinia.network/blog/2020/06/01/darwinia-project-moon-en.html"/>
         <updated>2020-06-01T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p><img src="/blog/assets/2020-06-01-darwinia-project-moon.png" alt=""></p>
-<p><strong>Darwinia 官方将为此次节点大奖赛提供 一亿 cRING 的奖励。</strong>所有奖励均可以在 Darwinia 主网上线之后按 100:1 的比例兑换成主网 RING。</p>
+<p><strong>For this Grand Prix, Darwinia will provide 100 Million cRING rewards.</strong> All rewards can be exchanged for the mainnet RING after the Darwinia Mainnet launched at the ratio of 100:1.</p>
 ]]></summary>
         <author>
             <name>@DarwiniaNetwork</name>
