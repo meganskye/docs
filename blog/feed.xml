@@ -4,7 +4,7 @@
         <title>Darwinia Documentation Blog</title>
         <link>https://docs.darwinia.network/blog</link>
         <description>The best place to stay up-to-date with the latest Darwinia Documentation news and events.</description>
-        <lastBuildDate>Mon, 20 Jul 2020 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 21 Oct 2020 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -13,6 +13,13 @@
             <link>https://docs.darwinia.network/blog</link>
         </image>
         <copyright>Copyright © 2020 Darwinia Network</copyright>
+        <item>
+            <title><![CDATA[SUBSCAN 成为 Darwinia 网络 #0 号身份注册商]]></title>
+            <link>https://docs.darwinia.network/blog/2020/10/21/subscan-became-the-0-registrar-of-darwinia-network.html</link>
+            <guid>https://docs.darwinia.network/blog/2020/10/21/subscan-became-the-0-registrar-of-darwinia-network.html</guid>
+            <pubDate>Wed, 21 Oct 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/blog/assets/2020-10-21-subscan-became-the-0-registrar-of-darwinia-network-1.jpg" alt></p> <h2><a class="anchor" aria-hidden="true" id="什么是身份注册商？"></a><a href="#什么是身份注册商？" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>什么是身份注册商？</h2> <p>身份注册商的主要工作就是验证链上身份真实性，并根据身份信息的完整性或真实性，授予不同的身份等级。获得一个较高的身份等级，会增加信任度与社区知名度，有利于参与链上治理、竞选验证人等活动。</p> <h2><a class="anchor" aria-hidden="true" id="如何查找当前身份注册商？"></a><a href="#如何查找当前身份注册商？" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>如何查找当前身份注册商？</h2> <ol> <li>您可以在 Chain state &gt; Storage &gt; Identity &gt; registrars : Vec &lt;Option&lt;RegistrarInfo&gt;&gt; 中查看所有身份注册商信息，包括注册商账号、注册费、权限等。 ...</li></ol>]]></description>
+        </item>
         <item>
             <title><![CDATA[Darwinia 跨链转账第一步：创世跨链，已开启！]]></title>
             <link>https://docs.darwinia.network/blog/2020/07/20/darwinia-mainnet-genesis.html</link>
@@ -114,21 +121,21 @@
 ]]></description>
         </item>
         <item>
-            <title><![CDATA[Darwinia & MathWallet 联名NFT，限量200个]]></title>
-            <link>https://docs.darwinia.network/blog/2020/04/14/math-nft.html</link>
-            <guid>https://docs.darwinia.network/blog/2020/04/14/math-nft.html</guid>
-            <pubDate>Tue, 14 Apr 2020 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p><img src="/blog/assets/2020-04-14-math-nft.png" alt=""></p>
-<p>为了感谢达尔文网络和麦子钱包的社区用户，双方决定限量发放 200 枚 非同质化代币 NFT 至社区。</p>
-]]></description>
-        </item>
-        <item>
             <title><![CDATA[Win Limited NFTs - Math x Darwinia]]></title>
             <link>https://docs.darwinia.network/blog/2020/04/14/math-nft-en.html</link>
             <guid>https://docs.darwinia.network/blog/2020/04/14/math-nft-en.html</guid>
             <pubDate>Tue, 14 Apr 2020 06:00:00 GMT</pubDate>
             <description><![CDATA[<p><img src="/blog/assets/2020-04-14-math-nft.png" alt=""></p>
 <p>Win Limited NFTs - Math x Darwinia: MathWallet Collectibles Series 5 🎁</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Darwinia & MathWallet 联名NFT，限量200个]]></title>
+            <link>https://docs.darwinia.network/blog/2020/04/14/math-nft.html</link>
+            <guid>https://docs.darwinia.network/blog/2020/04/14/math-nft.html</guid>
+            <pubDate>Tue, 14 Apr 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="/blog/assets/2020-04-14-math-nft.png" alt=""></p>
+<p>为了感谢达尔文网络和麦子钱包的社区用户，双方决定限量发放 200 枚 非同质化代币 NFT 至社区。</p>
 ]]></description>
         </item>
         <item>
