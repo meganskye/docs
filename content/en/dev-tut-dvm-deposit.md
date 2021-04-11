@@ -8,9 +8,9 @@ sidebar_label: Deposit to a DVM address
 
 ## Pangolin Testnet
 
-The Pangolin TestNet is a network for contract developers maintained by the Darwinia team with native token `PRING.` This network integrates the Darwinia Virtual Machine (DVM) which supports Ethereum smart contracts on the current Darwinia network. On Pangolin you can use the most common Ethereum tools, such as Metamask, Remix, etc. and unlike on Crab Network, Pangolin tokens are freely issued to those who apply.
+The Pangolin TestNet is a network for smart contract developers maintained by the Darwinia team with native token `PRING.` This network integrates the Darwinia Virtual Machine (DVM) which supports Ethereum smart contracts on the current Darwinia network. On Pangolin, you can use the most common Ethereum tools such as Metamask, Remix, etc. and unlike Crab Network cRING tokens, Pangolin tokens are freely issued to those who apply.
 
-Developers who would like to deploy smart contracts or test their functionality for use on Darwinia network can apply for free pRING tokens in [Darwinia Element](https://app.element.io/?pk_vid=6961ca0f7c45f8bf16052310122d2437#/room/#darwinia:matrix.org).
+Developers who would like to deploy smart contracts and test their functionality for use on Darwinia network can apply for free pRING tokens in [Darwinia Element](https://app.element.io/?pk_vid=6961ca0f7c45f8bf16052310122d2437#/room/#darwinia:matrix.org).
 
 ## Add Pangolin to MetaMask 
 
@@ -27,7 +27,7 @@ Setting Configuration:
 - Chain ID： `43`
 - Currency Symbol： `PRING`
 
-Click Save, and the Pangolin network will be added in Metamask. After being successfully added, you will be able to transfer tokens or deploy smart contracts with Metamask.
+Click Save, and Pangolin network will be added; and then you will be ready to transfer tokens or deploy smart contracts using Metamask.
 
 ## Add Pangolin to Apps
 
@@ -42,8 +42,8 @@ add custom ternal configuration ws://t1.hkg.itering.com:9944/, save and reload a
 
 ### Preparations
 
-- A EVM address (Metamask generate one account)
-- A Darwinia address (This should have a proper balance, apply in element)
+- An EVM address (Use Metamask to generate an account)
+- A Darwinia address (This should have a proper balance, apply in the Darwinia Element channel)
 
 ### Deposit
 
