@@ -8,14 +8,13 @@ sidebar_label: Deposit to a DVM address
 
 ## Pangolin Testnet
 
-The Pangolin TestNet is a network for contract developers maintained by darwinia team with token `PRING`. This network integrates the DVM(Darwinia Virtual Machine) which will support Ethereum smart contracts in current darwinia network. So, you can also use common ethereum tools, such as Metamask, Remix, etc. Unlike the crab test network,
-token in Pangolin is free to apply.
+The Pangolin TestNet is a network for contract developers maintained by the Darwinia team with native token `PRING.` This network integrates the Darwinia Virtual Machine (DVM) which supports Ethereum smart contracts on the current Darwinia network. On Pangolin you can use the most common Ethereum tools, such as Metamask, Remix, etc. and unlike on Crab Network, Pangolin tokens are freely issued to those who apply.
 
-Developer who needs test token to deploy contract or do something else about smart contract in darwinia network, could apply free token in [Darwinia Element](https://app.element.io/?pk_vid=6961ca0f7c45f8bf16052310122d2437#/room/#darwinia:matrix.org).
+Developers who would like to deploy smart contracts or test their functionality for use on Darwinia network can apply for free pRING tokens in [Darwinia Element](https://app.element.io/?pk_vid=6961ca0f7c45f8bf16052310122d2437#/room/#darwinia:matrix.org).
 
 ## Add Pangolin to MetaMask 
 
-We need to query balance of evm account, so add new network in metamask at first.
+We first need to query the balance of EVM account, so will need to add a new network in Metamask.
 
 ![add testnet](assets/wiki-tut-dvm-recharge-01.png)
 
@@ -28,7 +27,7 @@ Setting Configuration:
 - Chain ID： `43`
 - Currency Symbol： `PRING`
 
-Click Save, the pangolin network will be added in metamask successfully. Then, you could transfer token or deploy contracts in metamask.
+Click Save, and the Pangolin network will be added in Metamask. After being successfully added, you will be able to transfer tokens or deploy smart contracts with Metamask.
 
 ## Add Pangolin to Apps
 
